@@ -1,10 +1,10 @@
 import React from "react";
 
-import Header from "./Header.js";
-import Form from "./Form.js";
-import Cards from "./Cards.js";
-import Description from "./Description.js";
-import Quality from "./Quality.js";
+import Header from "../home/Header.js";
+import Form from "../home/Form.js";
+import Cards from "../home/Cards.js";
+import Description from "../home/Description.js";
+import Quality from "../home/Quality.js";
 
 export default function HomePage() {
   return (

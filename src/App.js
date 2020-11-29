@@ -1,7 +1,7 @@
 import React from "react";
 import { BrowserRouter, Route, Switch } from "react-router-dom";
-import HomePage from "./components/home/HomePage";
-import Contact from "./components/contact/Contact";
+import HomePage from "./components/pages/HomePage";
+import ContactPage from "./components/pages/ContactPage";
 import Navbar from "./components/Navbar";
 
 import "./styles/main.css";
@@ -13,7 +13,7 @@ export default function App() {
       <Navbar />
       <Switch>
         <Route path="/" exact component={HomePage} />
-        <Route path="/kontakt" component={Contact} />
+        <Route path="/kontakt" component={ContactPage} />
       </Switch>
       <Footer />
     </BrowserRouter>
