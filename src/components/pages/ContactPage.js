@@ -1,7 +1,7 @@
 import React from "react";
 import parse from "html-react-parser";
-import Form from "../contact/Form";
-import Info from "../contact/Info";
+import Form from "../ContactPage/Form";
+import Info from "../ContactPage/Info";
 
 const createMap = () => {
   const address = "Kamieniec Wrocławski Działkowa 4a";
