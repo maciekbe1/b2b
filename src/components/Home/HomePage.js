@@ -6,7 +6,7 @@ import Cards from "./Cards.js";
 import Description from "./Description.js";
 import Quality from "./Quality.js";
 
-export default function Home() {
+export default function HomePage() {
   return (
     <>
       <main className="">
