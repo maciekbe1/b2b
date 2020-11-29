@@ -12,7 +12,7 @@ export default function Cards() {
             <div className="px-4 py-5 flex-auto">
               <div className="text-white p-3 text-center inline-flex items-center justify-center w-20 h-20 mb-5 shadow-lg rounded-full border-2">
                 <i className="fas fa-award">
-                  <img src={shield} />
+                  <img src={shield} alt="" />
                 </i>
               </div>
               <h6 className="text-xl font-semibold text-navy">Bezpiecznie</h6>
