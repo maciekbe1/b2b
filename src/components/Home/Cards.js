@@ -1,0 +1,60 @@
+import React from "react";
+import shield from "../../assets/img/shield.png";
+import economic from "../../assets/img/profits.png";
+import ecology from "../../assets/img/plant.png";
+
+export default function Cards() {
+  return (
+    <div>
+      <div className="flex flex-wrap">
+        <div className="lg:pt-12 pt-6 w-full md:w-4/12 px-4 text-center">
+          <div className="relative flex flex-col min-w-0 break-words bg-white w-full mb-8 shadow-lg rounded-lg">
+            <div className="px-4 py-5 flex-auto">
+              <div className="text-white p-3 text-center inline-flex items-center justify-center w-20 h-20 mb-5 shadow-lg rounded-full border-2">
+                <i className="fas fa-award">
+                  <img src={shield} />
+                </i>
+              </div>
+              <h6 className="text-xl font-semibold text-navy">Bezpiecznie</h6>
+              <p className="mt-2 mb-4 text-gray-600">
+                Bezpieczne i skuteczne ocieplanie pianką PUR.
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <div className="w-full md:w-4/12 px-4 text-center">
+          <div className="relative flex flex-col min-w-0 break-words bg-white w-full mb-8 shadow-lg rounded-lg">
+            <div className="px-4 py-5 flex-auto">
+              <div className="text-white p-3 text-center inline-flex items-center justify-center w-20 h-20 mb-5 shadow-lg rounded-full border-2">
+                <i className="fas fa-retweet">
+                  <img src={economic} alt="" />
+                </i>
+              </div>
+              <h6 className="text-xl font-semibold text-navy">Ekonomicznie</h6>
+              <p className="mt-2 mb-4 text-gray-600">
+                Ocieplanie pianką PUR to mniejsze zuzycie energii.
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <div className="lg:pt-12 pt-6 w-full md:w-4/12 px-4 text-center">
+          <div className="relative flex flex-col min-w-0 break-words bg-white w-full mb-8 shadow-lg rounded-lg">
+            <div className="px-4 py-5 flex-auto">
+              <div className="text-white p-3 text-center inline-flex items-center justify-center w-20 h-20 mb-5 shadow-lg rounded-full border-2">
+                <i className="fas fa-fingerprint">
+                  <img src={ecology} alt="" />
+                </i>
+              </div>
+              <h6 className="text-xl font-semibold text-navy">Ekologicznie</h6>
+              <p className="mt-2 mb-4 text-gray-600">
+                Produkty przyjazne dla środowiska naturalnego.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  );
+}
