@@ -1,6 +1,6 @@
 import React from "react";
 import { NavLink } from "react-router-dom";
-import logo from "../assets/img/logo.jpg";
+import logo from "../assets/img/logo.png";
 
 export default function Navbar(props) {
   const [navbarOpen, setNavbarOpen] = React.useState(false);
@@ -8,7 +8,7 @@ export default function Navbar(props) {
     <>
       <nav className="fixed z-10 bg-white w-full">
         <div className="max-w-7xl mx-auto px-2 sm:px-6 lg:px-8">
-          <div className="relative flex items-center justify-between h-20">
+          <div className="relative flex items-center justify-between h-24">
             <div className="absolute inset-y-0 left-0 flex items-center sm:hidden">
               {/* <!-- Mobile menu button--> */}
               <button
@@ -62,7 +62,7 @@ export default function Navbar(props) {
               </button>
             </div>
             <img
-              className="hidden lg:block h-16 w-auto absolute"
+              className="hidden lg:block h-24 w-auto absolute"
               src={logo}
               alt="Workflow"
             />
@@ -71,7 +71,7 @@ export default function Navbar(props) {
                 <div className="flex space-x-4">
                   <NavLink
                     to="/"
-                    className="px-3 py-2 rounded-md text-sm font-medium hover:text-logoGreen"
+                    className="px-3 py-2 rounded-md text-sm font-medium hover:bg-navy hover:text-white"
                     activeClassName="bg-navy text-white"
                     exact
                   >
@@ -79,21 +79,21 @@ export default function Navbar(props) {
                   </NavLink>
                   <NavLink
                     to="/oferta"
-                    className="px-3 py-2 rounded-md text-sm font-medium hover:text-logoGreen"
+                    className="px-3 py-2 rounded-md text-sm font-medium hover:bg-navy hover:text-white"
                     activeClassName="bg-navy text-white"
                   >
                     Oferta
                   </NavLink>
                   <NavLink
                     to="/o-nas"
-                    className="px-3 py-2 rounded-md text-sm font-medium hover:text-logoGreen"
+                    className="px-3 py-2 rounded-md text-sm font-medium hover:bg-navy hover:text-white"
                     activeClassName="bg-navy text-white"
                   >
                     O nas
                   </NavLink>
                   <NavLink
                     to="/kontakt"
-                    className="px-3 py-2 rounded-md text-sm font-medium hover:text-logoGreen"
+                    className="px-3 py-2 rounded-md text-sm font-medium hover:bg-navy hover:text-white"
                     activeClassName="bg-navy text-white hover:text-white"
                   >
                     Kontakt

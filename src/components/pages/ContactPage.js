@@ -22,7 +22,7 @@ const createMap = () => {
 
 export default function Contact() {
   return (
-    <div className="pt-5">
+    <div className="pt-24">
       <div className="full-width">{createMap()}</div>
       <div className="container mx-auto px-4">
         <div className="flex flex-wrap">

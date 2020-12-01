@@ -2,8 +2,6 @@ import React from "react";
 import { Link } from "react-router-dom";
 import instagram from "../assets/img/instagram.png";
 import facebook from "../assets/img/facebook.png";
-import linkedin from "../assets/img/linkedin.png";
-import twitter from "../assets/img/twitter.png";
 
 export default function Footer() {
   return (
@@ -31,12 +29,6 @@ export default function Footer() {
               </div>
               <div className="mt-6">
                 <button
-                  className="bg-white text-blue-400 shadow-lg font-normal h-10 w-10 items-center justify-center align-center rounded-full outline-none focus:outline-none mr-2 p-3"
-                  type="button"
-                >
-                  <img src={twitter} alt="" />
-                </button>
-                <button
                   className="bg-white text-blue-600 shadow-lg font-normal h-10 w-10 items-center justify-center align-center rounded-full outline-none focus:outline-none mr-2 p-3"
                   type="button"
                 >
@@ -47,12 +39,6 @@ export default function Footer() {
                   type="button"
                 >
                   <img src={instagram} alt="" />
-                </button>
-                <button
-                  className="bg-white text-gray-900 shadow-lg font-normal h-10 w-10 items-center justify-center align-center rounded-full outline-none focus:outline-none mr-2 p-3"
-                  type="button"
-                >
-                  <img src={linkedin} alt="" />
                 </button>
               </div>
             </div>
@@ -65,7 +51,7 @@ export default function Footer() {
                   <ul className="list-unstyled">
                     <li>
                       <Link
-                        className="text-gray-700 hover:text-logoGreen font-semibold block pb-2 text-sm "
+                        className="text-gray-700 hover:underline font-semibold block pb-2 text-sm "
                         to="/oferta"
                       >
                         Oferta
@@ -73,7 +59,7 @@ export default function Footer() {
                     </li>
                     <li>
                       <Link
-                        className="text-gray-700 hover:text-logoGreen font-semibold block pb-2 text-sm"
+                        className="text-gray-700 hover:underline font-semibold block pb-2 text-sm"
                         to="/o-nas"
                       >
                         O nas
@@ -81,7 +67,7 @@ export default function Footer() {
                     </li>
                     <li>
                       <Link
-                        className="text-gray-700 hover:text-logoGreen font-semibold block pb-2 text-sm"
+                        className="text-gray-700 hover:underline font-semibold block pb-2 text-sm"
                         to="/kontakt"
                       >
                         Kontakt
@@ -96,7 +82,7 @@ export default function Footer() {
                   <ul className="list-unstyled">
                     <li>
                       <p className="text-gray-700 font-semibold block pb-2 text-sm">
-                        Pure Concept Sp. z o.o.
+                        Pur Concept s.c.
                       </p>
                     </li>
                     <li>
