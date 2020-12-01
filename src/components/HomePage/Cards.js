@@ -49,7 +49,7 @@ export default function Cards() {
               </div>
               <h6 className="text-xl font-semibold text-navy">Ekologicznie</h6>
               <p className="mt-2 mb-4 text-gray-600">
-                Produkty przyjazne dla alergików
+                Produkty przyjazne alergikom
               </p>
             </div>
           </div>

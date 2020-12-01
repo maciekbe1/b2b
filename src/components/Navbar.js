@@ -12,7 +12,7 @@ export default function Navbar(props) {
             <div className="absolute inset-y-0 left-0 flex items-center sm:hidden">
               {/* <!-- Mobile menu button--> */}
               <button
-                className="inline-flex items-center justify-center p-2 rounded-md text-gray-400 hover:text-white hover:bg-gray-700 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-white"
+                className="inline-flex items-center justify-center p-2 text-gray-400 hover:text-white hover:bg-gray-700 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-white"
                 aria-expanded="false"
                 onClick={() => setNavbarOpen(!navbarOpen)}
               >
@@ -71,7 +71,7 @@ export default function Navbar(props) {
                 <div className="flex space-x-4">
                   <NavLink
                     to="/"
-                    className="px-3 py-2 rounded-md text-sm font-medium hover:bg-navy hover:text-white"
+                    className="px-3 py-2 text-sm font-medium hover:bg-navy hover:text-white"
                     activeClassName="bg-navy text-white"
                     exact
                   >
@@ -79,21 +79,21 @@ export default function Navbar(props) {
                   </NavLink>
                   <NavLink
                     to="/oferta"
-                    className="px-3 py-2 rounded-md text-sm font-medium hover:bg-navy hover:text-white"
+                    className="px-3 py-2 text-sm font-medium hover:bg-navy hover:text-white"
                     activeClassName="bg-navy text-white"
                   >
                     Oferta
                   </NavLink>
                   <NavLink
                     to="/o-nas"
-                    className="px-3 py-2 rounded-md text-sm font-medium hover:bg-navy hover:text-white"
+                    className="px-3 py-2 text-sm font-medium hover:bg-navy hover:text-white"
                     activeClassName="bg-navy text-white"
                   >
                     O nas
                   </NavLink>
                   <NavLink
                     to="/kontakt"
-                    className="px-3 py-2 rounded-md text-sm font-medium hover:bg-navy hover:text-white"
+                    className="px-3 py-2 text-sm font-medium hover:bg-navy hover:text-white"
                     activeClassName="bg-navy text-white hover:text-white"
                   >
                     Kontakt
@@ -114,27 +114,27 @@ export default function Navbar(props) {
             <NavLink
               to="/"
               exact
-              className="px-3 py-2 rounded-md text-sm font-medium"
+              className="px-3 py-2 text-sm font-medium"
               activeClassName="bg-gray-900 text-white"
             >
               Strona główna
             </NavLink>
             <NavLink
               to="/kontakt"
-              className="px-3 py-2 rounded-md text-sm font-medium"
+              className="px-3 py-2 text-sm font-medium"
               activeClassName="bg-gray-900 text-white"
             >
               Kontakt
             </NavLink>
             {/* <NavLink
 							to="/"
-							className="block px-3 py-2 rounded-md text-base font-medium text-gray-300 hover:text-white hover:bg-gray-700"
+							className="block px-3 py-2 text-base font-medium text-gray-300 hover:text-white hover:bg-gray-700"
 						>
 							Projects
 						</NavLink>
 						<NavLink
 							to="/"
-							className="block px-3 py-2 rounded-md text-base font-medium text-gray-300 hover:text-white hover:bg-gray-700"
+							className="block px-3 py-2 text-base font-medium text-gray-300 hover:text-white hover:bg-gray-700"
 						>
 							Calendar
 						</NavLink> */}

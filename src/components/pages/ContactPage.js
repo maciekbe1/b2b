@@ -1,6 +1,6 @@
 import React from "react";
 import parse from "html-react-parser";
-import Form from "../ContactPage/Form";
+import Form from "../Form";
 import Info from "../ContactPage/Info";
 
 const createMap = () => {
@@ -21,13 +21,20 @@ const createMap = () => {
 };
 
 export default function Contact() {
+  const text = `Jeśli masz wątpliwości czy warto ocieplić poddasze lub dom pianką
+  poliuretanową, to zapytaj naszego eksperta od ocieplania budynków. Po
+  pierwsze poznasz zalety ocieplenia pianką PUR, a po drugie dowiesz się
+  czy w Twoim przypadku warto zastosować takie rozwiązanie. Zapraszamy –
+  izolacje natryskowe, izolacja poddasza pianką, ocieplenie.`;
   return (
     <div className="pt-24">
       <div className="full-width">{createMap()}</div>
       <div className="container mx-auto px-4">
         <div className="flex flex-wrap">
           <div className="w-full md:w-6/12 lg:w-6/12 lg:mb-0 mb-12 px-4">
-            <Form />
+            <div className="flex-auto p-5 lg:p-10">
+              <Form text={text} />
+            </div>
           </div>
           <div className="w-full md:w-6/12 lg:w-6/12 lg:mb-0 mb-12 px-4">
             <Info />

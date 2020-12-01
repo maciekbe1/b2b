@@ -1,6 +1,6 @@
 import React from "react";
 
-import Form from "../HomePage/Form";
+import HomePageForm from "../HomePage/HomePageForm";
 import Cards from "../HomePage/Cards";
 import Description from "../HomePage/Description";
 import Quality from "../HomePage/Quality";
@@ -21,7 +21,7 @@ export default function HomePage() {
           </div>
         </section>
         <Quality />
-        <Form />
+        <HomePageForm />
       </main>
     </>
   );
