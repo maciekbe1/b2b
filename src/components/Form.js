@@ -10,19 +10,15 @@ export default function Form({ text }) {
   ];
   const customStyles = {
     placeholder: () => ({
-      // none of react-select's styles are passed to <Control />
       color: "#9CA3AF",
       fontSize: "0.875rem",
       lineHeight: "1.25rem",
     }),
-    input: () => ({
-      padding: "0.75rem",
-    }),
     control: (provided) => ({
       ...provided,
       borderRadius: "0.25rem",
-      paddingLeft: "0.25rem",
       borderColor: "#D1D5DB",
+      padding: "0.4rem",
     }),
   };
   return (
