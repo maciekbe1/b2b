@@ -17,7 +17,8 @@ export default function Cards() {
               </div>
               <h6 className="text-xl font-semibold text-navy">Bezpiecznie</h6>
               <p className="mt-2 mb-4 text-gray-600">
-                Bezpieczne i skuteczne ocieplanie pianką PUR
+                Bezpieczne i skuteczne ocieplanie pianką PUR. Jest bezzapachowa
+                i nietoksyczna
               </p>
             </div>
           </div>
@@ -39,7 +40,7 @@ export default function Cards() {
           </div>
         </div>
 
-        <div className="lg:pt-12 pt-6 w-full md:w-4/12 px-4 text-center mn:pt-0 sm:pt-0">
+        <div className="lg:pt-12 w-full md:w-4/12 px-4 text-center mn:pt-0 sm:pt-0">
           <div className="relative flex flex-col min-w-0 break-words bg-white w-full mb-8 shadow-2xl ">
             <div className="px-4 py-5 flex-auto">
               <div className="text-white p-3 text-center inline-flex items-center justify-center w-20 h-20 mb-5 shadow-lg rounded-full border-2">
@@ -47,9 +48,11 @@ export default function Cards() {
                   <img src={ecology} alt="" />
                 </i>
               </div>
-              <h6 className="text-xl font-semibold text-navy">Ekologicznie</h6>
+              <h6 className="text-xl font-semibold text-navy">
+                Przyjazne Alergikom
+              </h6>
               <p className="mt-2 mb-4 text-gray-600">
-                Produkty przyjazne alergikom
+                Pianka nie pyli i nie zawiera żadnych środków alergennych
               </p>
             </div>
           </div>
