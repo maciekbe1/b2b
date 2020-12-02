@@ -7,7 +7,7 @@ import slider4 from "../../assets/img/slider4.png";
 
 export default function Carousel() {
   const settings = {
-    autoplay: false,
+    autoplay: true,
     dots: true,
     autoplaySpeed: 5000,
     arrows: false,
