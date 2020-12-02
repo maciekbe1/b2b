@@ -22,10 +22,10 @@ export default function AboutPage() {
           <div className="items-center flex flex-wrap">
             <div className="w-full lg:w-6/12 px-4 ml-auto mr-auto text-center">
               <div className="">
-                <h1 className="text-white font-semibold text-3xl">
+                <h1 className="text-white font-semibold text-3xl mb-4">
                   Świadczymy usługi na terenie całej polski
                 </h1>
-                <p className="mt-4 text-lg text-gray-200">
+                <span className="text-lg text-gray-200">
                   <hr />
                   Pracujemy na maszynach marki GRACO, wykorzystujemy do
                   natrysków najwyższej jakości piany PUR. Klient otrzymuje
@@ -34,12 +34,13 @@ export default function AboutPage() {
                   <strong className="text-logoGreen">
                     Oferujemy bezpłatną wycenę na miejscu inwestycji.
                   </strong>
-                </p>
+                </span>
               </div>
             </div>
           </div>
         </div>
       </div>
+
       <div className="pb-6">
         <h3 className="text-3xl mb-6 mt-6 font-semibold leading-normal text-navy text-center">
           Najczęściej zadawane pytania

@@ -17,10 +17,18 @@ const useStyles = makeStyles((theme) => ({
 
 export default function SimpleAccordion() {
   const classes = useStyles();
+  const [expanded, setExpanded] = React.useState("panel1");
 
+  const handleChange = (panel) => (event, isExpanded) => {
+    setExpanded(isExpanded ? panel : false);
+  };
   return (
     <div className={classes.root}>
-      <Accordion className={classes.shadow}>
+      <Accordion
+        className={classes.shadow}
+        expanded={expanded === "panel1"}
+        onChange={handleChange("panel1")}
+      >
         <AccordionSummary
           expandIcon={<ExpandMoreIcon />}
           aria-controls="panel1a-content"
@@ -51,7 +59,11 @@ export default function SimpleAccordion() {
         </AccordionDetails>
       </Accordion>
 
-      <Accordion className={classes.shadow}>
+      <Accordion
+        className={classes.shadow}
+        expanded={expanded === "panel2"}
+        onChange={handleChange("panel2")}
+      >
         <AccordionSummary
           expandIcon={<ExpandMoreIcon />}
           aria-controls="panel2a-content"
@@ -94,7 +106,11 @@ export default function SimpleAccordion() {
         </AccordionDetails>
       </Accordion>
 
-      <Accordion className={classes.shadow}>
+      <Accordion
+        className={classes.shadow}
+        expanded={expanded === "panel3"}
+        onChange={handleChange("panel3")}
+      >
         <AccordionSummary
           expandIcon={<ExpandMoreIcon />}
           aria-controls="panel3a-content"
@@ -131,7 +147,11 @@ export default function SimpleAccordion() {
         </AccordionDetails>
       </Accordion>
 
-      <Accordion className={classes.shadow}>
+      <Accordion
+        className={classes.shadow}
+        expanded={expanded === "panel4"}
+        onChange={handleChange("panel4")}
+      >
         <AccordionSummary
           expandIcon={<ExpandMoreIcon />}
           aria-controls="panel4a-content"
@@ -149,7 +169,11 @@ export default function SimpleAccordion() {
         </AccordionDetails>
       </Accordion>
 
-      <Accordion className={classes.shadow}>
+      <Accordion
+        className={classes.shadow}
+        expanded={expanded === "panel5"}
+        onChange={handleChange("panel5")}
+      >
         <AccordionSummary
           expandIcon={<ExpandMoreIcon />}
           aria-controls="panel5a-content"
