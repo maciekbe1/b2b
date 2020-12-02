@@ -3,6 +3,7 @@ import Select from "react-select";
 
 export default function Form({ text }) {
   const data = [
+    { value: "poddasze", label: "Poddasze" },
     { value: "dach-płaski-zewnętrzny", label: "Dach płaski zewnętrzny" },
     { value: "fundament", label: "Fundament" },
     { value: "podłogi", label: "Podłogi" },

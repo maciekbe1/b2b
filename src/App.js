@@ -17,7 +17,7 @@ export default function App() {
         <Route path="/" exact component={HomePage} />
         <Route path="/kontakt" component={ContactPage} />
         <Route path="/o-nas" component={AboutPage} />
-        <Route path="/o-nas" component={OffertPage} />
+        <Route path="/oferta" component={OffertPage} />
       </Switch>
       <Footer />
     </BrowserRouter>

@@ -6,7 +6,7 @@ export default function HomePageForm() {
   poniższy formularz, a nasz ekspert skontaktuje się z Tobą
   najszybciej jak będzie to możliwe.`;
   return (
-    <section className="relative block lg:pt-0 bg-navy">
+    <section className="relative block lg:pt-0 bg-darkNavy">
       <div className="container mx-auto px-4">
         <div className="flex flex-wrap justify-center py-24">
           <div className="w-full lg:w-6/12 px-4">

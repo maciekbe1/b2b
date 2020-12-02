@@ -1,6 +1,6 @@
 import React from "react";
 import { Link } from "react-router-dom";
-import piana from "../../assets/img/piana-pur-ekodom-2.jpg";
+import piana from "../../assets/img/piana.png";
 
 export default function Description() {
   return (

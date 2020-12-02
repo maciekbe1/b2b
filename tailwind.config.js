@@ -11,6 +11,7 @@ module.exports = {
     extend: {
       colors: {
         navy: "#1A4F72",
+        darkNavy: "#113248",
         logoGreen: "#33B41A",
       },
       screens: {

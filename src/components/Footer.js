@@ -2,14 +2,15 @@ import React from "react";
 import { Link } from "react-router-dom";
 import instagram from "../assets/img/instagram.png";
 import facebook from "../assets/img/facebook.png";
+import youtube from "../assets/img/youtube.png";
 
 export default function Footer() {
   return (
     <>
-      <footer className="relative bg-gray-300 pt-8 pb-6">
+      <footer className="relative pt-8 pb-6">
         <div className="container mx-auto px-4">
           <div className="flex flex-wrap">
-            <div className="w-full lg:w-6/12 px-4">
+            <div className="w-full lg:w-6/12">
               <h4 className="text-3xl font-semibold text-navy">
                 Potrzebujesz więcej informacji?
               </h4>
@@ -29,16 +30,22 @@ export default function Footer() {
               </div>
               <div className="mt-6">
                 <button
-                  className="bg-white text-blue-600 shadow-lg font-normal h-10 w-10 items-center justify-center align-center rounded-full outline-none focus:outline-none mr-2 p-3"
+                  className="bg-white text-blue-600 border border-gray-200 shadow-lg font-normal h-10 w-10 items-center justify-center align-center rounded-full outline-none focus:outline-none mr-2 p-3"
                   type="button"
                 >
                   <img src={facebook} alt="" />
                 </button>
                 <button
-                  className="bg-white text-pink-400 shadow-lg font-normal h-10 w-10 items-center justify-center align-center rounded-full outline-none focus:outline-none mr-2 p-3"
+                  className="bg-white text-pink-400 border border-gray-200 shadow-lg font-normal h-10 w-10 items-center justify-center align-center rounded-full outline-none focus:outline-none mr-2 p-3"
                   type="button"
                 >
                   <img src={instagram} alt="" />
+                </button>
+                <button
+                  className="bg-white text-pink-400 border border-gray-200 shadow-lg font-normal h-10 w-10 items-center justify-center align-center rounded-full outline-none focus:outline-none mr-2 p-3"
+                  type="button"
+                >
+                  <img src={youtube} alt="" />
                 </button>
               </div>
             </div>
@@ -104,7 +111,7 @@ export default function Footer() {
           <div className="flex flex-wrap items-center md:justify-between justify-center">
             <div className="w-full md:w-4/12 px-4 mx-auto text-center">
               <div className="text-sm text-gray-600 font-semibold py-1">
-                Copyright © {new Date().getFullYear()}
+                PUR CONCEPT © {new Date().getFullYear()}
               </div>
             </div>
           </div>
