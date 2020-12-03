@@ -16,14 +16,14 @@ export default function Description() {
             wykonania i jakość użytych materiałów ma kluczowe znaczenie warto
             zdecydować się na profesjonalną firmę z doświadczeniem. Uzyskanie
             należytej szczelności i jakości wymaga precyzji i dokłądności, które
-            synikają z doświadczenia.
+            wynikają z doświadczenia.
           </p>
           <p className="text-lg font-light leading-relaxed mt-0 mb-4 text-gray-700">
-            Izolacja poddasza, dachu, podłogi, fundamentu ma duże znaczenie,
-            gdyż tą drogą zwykle ucieka dużo ciepła. Ocieplenie kluczowych
-            elementów konstrukcji budynku jest ważne, bo znacząco wpływa na
-            redukcję kosztów związanych z opłatami za ogrzewanie. To ważne, gdyż
-            koszty ogrzewania ciągle rosną.
+            Izolacja poddasza, dachu, podłogi, fundamentu ma ogromne znaczenie,
+            ponieważ to właśnie tą drogą zwykle ucieka najwięcej ciepła.
+            Ocieplenie kluczowych elementów konstrukcji budynku jest ważne, gdyż
+            znacząco wpływa na redukcję kosztów związanych z ogrzewaniem. To
+            ważne, biorąc pod uwagę koszty ogrzewania które stale rosną.
           </p>
           <Link
             to="/oferta"

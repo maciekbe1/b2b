@@ -9,7 +9,7 @@ import home from "../../assets/img/logo.png";
 
 import slider from "../../assets/img/slider-text.png";
 import slider2 from "../../assets/img/slider2.png";
-import slider3 from "../../assets/img/slider3-text.png";
+import slider3 from "../../assets/img/slider3.png";
 import slider4 from "../../assets/img/slider4.png";
 const settings = {
   autoplay: true,

@@ -28,9 +28,9 @@ export default function AboutPage() {
                 <span className="text-lg text-gray-200">
                   <hr />
                   Pracujemy na maszynach marki GRACO, wykorzystujemy do
-                  natrysków najwyższej jakości piany PUR. Klient otrzymuje
-                  bezpłatnie certyfikat aplikacji po skończonym natrysku jak i
-                  pokazujemy wynik na kamerze termowizyjnej.{" "}
+                  natrysków najwyższej jakości piany PUR. Każdy nasz klient
+                  otrzymuje certyfikat aplikacji po skończonym natrysku oraz
+                  prezentujemy wynik na kamerze termowizyjnej.{" "}
                   <strong className="text-logoGreen">
                     Oferujemy bezpłatną wycenę na miejscu inwestycji.
                   </strong>
@@ -51,7 +51,9 @@ export default function AboutPage() {
           </div>
           <div className="w-full md:w-4/12 ml-auto mr-auto px-4 mn:pt-2">
             <img src={logo} alt="" />
-            <h5 className="text-center">Zapraszamy do współpracy!</h5>
+            <h5 className="text-center leading-relaxed ">
+              Zapraszamy do współpracy!
+            </h5>
           </div>
         </div>
       </div>

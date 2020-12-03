@@ -18,7 +18,7 @@ export default function Info() {
         <div className="pt-6">
           <h6 className="text-xl font-bold">Adres</h6>
           <p className="mt-1 text-sm text-gray-800 uppercase font-semibold">
-            ul. Działkowa 4a lok. 5 <br /> 55-002 Kamieniec Wrocławski
+            ul. Działkowa 4a lok. 4 <br /> 55-002 Kamieniec Wrocławski
           </p>
         </div>
       </div>

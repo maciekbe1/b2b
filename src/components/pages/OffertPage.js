@@ -1,7 +1,7 @@
 import React from "react";
 import { Link } from "react-router-dom";
-import pianka1 from "../../assets/img/purios-h77.png";
-import pianka2 from "../../assets/img/piana-poliuretanowa-otwartokomorkowa-purios-s.png";
+import pianka1 from "../../assets/img/pianka1.jpg";
+import pianka2 from "../../assets/img/pianka2.jpg";
 import Carousel from "../Carousel";
 import ImageCarusel from "../OffertPage/ImageCarusel";
 const settings = {
@@ -9,17 +9,18 @@ const settings = {
   dots: true,
   autoplaySpeed: 5000,
   arrows: false,
+  adaptiveHeight: true,
 };
 
 const images = [
   <ImageCarusel
     path={pianka1}
-    text="Purios HO to piana poliuretanowa o strukturze zamkniętych komórek, stosowana do produkcji sztywnej pianki natryskowej. System posiada w swoim składzie środek spieniający nowej generacji (HFO) o potencjale zubożenia warstwy ozonowej (ODP) równym zero oraz niskim współczyniku ocieplenia globalnego (GWP). Purios HO charakteryzuje się możliwością natryskiwania znacznie grubszych warstw (od 5 do 10 cm), co skutkuje znaczną oszczędnością czasu podczas aplikacji i zmniejszenie kosztów."
-    title="Piany HO"
+    text="Druga odmiana izolacyjnej pianki PUR ma strukturę zamkniętokomórkową. Ten rodzaj pianki składa się w minimum 80% z komórek zamkniętych, wypełnionych gazem (czasem również powietrzem). Jest o wiele cięższa od pianki otwartokomórkowej. Wyróżnia się wysoką odpornością na zgniatanie oraz niską paroprzepuszczalnością. Dzięki tym cechą wykorzystywana jest w szczególności do izolowania posadzek, zbiorników, fundamentów, basenów oraz rur. Nadaję się również do ocieplenia obór, stajni i chlewni."
+    title="Piany Zamkniętokomórkowe"
   />,
   <ImageCarusel
     path={pianka2}
-    text="Piana otwartokomórkowa służy głównie do wykonywania izolacji wewnątrz budynków. W 90% składa się z otwartych komórek. Cechuje się niskim współczynnikiem oporu dyfuzyjnego pary wodnej, dzięki czemu wilgoć nie jest zatrzymywana w warstwie izolacyjnej. Piana Purios otwartokomórkowa posiada λ od 0,033, co pozwala wyraźnie obniżyć rachunki za energię w budynkach."
+    text={`Pianka otwartokomórkowa jest materiałem lekkim, dzięki czemu nie obciąża konstrukcji. Znakomicie nadaje się do izolacji poddasza. Ta odmiana pianki bardzo przypomina gąbkę. Jej struktura składa się w minimu 80% z komórek otwartych wypełnionych powietrzem. To właśnie powietrze jest świetnym izolatorem akustycznym, przepuszcza parę wodną ("oddycha"). Pianka otwaryokomórkowa, nie wykazuje odporności na ściskanie. Chwilę po aplikacji pianka rozpręża się bardzo dynamicznie, zwiększając swoją obiętość nawet 120 razy. Dzięki tej właściwości dociera w szczeliny i miejsca, które są trudno dostępne, wypełniając je i tym samym nie doprowadza do powstawania mostków termicznych.`}
     title="Piany Otwartokomórkowe"
   />,
 ];
@@ -29,16 +30,16 @@ export default function OffertPage() {
       <div className="pt-6">
         <div className="items-center flex flex-wrap">
           <div className="w-full md:w-4/12 ml-auto mr-auto px-4 mn:pt-2">
-            <h5 className="text-lg font-light leading-relaxed mt-4 mb-4 text-gray-700">
-              Oferujemy idealne rozwiązania, przeznaczone do izolacji budynków
-              mieszkalnych, biurowych, obiektów przemysłowych i
+            <h5 className="text-xl font-light leading-relaxed mt-4 mb-4 text-gray-700">
+              Zapewniamy każdemu klientowi profesjonalną usługę. Oferujemy
+              idealne rozwiązania, przeznaczone do izolacji budynków
+              mieszkalnych, biurowych, obiektów przemysłowych,
               handlowo-usługowych oraz pomieszczeń gospodarczych.
               <br />
               <br />
               Innowacyjne systemy ociepleń pianą PUR mogą być stosowane do
               wykonywania izolacji termicznej zarówno w budynkach nowo
-              wznoszonych, jak i tych, podlegających termomodernizacji Gwarancja
-              producenta 25 lat na pianę
+              wznoszonych, jak i tych podlegających termomodernizacji.
             </h5>
           </div>
           <div className="w-full md:w-6/12 ml-auto mr-auto px-4">
@@ -50,54 +51,32 @@ export default function OffertPage() {
         <h5 className="text-lg text-navy">
           Pianka PUR może poszczycić się bardzo dobrymi parametrami i łatwością
           użycia.
-          <br /> Do jej właściwości zaliczyć można więc to, że pianka
-          poliuretanowa:
+          <br /> Do jej właściwości można zaliczyć:
         </h5>
 
         <ul className="list-disc pl-4 text-lg font-light leading-relaxed mt-4 mb-4 text-gray-700">
+          <li>zapewnia bardzo dobrą izolację cieplną,</li>
           <li>
-            może być stosowana w zakresie temperatur od –50°C do +100-130°C, co
-            więcej: przez krótki okres wytrzyma nawet temperaturę wynoszącą
-            +250°C,
+            ma dużo niższy współczynnik przewodzenia ciepła niż w przypadku
+            wełny lub styropianu mając przy tym mniejszą grubość,
           </li>
-          <li>
-            zapewnia bardzo dobrą izolację cieplną (w zakresie od –60°C do
-            +95°C),
-          </li>
-          <li>
-            ma dwukrotnie niższy współczynnik przewodzenia ciepła niż w np.
-            przypadku wełny lub styropianu przy jednoczesnej mniejszej grubości
-            izolacji,
-          </li>
-          <li>zapewnia także izolację akustyczną, </li>
+          <li>zapewnia izolację akustyczną, </li>
           <li>wykazuje się paroprzepuszczalnością,</li>
-          <li>
-            ma trzy stopnie palności (zgodnie z normą DIN 4102), to znaczy
-            stopień: łatwo zapalny (B3), średnio palny (B2) oraz trudno zapalny
-            (B1),
-          </li>
           <li>nie jest szkodliwa dla zdrowia,</li>
-          <li>nie jest kłopotliwa w transporcie,</li>
-          <li>jest łatwa w obróbce oraz montażu,</li>
+          <li>jest bezwonna,</li>
           <li>jest odporna na działanie grzybów czy pleśni,</li>
           <li>
-            nie lubią jej owady i gryzonie (nie jest więc przez nie uszkadzana
-            czy gryziona),
+            nie lubią jej owady i gryzonie (i z tego powodu nie jest przez nie
+            uszkadzana czy gryziona),
           </li>
+          <li>łatwo się przyczepia do różnego rodzaju nawierzchni,</li>
           <li>
-            jest odporna na dyfuzję pary wodnej, a także na opary chemiczne,
-            większość rozpuszczalników organicznych oraz kwasy i zasady,
+            nie zmienia swoich właściwości po upływie czasu w przeciwieństwie do
+            tradycyjnych materiałów izolacyjnych,
           </li>
-          <li>posiada wersje palną i samogasnącą,</li>
-          <li>
-            „nie starzeje się”, to znaczy z upływem czasu nie zmienia swoich
-            parametrów mechanicznych i izolacyjnych,
-          </li>
-          <li>
-            może być pokrywana lakierem, pokrywana farbami (na bazie tworzyw
-            sztucznych), a nawet laminowana.
-          </li>
+          <li>może być pokrywana lakierem lub farbami.</li>
         </ul>
+
         <h4 className="text-xl font-semibold text-navy pb-5">
           Chciałbyś dowiedzieć się wiecej o naszej ofercie?
         </h4>

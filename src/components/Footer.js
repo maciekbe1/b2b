@@ -94,7 +94,7 @@ export default function Footer() {
                     </li>
                     <li>
                       <p className="text-gray-700 font-semibold block pb-2 text-sm">
-                        ul. Działkowa 4a lok. 5
+                        ul. Działkowa 4a lok. 4
                       </p>
                     </li>
                     <li>
