@@ -116,8 +116,9 @@ export default function Navbar(props) {
             <NavLink
               to="/"
               exact
-              className="px-3 py-2 text-sm font-medium"
+              className="px-3 py-2 text-sm font-medium z-10"
               activeClassName="bg-gray-900 text-white"
+              onClick={() => setNavbarOpen(!navbarOpen)}
             >
               Strona główna
             </NavLink>
@@ -125,6 +126,7 @@ export default function Navbar(props) {
               to="/oferta"
               className="px-3 py-2 text-sm font-medium"
               activeClassName="bg-gray-900 text-white"
+              onClick={() => setNavbarOpen(!navbarOpen)}
             >
               Oferta
             </NavLink>
@@ -132,6 +134,7 @@ export default function Navbar(props) {
               to="/o-nas"
               className="px-3 py-2 text-sm font-medium"
               activeClassName="bg-gray-900 text-white"
+              onClick={() => setNavbarOpen(!navbarOpen)}
             >
               O nas
             </NavLink>
@@ -139,6 +142,7 @@ export default function Navbar(props) {
               to="/kontakt"
               className="px-3 py-2 text-sm font-medium"
               activeClassName="bg-gray-900 text-white"
+              onClick={() => setNavbarOpen(!navbarOpen)}
             >
               Kontakt
             </NavLink>
