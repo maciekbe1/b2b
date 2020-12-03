@@ -67,7 +67,7 @@ export default function Navbar(props) {
               alt="Workflow"
             />
             <div className="flex-1 flex items-center justify-center sm:items-stretch">
-              <div className="hidden sm:block sm:ml-6">
+              <div className="hidden sm:block">
                 <div className="flex space-x-4">
                   <NavLink
                     to="/"
@@ -109,8 +109,10 @@ export default function Navbar(props) {
 
     Menu open: "block", Menu closed: "hidden"
   --> */}
-        <div className={`${navbarOpen ? "block" : "hidden"} sm:hidden`}>
-          <div className="px-2 pt-2 pb-3 space-y-1 flex flex-column">
+        <div
+          className={`${navbarOpen ? "block" : "hidden"} sm:hidden mn:-mt-8`}
+        >
+          <div className="px-2 pt-2 pb-3 space-y-1 flex flex-col">
             <NavLink
               to="/"
               exact
@@ -120,24 +122,26 @@ export default function Navbar(props) {
               Strona główna
             </NavLink>
             <NavLink
+              to="/oferta"
+              className="px-3 py-2 text-sm font-medium"
+              activeClassName="bg-gray-900 text-white"
+            >
+              Oferta
+            </NavLink>
+            <NavLink
+              to="/o-nas"
+              className="px-3 py-2 text-sm font-medium"
+              activeClassName="bg-gray-900 text-white"
+            >
+              O nas
+            </NavLink>
+            <NavLink
               to="/kontakt"
               className="px-3 py-2 text-sm font-medium"
               activeClassName="bg-gray-900 text-white"
             >
               Kontakt
             </NavLink>
-            {/* <NavLink
-							to="/"
-							className="block px-3 py-2 text-base font-medium text-gray-300 hover:text-white hover:bg-gray-700"
-						>
-							Projects
-						</NavLink>
-						<NavLink
-							to="/"
-							className="block px-3 py-2 text-base font-medium text-gray-300 hover:text-white hover:bg-gray-700"
-						>
-							Calendar
-						</NavLink> */}
           </div>
         </div>
       </nav>

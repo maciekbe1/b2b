@@ -28,7 +28,7 @@ export default function Footer() {
                   Zadzwoń: 510-510-499
                 </h5>
               </div>
-              <div className="mt-6">
+              <div className="mn:mt-2 mn:mb-2 mt-6">
                 <button
                   className="bg-white text-blue-600 border border-gray-200 shadow-lg font-normal h-10 w-10 items-center justify-center align-center rounded-full outline-none focus:outline-none mr-2 p-3"
                   type="button"
