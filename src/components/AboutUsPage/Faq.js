@@ -39,7 +39,7 @@ export default function SimpleAccordion() {
           </p>
         </AccordionSummary>
         <AccordionDetails>
-          <span className="text-sm font-semi">
+          <span className="text-sm font-light leading-relaxed mt-4 mb-4 text-gray-700">
             <strong>Natryskowa pianka poliuretanowa</strong> (inaczej natrysk,
             pianka PUR) jest sprawdzonym materiałem izolacyjnym, mechanicznie
             nanoszonym na izolowaną powierzchnię. Piany natryskowe to nowoczesny
@@ -74,7 +74,7 @@ export default function SimpleAccordion() {
           </p>
         </AccordionSummary>
         <AccordionDetails>
-          <span className="text-sm font-semi">
+          <span className="text-sm font-light leading-relaxed mt-4 mb-4 text-gray-700">
             Pianki natryskowe mogą mieć różną strukturę. Wyróżniamy pianki o
             strukturze zamkniętokomórkowej (inaczej pianka sztywna, pianka
             twarda) oraz o strukturze otwartokomórkowej (inaczej pianka
@@ -121,7 +121,7 @@ export default function SimpleAccordion() {
           </p>
         </AccordionSummary>
         <AccordionDetails>
-          <span className="text-sm font-semi">
+          <span className="text-sm font-light leading-relaxed mt-4 mb-4 text-gray-700">
             <strong>Mostki termiczne</strong> (inaczej mostki cieplne) to
             miejsca w warstwie izolacji, gdzie z powodu obniżonych własności
             termoizolacyjnych z racji np. łączeń, następuje zwiększona utrata
@@ -162,7 +162,7 @@ export default function SimpleAccordion() {
           </p>
         </AccordionSummary>
         <AccordionDetails>
-          <span className="text-sm font-semi">
+          <span className="text-sm font-light leading-relaxed mt-4 mb-4 text-gray-700">
             Piana PUR o strukturze otwartokomórkowej jest materiałem{" "}
             <strong>oddychającym i paroprzepuszczalnym</strong>.
           </span>
@@ -184,7 +184,7 @@ export default function SimpleAccordion() {
           </p>
         </AccordionSummary>
         <AccordionDetails>
-          <span className="text-sm font-semi">
+          <span className="text-sm font-light leading-relaxed mt-4 mb-4 text-gray-700">
             Izolacje metodą natrysku od wielu lat stosowane są w budownictwie
             mieszkaniowym, które chronione jest coraz bardziej zaostrzającymi
             się przepisami prawa budowlanego. Dlatego oferowane przez nas
