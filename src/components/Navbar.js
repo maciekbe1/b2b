@@ -1,5 +1,5 @@
 import React from "react";
-import { NavLink } from "react-router-dom";
+import { NavLink, Link } from "react-router-dom";
 import logo from "../assets/img/logo-2.png";
 
 export default function Navbar(props) {
@@ -61,11 +61,9 @@ export default function Navbar(props) {
                 </svg>
               </button>
             </div>
-            <img
-              className="hidden lg:block h-24 w-auto absolute"
-              src={logo}
-              alt="Workflow"
-            />
+            <Link className="hidden lg:block w-auto absolute" to="/">
+              <img className="h-24" src={logo} alt="Logo" />
+            </Link>
             <div className="flex-1 flex items-center justify-center sm:items-stretch">
               <div className="hidden sm:block">
                 <div className="flex space-x-4">
