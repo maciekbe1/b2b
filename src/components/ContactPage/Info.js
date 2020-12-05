@@ -1,5 +1,7 @@
 import React from "react";
-
+import instagram from "../../assets/img/instagram.png";
+import facebook from "../../assets/img/facebook.png";
+import youtube from "../../assets/img/youtube.png";
 export default function Info() {
   return (
     <div className="flex-auto p-5 lg:p-10">
@@ -29,6 +31,29 @@ export default function Info() {
           <p className="mt-1 text-sm text-gray-800 uppercase font-semibold">
             Telefon: 510-510-499
           </p>
+          <p className="mt-1 text-sm text-gray-800 uppercase font-semibold">
+            Email: kontak@purconcept.pl
+          </p>
+          <div className="mn:mt-2 mn:mb-2 mt-6">
+            <button
+              className="bg-white text-blue-600 border border-gray-200 shadow-lg font-normal h-10 w-10 items-center justify-center align-center rounded-full outline-none focus:outline-none mr-2 p-3"
+              type="button"
+            >
+              <img src={facebook} alt="" />
+            </button>
+            <button
+              className="bg-white text-pink-400 border border-gray-200 shadow-lg font-normal h-10 w-10 items-center justify-center align-center rounded-full outline-none focus:outline-none mr-2 p-3"
+              type="button"
+            >
+              <img src={instagram} alt="" />
+            </button>
+            <button
+              className="bg-white text-pink-400 border border-gray-200 shadow-lg font-normal h-10 w-10 items-center justify-center align-center rounded-full outline-none focus:outline-none mr-2 p-3"
+              type="button"
+            >
+              <img src={youtube} alt="" />
+            </button>
+          </div>
         </div>
       </div>
     </div>

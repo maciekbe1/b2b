@@ -28,7 +28,6 @@ export default function Contact() {
   izolacje natryskowe, izolacja poddasza pianką, ocieplenie.`;
   return (
     <div className="pt-24">
-      <div className="full-width">{createMap()}</div>
       <div className="container mx-auto px-4">
         <div className="flex flex-wrap">
           <div className="w-full md:w-6/12 lg:w-6/12 lg:mb-0 mb-12 px-4">
@@ -41,6 +40,7 @@ export default function Contact() {
           </div>
         </div>
       </div>
+      <div className="full-width">{createMap()}</div>
     </div>
   );
 }

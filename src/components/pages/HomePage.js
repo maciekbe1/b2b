@@ -1,16 +1,17 @@
 import React from "react";
+import Footer from "../Footer";
 
-import HomePageForm from "../HomePage/HomePageForm";
 import Cards from "../HomePage/Cards";
 import Description from "../HomePage/Description";
-import Quality from "../HomePage/Quality";
 import Carousel from "../Carousel";
+
 import home from "../../assets/img/logo.png";
 
-import slider from "../../assets/img/slider-text.png";
-import slider2 from "../../assets/img/slider2.png";
-import slider3 from "../../assets/img/slider3.png";
-import slider4 from "../../assets/img/slider4.png";
+import slider from "../../assets/img/slider1.png";
+import slider2 from "../../assets/img/slider2.jpg";
+import slider3 from "../../assets/img/slider3.jpg";
+import slider4 from "../../assets/img/slider4.jpg";
+
 const settings = {
   autoplay: true,
   dots: true,
@@ -55,6 +56,7 @@ const images = [
     },
   },
 ];
+
 export default function HomePage() {
   return (
     <>
@@ -69,9 +71,8 @@ export default function HomePage() {
             <Description />
           </div>
         </section>
-        <Quality />
-        <HomePageForm />
       </main>
+      <Footer />
     </>
   );
 }
