@@ -7,13 +7,11 @@ export default function Info() {
     <div className="flex-auto p-5 lg:p-10">
       <h4 className="text-2xl font-semibold text-navy">Dane kontaktowe</h4>
 
-      <div>
-        <div className="pt-6">
-          <h6 className="text-xl font-bold">Nazwa firmy</h6>
-          <p className="mt-1 text-sm text-gray-800 uppercase font-semibold">
-            Pur Concept s.c.
-          </p>
-        </div>
+      <div className="pt-6">
+        <h6 className="text-xl font-bold">Nazwa firmy</h6>
+        <p className="mt-1 text-sm text-gray-800 uppercase font-semibold">
+          Pur Concept s.c.
+        </p>
       </div>
 
       <div>

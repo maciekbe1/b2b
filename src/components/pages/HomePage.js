@@ -5,10 +5,13 @@ import Cards from "../HomePage/Cards";
 import Description from "../HomePage/Description";
 import Carousel from "../Carousel";
 
+import useWindowDimensions from "../utils/ViewPort";
+
 import home from "../../assets/img/logo.png";
 
 import slider from "../../assets/img/slider1.png";
 import slider2 from "../../assets/img/slider2.jpg";
+import slider2text2 from "../../assets/img/slider2-text2.jpg";
 import slider3 from "../../assets/img/slider3.jpg";
 import slider4 from "../../assets/img/slider4.jpg";
 
@@ -18,46 +21,51 @@ const settings = {
   autoplaySpeed: 5000,
   arrows: false,
 };
-const images = [
-  {
-    path: slider,
-    style: {
-      height: "60vh",
-      objectFit: "contain",
-      margin: "0 auto",
-      width: "100%",
-    },
-  },
-  {
-    path: slider2,
-    style: {
-      height: "60vh",
-      objectFit: "cover",
-      margin: "0 auto",
-      width: "100%",
-    },
-  },
-  {
-    path: slider3,
-    style: {
-      height: "60vh",
-      objectFit: "cover",
-      margin: "0 auto",
-      width: "100%",
-    },
-  },
-  {
-    path: slider4,
-    style: {
-      height: "60vh",
-      objectFit: "cover",
-      margin: "0 auto",
-      width: "100%",
-    },
-  },
-];
 
 export default function HomePage() {
+  const { width } = useWindowDimensions();
+
+  const images = [
+    {
+      path: slider,
+      style: {
+        height: width <= 1024 && width >= 768 ? "420px" : "600px",
+        objectFit: "contain",
+        margin: "0 auto",
+        width: "100%",
+      },
+    },
+    {
+      path: width <= 1024 && width >= 768 ? slider2text2 : slider2,
+      style: {
+        height: width <= 1024 && width >= 768 ? "420px" : "600px",
+
+        objectFit: "cover",
+        margin: "0 auto",
+        width: "100%",
+      },
+    },
+    {
+      path: slider3,
+      style: {
+        height: width <= 1024 && width >= 768 ? "420px" : "600px",
+
+        objectFit: "cover",
+        margin: "0 auto",
+        width: "100%",
+      },
+    },
+    {
+      path: slider4,
+      style: {
+        height: width <= 1024 && width >= 768 ? "420px" : "600px",
+
+        objectFit: "cover",
+        margin: "0 auto",
+        width: "100%",
+      },
+    },
+  ];
   return (
     <>
       <main className="pt-24">

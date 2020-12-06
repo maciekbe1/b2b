@@ -47,16 +47,6 @@ export default function AboutPage() {
           </h3>
           <div className="items-center flex flex-wrap">
             <Faq />
-
-            {/* <div className="w-full md:w-7/12 ml-auto mr-auto px-4">
-              <Faq2 />
-            </div>
-            <div className="w-full md:w-4/12 ml-auto mr-auto px-4 mn:pt-2">
-              <img src={logo} alt="" />
-              <h5 className="text-center leading-relaxed ">
-                Zapraszamy do współpracy!
-              </h5>
-            </div> */}
           </div>
         </div>
       </div>
