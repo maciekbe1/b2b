@@ -35,7 +35,7 @@ export default function Contact() {
               <Form text={text} />
             </div>
           </div>
-          <div className="w-full md:w-6/12 lg:w-6/12 lg:mb-0 mb-12 px-4">
+          <div className="w-full md:w-6/12 lg:w-6/12 lg:mb-0 mb-12 px-4 flex items-center">
             <Info />
           </div>
         </div>
