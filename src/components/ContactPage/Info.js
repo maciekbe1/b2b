@@ -30,7 +30,7 @@ export default function Info() {
             Telefon: 510-510-499
           </p>
           <p className="mt-1 text-sm text-gray-800 uppercase font-semibold">
-            Email: kontak@purconcept.pl
+            Email: kontakt@purconcept.pl
           </p>
           <div className="mn:mt-2 mn:mb-2 mt-6">
             <button
