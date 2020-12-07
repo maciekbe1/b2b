@@ -7,7 +7,7 @@ import Carousel from "../Carousel";
 
 import home from "../../assets/img/logo.png";
 
-import slider from "../../assets/img/slider1.png";
+import slider from "../../assets/img/slider1.jpg";
 import slider2 from "../../assets/img/slider2.jpg";
 import slider3 from "../../assets/img/slider3.jpg";
 import slider4 from "../../assets/img/slider4.jpg";
@@ -26,17 +26,25 @@ export default function HomePage() {
       path: slider,
       text:
         "Profesjonalna izolacja oraz ocieplenie domu zapewnia komfort i oszczędności na wiele lat",
+      backgroundSize: "contain",
     },
-    { path: slider2, text: "Oszczędzając energię dbasz o środowisko" },
+
+    {
+      path: slider2,
+      text: "Oszczędzając energię dbasz o środowisko",
+      backgroundSize: "cover",
+    },
     {
       path: slider3,
       text:
         "Izolacja pianą natryskową PUR zapewnia najlepszy standard termiczny",
+      backgroundSize: "cover",
     },
     {
       path: slider4,
       text:
         "Ocieplenie pianą natryskową PUR zapewnia oszczędności nawet do 50 % ",
+      backgroundSize: "cover",
     },
   ];
   const imageComponents = images.map((item) => {

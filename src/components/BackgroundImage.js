@@ -10,7 +10,7 @@ export default function BackgroundImage({ item }) {
       style={{
         backgroundImage: `url('${item.path}')`,
         height: width >= 768 ? "600px" : "400px",
-        backgroundSize: "cover",
+        backgroundSize: item.backgroundSize,
       }}
     >
       <div className="absolute bottom-0 right-0 bg-black opacity-60 text-white lg:text-3xl md:text-2xl py-3 px-4 w-full text-center">
