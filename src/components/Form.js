@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-// import axios from "axios";
+import axios from "axios";
 import Select from "react-select";
 
 export default function Form({ text }) {
@@ -35,12 +35,27 @@ export default function Form({ text }) {
   const handleFormSubmit = (e) => {
     e.preventDefault();
     const data = {
-      "Miejsce aplikacji": selectedValue.map((item) => item.label),
-      "Nazwa klienta": name,
-      "Email klienta": email,
-      "Treść wiadomości": message,
+      subject: selectedValue.map((item) => item.label).join(", "),
+      client: name,
+      email: email,
+      message: message,
     };
-    console.log(data);
+    axios({
+      method: "post",
+      url: "/api/send",
+      headers: {
+        "Content-Type": "application/json",
+      },
+      data: data,
+    })
+      .then((res) => {
+        // setSuccess(true);
+        console.log(res);
+      })
+      .catch((err) => {
+        // setError(err.response.data);
+        console.log(err);
+      });
   };
   return (
     <form onSubmit={handleFormSubmit}>
