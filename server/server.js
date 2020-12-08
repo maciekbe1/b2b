@@ -26,7 +26,6 @@ app.use(cookieParser(), jsonParser, morgan("tiny"), cors("*"));
 
 app.post("/api/send", (req, res) => {
   try {
-    console.log(req.body);
     const transporter = nodemailer.createTransport({
       host: "web8.aftermarket.hosting",
       port: 465,

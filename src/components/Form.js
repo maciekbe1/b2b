@@ -27,35 +27,40 @@ export default function Form({ text }) {
   const [email, setEmail] = useState("");
   const [selectedValue, setSelectedValue] = useState();
   const [message, setMessage] = useState("");
-
+  const [pending, setPending] = useState(false);
+  const [success, setSuccess] = useState(false);
   const handleChange = (e) => {
     setSelectedValue(e);
   };
 
   const handleFormSubmit = (e) => {
     e.preventDefault();
-    const data = {
-      subject: selectedValue.map((item) => item.label).join(", "),
-      client: name,
-      email: email,
-      message: message,
-    };
-    axios({
-      method: "post",
-      url: "/api/send",
-      headers: {
-        "Content-Type": "application/json",
-      },
-      data: data,
-    })
-      .then((res) => {
-        // setSuccess(true);
-        console.log(res);
+    if (!success) {
+      setPending(true);
+      const data = {
+        subject: selectedValue.map((item) => item.label).join(", "),
+        client: name,
+        email: email,
+        message: message,
+      };
+      axios({
+        method: "post",
+        url: "/api/send",
+        headers: {
+          "Content-Type": "application/json",
+        },
+        data: data,
       })
-      .catch((err) => {
-        // setError(err.response.data);
-        console.log(err);
-      });
+        .then((res) => {
+          setPending(false);
+          setSuccess(true);
+        })
+        .catch((err) => {
+          setPending(false);
+          console.log(err);
+        });
+    }
+    setSuccess(false);
   };
   return (
     <form onSubmit={handleFormSubmit}>
@@ -134,15 +139,24 @@ export default function Form({ text }) {
         />
       </div>
       <div className="text-center mt-6">
-        <button
-          type="submit"
-          className="bg-navy text-white active:bg-gray-700 text-sm font-bold uppercase px-6 py-3 shadow hover:shadow-lg outline-none focus:outline-none mr-1 mb-1"
-          style={{
-            transition: "all .15s ease",
-          }}
-        >
-          Wyślij Wiadomość
-        </button>
+        {!success ? (
+          <button
+            type="submit"
+            className={`text-white active:bg-gray-700 text-sm font-bold uppercase px-6 py-3 shadow hover:shadow-lg outline-none focus:outline-none mr-1 mb-1 ${
+              pending ? "cursor-not-allowed bg-gray-500" : "bg-navy"
+            }`}
+            disabled={pending}
+            style={{
+              transition: "all .15s ease",
+            }}
+          >
+            Wyślij Wiadomość
+          </button>
+        ) : (
+          <button className="bg-logoGreen text-white hover:bg-geen-700 text-sm font-bold uppercase px-6 py-3 shadow hover:shadow-lg outline-none focus:outline-none mr-1 mb-1">
+            Wiadomość Wysłana
+          </button>
+        )}
       </div>
     </form>
   );

@@ -38,7 +38,7 @@
     "watch:css": "postcss ./src/styles/tailwind.css -o ./src/styles/main.css",
     "server": "nodemon --exec babel-node server/server.js",
     "dev": "concurrently \"npm run start\" \"npm run server\"",
-    "postbuild": "npm install && npm run build"
+    "postbuild": "npm build && npm run server"
   },
   "eslintConfig": {
     "extends": [
@@ -62,7 +62,8 @@
     "@babel/core": "^7.12.9",
     "@babel/node": "^7.12.6",
     "@babel/preset-env": "^7.12.7",
-    "concurrently": "^5.3.0"
+    "concurrently": "^5.3.0",
+    "tailwindcss-spinner": "^1.2.0"
   },
   "proxy": "http://localhost:12444"
 }
