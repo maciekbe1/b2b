@@ -16,6 +16,7 @@
     "http-proxy-middleware": "^1.0.6",
     "infinite-react-carousel": "^1.2.11",
     "morgan": "^1.10.0",
+    "node-cron": "^2.0.3",
     "nodemailer": "^6.4.16",
     "nodemon": "^2.0.6",
     "postcss": "^8.1.10",
