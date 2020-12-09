@@ -38,7 +38,7 @@ export default function Form({ text }) {
     if (!success) {
       setPending(true);
       const data = {
-        subject: selectedValue.map((item) => item.label).join(", "),
+        place: selectedValue.map((item) => item.label).join(", "),
         client: name,
         email: email,
         message: message,

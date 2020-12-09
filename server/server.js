@@ -11,7 +11,7 @@ require("dotenv").config();
 
 const app = express();
 
-const port = 12444;
+const port = 12366;
 
 if (process.env.NODE_ENV === "production") {
   app.use(express.static(path.join(__dirname, "../build")));
@@ -38,16 +38,16 @@ app.post("/api/send", (req, res) => {
 
     const mailOptions = {
       from: req.body.email, // sender address
-      to: "madecki1991@gmail.com", // list of receivers
-      subject: req.body.subject, // Subject line
+      to: "kontakt@purconcept.pl", // list of receivers
+      subject: `OD: ${req.body.client}, EMAIL: ${req.body.email}`, // Subject line
       html: `
-      <p>Masz nową wiadomość!</p>
+      <p>Wiadomość od ${req.body.client}</p>
       <ul>
-        <li>Nazwa klienta: ${req.body.client}</li>
         <li>Email: ${req.body.email}</li>
-        <li>Miejsce Aplikacji: ${req.body.subject}</li>
-        <li>Wiadomość: ${req.body.message}</li>
+        <li>Miejsce Aplikacji: ${req.body.place}</li>
       </ul>
+      <p><strong>Treść wiadomości:</strong></p>
+      <p>${req.body.message}</p>
       `,
     };
 
@@ -74,6 +74,6 @@ app.post("/api/send", (req, res) => {
   }
 });
 
-app.listen(port, () => {
-  console.log("server start on port 12444");
+app.listen(port, "127.0.0.1", () => {
+  console.log("server start on port 12366");
 });
