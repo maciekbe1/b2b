@@ -536,6 +536,46 @@ video {
   }
 }
 
+.form-checkbox:checked {
+  background-image: url("data:image/svg+xml,%3csvg viewBox='0 0 16 16' fill='white' xmlns='http://www.w3.org/2000/svg'%3e%3cpath d='M5.707 7.293a1 1 0 0 0-1.414 1.414l2 2a1 1 0 0 0 1.414 0l4-4a1 1 0 0 0-1.414-1.414L7 8.586 5.707 7.293z'/%3e%3c/svg%3e");
+  border-color: transparent;
+  background-color: currentColor;
+  background-size: 100% 100%;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+@media not print {
+  .form-checkbox::-ms-check {
+    color: transparent;
+    background: inherit;
+    border-color: inherit;
+    border-radius: inherit;
+  }
+}
+
+.form-checkbox {
+  -webkit-appearance: none;
+          appearance: none;
+  -webkit-print-color-adjust: exact;
+          color-adjust: exact;
+  display: inline-block;
+  vertical-align: middle;
+  background-origin: border-box;
+  -webkit-user-select: none;
+          user-select: none;
+  flex-shrink: 0;
+  height: 1em;
+  width: 1em;
+  color: #3b82f6;
+  background-color: #fff;
+}
+
+.form-checkbox:focus {
+  outline: none;
+  border-color: #60a5fa;
+}
+
 .space-y-1 > :not([hidden]) ~ :not([hidden]) {
   --tw-space-y-reverse: 0;
   margin-top: calc(0.25rem * calc(1 - var(--tw-space-y-reverse)));
@@ -665,6 +705,10 @@ video {
 
 .border-b-2 {
   border-bottom-width: 2px;
+}
+
+.cursor-pointer {
+  cursor: pointer;
 }
 
 .cursor-not-allowed {
@@ -1215,6 +1259,11 @@ video {
   color: rgba(255, 255, 255, var(--tw-text-opacity));
 }
 
+.hover\:text-blue-700:hover {
+  --tw-text-opacity: 1;
+  color: rgba(29, 78, 216, var(--tw-text-opacity));
+}
+
 .hover\:text-darkNavy:hover {
   --tw-text-opacity: 1;
   color: rgba(17, 50, 72, var(--tw-text-opacity));
@@ -1326,6 +1375,10 @@ video {
     line-height: 2rem;
   }
 
+  .md\:pt-48 {
+    padding-top: 12rem;
+  }
+
   .md\:w-4\/12 {
     width: 33.333333%;
   }
@@ -1381,6 +1434,10 @@ video {
 
   .lg\:pt-12 {
     padding-top: 3rem;
+  }
+
+  .lg\:pt-48 {
+    padding-top: 12rem;
   }
 
   .lg\:w-3\/4 {

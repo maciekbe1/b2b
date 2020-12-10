@@ -30,12 +30,12 @@ export default function Contact() {
     <div className="pt-24">
       <div className="container mx-auto px-4">
         <div className="flex flex-wrap">
-          <div className="w-full md:w-6/12 lg:w-6/12 lg:mb-0 mb-12 px-4">
+          <div className="w-full md:w-6/12 lg:w-6/12 lg:mb-0 mb-4 px-4">
             <div className="flex-auto p-5 lg:p-10">
               <Form text={text} />
             </div>
           </div>
-          <div className="w-full md:w-6/12 lg:w-6/12 lg:mb-0 mb-12 px-4 flex items-center">
+          <div className="w-full md:w-6/12 lg:w-6/12 lg:mb-0 mb-12 px-4 lg:pt-48 md:pt-48">
             <Info />
           </div>
         </div>

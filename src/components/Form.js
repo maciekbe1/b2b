@@ -29,13 +29,14 @@ export default function Form({ text }) {
   const [message, setMessage] = useState("");
   const [pending, setPending] = useState(false);
   const [success, setSuccess] = useState(false);
+  const [consent, setConsent] = useState(false);
   const handleChange = (e) => {
     setSelectedValue(e);
   };
 
   const handleFormSubmit = (e) => {
     e.preventDefault();
-    if (!success) {
+    if (!success && consent) {
       setPending(true);
       const data = {
         place: selectedValue.map((item) => item.label).join(", "),
@@ -68,7 +69,6 @@ export default function Form({ text }) {
       {text ? (
         <p className="leading-relaxed mt-1 mb-4 text-gray-600">{text}</p>
       ) : null}
-
       <div className="relative w-full mb-3 mt-8">
         <label
           className="block uppercase text-gray-700 text-xs font-bold mb-2"
@@ -87,7 +87,6 @@ export default function Form({ text }) {
           onChange={(e) => setName(e.target.value)}
         />
       </div>
-
       <div className="relative w-full mb-3">
         <label
           className="block uppercase text-gray-700 text-xs font-bold mb-2"
@@ -106,7 +105,6 @@ export default function Form({ text }) {
           onChange={(e) => setEmail(e.target.value)}
         />
       </div>
-
       <div className="relative w-full mb-3">
         <label className="block uppercase text-gray-700 text-xs font-bold mb-2">
           Miejse aplikacji piany
@@ -121,7 +119,6 @@ export default function Form({ text }) {
           value={data.find((obj) => obj.value === selectedValue)}
         />
       </div>
-
       <div className="relative w-full mb-3">
         <label
           className="block uppercase text-gray-700 text-xs font-bold mb-2"
@@ -138,12 +135,42 @@ export default function Form({ text }) {
           required
         />
       </div>
+
+      <div className="flex">
+        <details className="w-full">
+          <summary className="mb-2 flex items-center outline-none">
+            <div className="w-full flex justify-between items-center">
+              <p className="hover:underline hover:text-blue-700 leading-relaxed text-gray-600 cursor-pointer">
+                Wyrażam zgodę na przetwarzanie moich danych osobowych
+              </p>
+
+              <input
+                type="checkbox"
+                class="form-checkbox border-2 border-navy text-logoGreen"
+                onChange={() => setConsent(!consent)}
+                value={consent}
+              />
+            </div>
+          </summary>
+          <p className="leading-relaxed text-gray-600">
+            przez EKO-PLUS Łukasz Bomba z siedzibą we Wrocławiu, 51-180, ul.
+            Księgarska 37, w celu przesyłania mi treści marketingowych na mój
+            adres e-mail podany wyżej w formularzu kontaktowym. Informujemy, że
+            Państwa zgoda może zostać cofnięta w dowolnym momencie przez
+            wysłanie wiadomości e-mail na adres: bomba@eko-plus.com, spod
+            adresu, którego zgoda dotyczy. Informujemy, ze nie jesteście Państwo
+            profilowani. Państwa dane nie będą przekazywane poza EOG ani
+            udostępniane organizacjom międzynarodowym.
+          </p>
+        </details>
+      </div>
+
       <div className="text-center mt-6">
         {!success ? (
           <button
             type="submit"
             className={`text-white active:bg-gray-700 text-sm font-bold uppercase px-6 py-3 shadow hover:shadow-lg outline-none focus:outline-none mr-1 mb-1 ${
-              pending ? "cursor-not-allowed bg-gray-500" : "bg-navy"
+              pending || !consent ? "cursor-not-allowed bg-gray-500" : "bg-navy"
             }`}
             disabled={pending}
             style={{
