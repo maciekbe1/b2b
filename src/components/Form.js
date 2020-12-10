@@ -138,7 +138,7 @@ export default function Form({ text }) {
 
       <div className="w-full">
         <label className="w-full flex">
-          <p className="leading-relaxed text-gray-600 text-xs cursor-pointer">
+          <p className="leading-relaxed text-gray-600 text-sxs cursor-pointer">
             Wyrażam zgodę na przetwarzanie moich danych osobowych przez Pur
             Concept s.c. z siedzibą we Wrocławiu, 55-002, ul. Działkowa 4A LOK.
             4, w celu przesyłania mi treści marketingowych na mój adres e-mail
@@ -151,7 +151,7 @@ export default function Form({ text }) {
           </p>
           <input
             type="checkbox"
-            class="form-checkbox border-2 border-navy text-logoGreen ml-2"
+            className="form-checkbox border-2 border-navy text-logoGreen ml-2"
             onChange={() => setConsent(!consent)}
             value={consent}
           />
@@ -162,7 +162,7 @@ export default function Form({ text }) {
         {!success ? (
           <button
             type="submit"
-            className={`text-white active:bg-gray-700 text-sm font-bold uppercase px-6 py-3 shadow hover:shadow-lg outline-none focus:outline-none mr-1 mb-1 ${
+            className={`text-white active:bg-gray-700 text-xs font-bold uppercase px-6 py-3 shadow hover:shadow-lg outline-none focus:outline-none mr-1 mb-1 ${
               pending || !consent ? "cursor-not-allowed bg-gray-500" : "bg-navy"
             }`}
             disabled={pending}
@@ -173,7 +173,7 @@ export default function Form({ text }) {
             Wyślij Wiadomość
           </button>
         ) : (
-          <button className="bg-logoGreen text-white hover:bg-geen-700 text-sm font-bold uppercase px-6 py-3 shadow hover:shadow-lg outline-none focus:outline-none mr-1 mb-1">
+          <button className="bg-logoGreen text-white hover:bg-geen-700 text-xs font-bold uppercase px-6 py-3 shadow hover:shadow-lg outline-none focus:outline-none mr-1 mb-1">
             Wiadomość Wysłana
           </button>
         )}

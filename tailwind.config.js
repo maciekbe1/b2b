@@ -17,6 +17,9 @@ module.exports = {
       screens: {
         mn: { max: "639px" },
       },
+      fontSize: {
+        sxs: "0.55rem",
+      },
     },
   },
   variants: {

@@ -842,6 +842,10 @@ video {
   line-height: 2.5rem;
 }
 
+.text-sxs {
+  font-size: 0.55rem;
+}
+
 .leading-normal {
   line-height: 1.5;
 }
@@ -1257,11 +1261,6 @@ video {
 .hover\:text-white:hover {
   --tw-text-opacity: 1;
   color: rgba(255, 255, 255, var(--tw-text-opacity));
-}
-
-.hover\:text-blue-700:hover {
-  --tw-text-opacity: 1;
-  color: rgba(29, 78, 216, var(--tw-text-opacity));
 }
 
 .hover\:text-darkNavy:hover {
