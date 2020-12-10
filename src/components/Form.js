@@ -136,33 +136,26 @@ export default function Form({ text }) {
         />
       </div>
 
-      <div className="flex">
-        <details className="w-full">
-          <summary className="mb-2 flex items-center outline-none">
-            <div className="w-full flex justify-between items-center">
-              <p className="hover:underline hover:text-blue-700 leading-relaxed text-gray-600 cursor-pointer">
-                Wyrażam zgodę na przetwarzanie moich danych osobowych
-              </p>
-
-              <input
-                type="checkbox"
-                class="form-checkbox border-2 border-navy text-logoGreen"
-                onChange={() => setConsent(!consent)}
-                value={consent}
-              />
-            </div>
-          </summary>
-          <p className="leading-relaxed text-gray-600">
-            przez EKO-PLUS Łukasz Bomba z siedzibą we Wrocławiu, 51-180, ul.
-            Księgarska 37, w celu przesyłania mi treści marketingowych na mój
-            adres e-mail podany wyżej w formularzu kontaktowym. Informujemy, że
-            Państwa zgoda może zostać cofnięta w dowolnym momencie przez
-            wysłanie wiadomości e-mail na adres: bomba@eko-plus.com, spod
-            adresu, którego zgoda dotyczy. Informujemy, ze nie jesteście Państwo
-            profilowani. Państwa dane nie będą przekazywane poza EOG ani
-            udostępniane organizacjom międzynarodowym.
+      <div className="w-full">
+        <label className="w-full flex">
+          <p className="leading-relaxed text-gray-600 text-xs cursor-pointer">
+            Wyrażam zgodę na przetwarzanie moich danych osobowych przez Pur
+            Concept s.c. z siedzibą we Wrocławiu, 55-002, ul. Działkowa 4A LOK.
+            4, w celu przesyłania mi treści marketingowych na mój adres e-mail
+            podany wyżej w formularzu kontaktowym. Informujemy, że Państwa zgoda
+            może zostać cofnięta w dowolnym momencie przez wysłanie wiadomości
+            e-mail na adres: kontakt@purconcept.pl, spod adresu, którego zgoda
+            dotyczy. Informujemy, że nie jesteście Państwo profilowani. Państwa
+            dane nie będą przekazywane poza EOG ani udostępniane organizacjom
+            międzynarodowym.
           </p>
-        </details>
+          <input
+            type="checkbox"
+            class="form-checkbox border-2 border-navy text-logoGreen ml-2"
+            onChange={() => setConsent(!consent)}
+            value={consent}
+          />
+        </label>
       </div>
 
       <div className="text-center mt-6">
