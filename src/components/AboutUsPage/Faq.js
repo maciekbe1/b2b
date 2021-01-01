@@ -20,7 +20,7 @@ export default function Faq2() {
   const [index, setIndex] = useState(0);
   return (
     <div className="flex flex-wrap">
-      <nav className="lg:w-2/12 mn:mb-6">
+      <nav className="lg:w-2/12 mn:w-full mn:mb-6">
         <ul className="lg:h-full lg:border-r-2 border-navy mn:border-b-2">
           {questions.map((item, i) => (
             <li key={i} className={i > questions.length ? "mb-2" : "mn:mb-2"}>

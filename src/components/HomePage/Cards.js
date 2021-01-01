@@ -17,8 +17,7 @@ export default function Cards() {
               </div>
               <h6 className="text-xl font-semibold text-navy">Bezpiecznie</h6>
               <p className="mt-2 mb-4 text-gray-600">
-                Bezpieczne i skuteczne ocieplanie pianką PUR. Jest bezzapachowa
-                i nietoksyczna
+                Piana PUR jest systemem bezzapachowym i nietoksycznym
               </p>
             </div>
           </div>
@@ -34,7 +33,7 @@ export default function Cards() {
               </div>
               <h6 className="text-xl font-semibold text-navy">Ekonomicznie</h6>
               <p className="mt-2 mb-4 text-gray-600">
-                Ocieplanie pianką PUR to mniejsze zuzycie energii do nawet 50%
+                Ocieplanie pianą PUR to mniejsze zużycie energii do nawet 50%
               </p>
             </div>
           </div>
@@ -52,7 +51,7 @@ export default function Cards() {
                 Przyjazne Alergikom
               </h6>
               <p className="mt-2 mb-4 text-gray-600">
-                Pianka nie pyli i nie zawiera żadnych środków alergennych
+                Piana nie pyli i nie zawiera żadnych środków alergennych
               </p>
             </div>
           </div>

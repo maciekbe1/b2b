@@ -2,6 +2,8 @@ import React from "react";
 import parse from "html-react-parser";
 import Form from "../Form";
 import Info from "../ContactPage/Info";
+import slider4 from "../../assets/img/ergopigg.jpg";
+import BackgroundImage from "../BackgroundImage";
 
 const createMap = () => {
   const address = "Kamieniec Wrocławski Działkowa 4a";
@@ -19,16 +21,25 @@ const createMap = () => {
 
   return parse(map);
 };
+const image = {
+  text: "Ocieplenie pianą natryskową PUR zapewnia oszczędności nawet do 50 % ",
+  backgroundSize: "100% 470px",
+  background: `url('${slider4}') 100% -68px no-repeat`,
+};
 
 export default function Contact() {
-  const text = `Jeśli masz wątpliwości czy warto ocieplić poddasze lub dom pianką
+  const text = `Jeśli masz wątpliwości czy warto ocieplić poddasze lub dom pianą
   poliuretanową, to zapytaj naszego eksperta od ocieplania budynków. Po
-  pierwsze poznasz zalety ocieplenia pianką PUR, a po drugie dowiesz się
+  pierwsze poznasz zalety ocieplenia pianą PUR, a po drugie dowiesz się
   czy w Twoim przypadku warto zastosować takie rozwiązanie. Zapraszamy –
-  izolacje natryskowe, izolacja poddasza pianką, ocieplenie.`;
+  izolacje natryskowe, izolacja poddasza pianą, ocieplenie.`;
   return (
-    <div className="pt-24">
-      <div className="container mx-auto px-4">
+    <>
+      <div className="pt-24 container px-6 mx-auto">
+        <section className="mn:hidden">
+          <BackgroundImage item={image} />
+        </section>
+
         <div className="flex flex-wrap">
           <div className="w-full md:w-6/12 lg:w-6/12 lg:mb-0 mb-4 px-4">
             <div className="flex-auto p-5 lg:p-10">
@@ -41,6 +52,6 @@ export default function Contact() {
         </div>
       </div>
       <div className="full-width">{createMap()}</div>
-    </div>
+    </>
   );
 }

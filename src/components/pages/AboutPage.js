@@ -2,10 +2,21 @@ import React from "react";
 import Faq from "../AboutUsPage/Faq";
 import about from "../../assets/img/about.jpg";
 import Footer from "../Footer";
+import BackgroundImage from "../BackgroundImage";
+import slider3 from "../../assets/img/slider3.jpg";
+
+const image = {
+  text: "Izolacja pianą natryskową PUR zapewnia najlepszy standard termiczny",
+  backgroundSize: "cover",
+  background: `url('${slider3}') top center / 200px 200px no-repeat`,
+};
 export default function AboutPage() {
   return (
     <>
       <div className="pt-24 container px-6 mx-auto">
+        <section className="mn:hidden">
+          <BackgroundImage item={image} />
+        </section>
         <div className="relative pt-20 pb-32 flex content-center items-center justify-center">
           <div
             className="absolute top-0 w-full h-full bg-center bg-cover"

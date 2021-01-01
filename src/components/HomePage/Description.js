@@ -4,36 +4,114 @@ import piana from "../../assets/img/piana.jpg";
 
 export default function Description() {
   return (
-    <div className="flex flex-wrap items-center mt-2">
-      <div className="flex flex-wrap items-center mt-10">
-        <div className="w-full md:w-5/12 px-4 mr-auto ml-auto">
-          <h3 className="text-3xl mb-2 font-semibold leading-normal text-navy">
-            Natrysk pianką poliuretanową
-          </h3>
-          <p className="text-lg font-light leading-relaxed mt-4 mb-4 text-gray-700">
-            Ocieplenie pianką poliuretanową, czyli tzw. termoizolacja pianką PUR
-            wymaga specjalistycznej wiedzy i umiejętności. Ponieważ precyzyja
-            wykonania i jakość użytych materiałów ma kluczowe znaczenie warto
-            zdecydować się na profesjonalną firmę z doświadczeniem. Uzyskanie
-            należytej szczelności i jakości wymaga precyzji i dokłądności, które
-            wynikają z doświadczenia.
+    <div className="flex mt-2">
+      <div className="flex mn:flex-col-reverse mt-10 mn:mt-0 mn:px-4">
+        <div className="w-6/12 mn:w-full mr-auto ml-auto">
+          <div>
+            <div className="flex pb-2">
+              <div className="mr-2">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  className="text-logoGreen h-6 w-6"
+                  viewBox="0 0 20 20"
+                  fill="currentColor"
+                >
+                  <path
+                    fillRule="evenodd"
+                    d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"
+                    clipRule="evenodd"
+                  />
+                </svg>
+              </div>
+              <p className="text-xl font-light leading-relaxed text-gray-700">
+                Budujesz lub remontujesz dom?
+              </p>
+            </div>
+            <div className="flex pb-2">
+              <div className="mr-2">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  className="text-logoGreen h-6 w-6"
+                  viewBox="0 0 20 20"
+                  fill="currentColor"
+                >
+                  <path
+                    fillRule="evenodd"
+                    d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"
+                    clipRule="evenodd"
+                  />
+                </svg>
+              </div>
+
+              <p className="text-xl font-light leading-relaxed text-gray-700">
+                Zastanawiasz się nad doborem odpowiedniego źródła ciepła?
+              </p>
+            </div>
+            <div className="flex pb-2">
+              <div className="mr-2">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  className="text-logoGreen h-6 w-6"
+                  viewBox="0 0 20 20"
+                  fill="currentColor"
+                >
+                  <path
+                    fillRule="evenodd"
+                    d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"
+                    clipRule="evenodd"
+                  />
+                </svg>
+              </div>
+              <p className="text-xl font-light leading-relaxed text-gray-700">
+                Myślisz o oszczędzaniu energii?
+              </p>
+            </div>
+            <div className="flex pb-2">
+              <div className="mr-2">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  className="text-logoGreen h-6 w-6"
+                  viewBox="0 0 20 20"
+                  fill="currentColor"
+                >
+                  <path
+                    fillRule="evenodd"
+                    d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"
+                    clipRule="evenodd"
+                  />
+                </svg>
+              </div>
+              <p className="text-xl font-light leading-relaxed text-gray-700">
+                Chcesz mieć przyjemny chłód w lecie i kojące ciepło w zimie?
+              </p>
+            </div>
+          </div>
+          <p className="text-lg font-light leading-relaxed mb-4 text-gray-700">
+            Począwszy od fundamentów, przez posadzki, aż po poddasze, musisz
+            zadbać o szereg elementów, które mają istotny wpływ na standard
+            energetyczny Twojego domu. Ocieplenie oraz izolacja poddasza, dachu,
+            podłogi, fundamentów ma ogromne znaczenie, ponieważ to właśnie tu
+            odnotowujemy największe straty ciepła. Od doboru odpowiedniej
+            technologii i wykorzystanych materiałów zależeć będzie Twój komfort
+            i koszty eksploatacji.
+            <br />
+            <br />
+            Piana zamkniętokomórkowa i otwartokomórkowa, aplikowana metodą
+            natryskową, jest doskonałym rozwiązaniem dla wymagających klientów,
+            którzy cenią sobie najwyższą jakość i niezmienne parametry
+            energetyczne przez wiele lat eksploatacji.
           </p>
-          <p className="text-lg font-light leading-relaxed mt-0 mb-4 text-gray-700">
-            Izolacja poddasza, dachu, podłogi, fundamentu ma ogromne znaczenie,
-            ponieważ to właśnie tą drogą zwykle ucieka najwięcej ciepła.
-            Ocieplenie kluczowych elementów konstrukcji budynku jest ważne, gdyż
-            znacząco wpływa na redukcję kosztów związanych z ogrzewaniem. To
-            ważne, biorąc pod uwagę koszty ogrzewania które stale rosną.
-          </p>
-          <Link
-            to="/oferta"
-            className="font-bold text-white mt-8 bg-navy px-4 py-2 active:bg-gray-700"
-          >
-            Sprawdź ofertę!
-          </Link>
+          <div className="lg:pt-4 mn:pt-2">
+            <Link
+              to="/oferta"
+              className="font-bold text-white bg-navy px-4 py-2 active:bg-gray-700"
+            >
+              Sprawdź ofertę!
+            </Link>
+          </div>
         </div>
 
-        <div className="w-full md:w-4/12 px-4 mr-auto ml-auto mn:mt-6">
+        <div className="w-5/12 mn:w-full mr-auto ml-auto mn:mt-6">
           <div className="relative flex flex-col min-w-0 break-words w-full mb-6 shadow-lg bg-navy">
             <img
               alt="..."
@@ -56,15 +134,15 @@ export default function Description() {
                   className="text-navy fill-current"
                 ></polygon>
               </svg>
-              <h4 className="text-xl font-bold text-white">
-                OCIEPLANIE PIANKĄ
-              </h4>
+              <h4 className="text-xl font-bold text-white">OCIEPLANIE PIANĄ</h4>
               <p className="text-md font-light mt-2 text-white">
-                Naszym klientom oferujemy wykonanie izolacji najnowocześniejszym
-                (pianka poliuretanowa PUR) dostępnym na rynku oraz zapewniamy
-                fachową obsługę. Specjalizujemy się w kompleksowym docieplaniu
-                domów Wykonujemy ocieplenia poddaszy, dachów (od wewnątrz i od
-                zewnątrz), elewacji, tarasów oraz izolację fundamentów.
+                Oferujemy wykonanie termoizolacji metodą natryskową nowoczesnym
+                urządzeniem natryskowym, znanej i renomowanej firmy GRACO
+                Specjalizujemy się w kompleksowym wykonaniu izolacji i
+                docieplenia domów, piwnic, hal przemysłowych, garaży,
+                pomieszczeń gospodarczych i innych budynków. Wykonujemy
+                ocieplenia poddaszy , izolacje dachów płaskich, ocieplenie i
+                izolacje fundamentów i posadzek oraz sufitów.
               </p>
             </blockquote>
           </div>
