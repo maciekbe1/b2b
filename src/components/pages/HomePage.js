@@ -19,7 +19,7 @@ export default function HomePage() {
     <>
       <main className="pt-24">
         <img src={home} className="hidden mn:block" alt="Logo" />
-        <section className="container mx-auto px-4 mn:hidden ">
+        <section className="container mx-auto px-4 mn:hidden">
           <div className="flex justify-between items-center">
             <div className="lg:w-6/12 mr-auto ml-auto">
               <p

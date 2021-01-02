@@ -4,7 +4,7 @@ import facebook from "../../assets/img/facebook.png";
 import youtube from "../../assets/img/youtube.png";
 export default function Info() {
   return (
-    <div className="flex-auto px-5 lg:px-10">
+    <div className="flex-auto lg:px-10">
       <h4 className="text-2xl font-semibold text-navy">Dane kontaktowe</h4>
 
       <div className="pt-6">

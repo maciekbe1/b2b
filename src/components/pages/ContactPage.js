@@ -35,18 +35,18 @@ export default function Contact() {
   izolacje natryskowe, izolacja poddasza pianą, ocieplenie.`;
   return (
     <>
-      <div className="pt-24 container px-6 mx-auto">
+      <div className="pt-24 container px-6 mn:px-4 mx-auto">
         <section className="mn:hidden">
           <BackgroundImage item={image} />
         </section>
 
         <div className="flex flex-wrap">
-          <div className="w-full md:w-6/12 lg:w-6/12 lg:mb-0 mb-4 px-4">
-            <div className="flex-auto p-5 lg:p-10">
+          <div className="w-full md:w-6/12 lg:w-6/12 lg:mb-0 mb-4 lg:px-4">
+            <div className="flex-auto md:p-5 lg:p-10">
               <Form text={text} />
             </div>
           </div>
-          <div className="w-full md:w-6/12 lg:w-6/12 lg:mb-0 mb-12 px-4 lg:pt-48 md:pt-48">
+          <div className="w-full md:w-6/12 lg:w-6/12 lg:mb-0 mb-12 lg:pt-48 md:pt-48">
             <Info />
           </div>
         </div>

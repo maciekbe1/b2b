@@ -5,7 +5,7 @@ import piana from "../../assets/img/piana.jpg";
 export default function Description() {
   return (
     <div className="flex mt-2">
-      <div className="flex mn:flex-col-reverse mt-10 mn:mt-0 mn:px-4">
+      <div className="flex mn:flex-col-reverse mt-10 mn:mt-0">
         <div className="w-6/12 mn:w-full mr-auto ml-auto">
           <div>
             <div className="flex pb-2">

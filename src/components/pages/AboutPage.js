@@ -13,7 +13,7 @@ const image = {
 export default function AboutPage() {
   return (
     <>
-      <div className="pt-24 container px-6 mx-auto">
+      <div className="pt-24 container px-6 mn:px-2 mx-auto">
         <section className="mn:hidden">
           <BackgroundImage item={image} />
         </section>

@@ -20,7 +20,7 @@ const image = {
 export default function OffertPage() {
   return (
     <>
-      <main className="pt-24 container mx-auto px-4">
+      <main className="pt-24 container mx-auto px-6 mn:px-4">
         <section className="mn:hidden">
           <BackgroundImage item={image} />
         </section>
@@ -40,15 +40,13 @@ export default function OffertPage() {
               </h5>
               <hr />
             </div>
-            <div className="lg:w-5/12 px-4 md:hidden sm:hidden mn:hidden lg:block">
-              <div className="overflow-hidden" style={{ height: "430px" }}>
-                <img
-                  src={image1}
-                  alt="pur1"
-                  className="mr-auto ml-auto"
-                  style={{ height: "650px" }}
-                />
-              </div>
+            <div className="lg:w-5/12 px-4 md:hidden sm:hidden mn:hidden lg:block ">
+              <div
+                className="h-full"
+                style={{
+                  background: `url(${image1}) top center / 100% no-repeat`,
+                }}
+              />
             </div>
           </section>
           <section className="flex pb-6">
@@ -60,15 +58,13 @@ export default function OffertPage() {
               />
               <hr />
             </div>
-            <div className="lg:w-5/12 px-4 lg:flex md:hidden sm:hidden mn:hidden items-center justify-center">
-              <div className="overflow-hidden" style={{ height: "430px" }}>
-                <img
-                  src={image2}
-                  alt="pur1"
-                  className="mr-auto ml-auto"
-                  style={{ height: "650px" }}
-                />
-              </div>
+            <div className="lg:w-5/12 px-4 md:hidden sm:hidden mn:hidden lg:block">
+              <div
+                className="h-full"
+                style={{
+                  background: `url(${image2}) top center / 100% no-repeat`,
+                }}
+              />
             </div>
           </section>
           <section className="flex">
@@ -79,15 +75,13 @@ export default function OffertPage() {
                 title="Piany Zamkniętokomórkowe"
               />
             </div>
-            <div className="lg:w-5/12 px-4 md:hidden sm:hidden mn:hidden lg:flex items-center justify-center">
-              <div className="overflow-hidden" style={{ height: "430px" }}>
-                <img
-                  src={image3}
-                  alt="pur1"
-                  className="mr-auto ml-auto"
-                  style={{ height: "650px" }}
-                />
-              </div>
+            <div className="lg:w-5/12 px-4 md:hidden sm:hidden mn:hidden lg:block">
+              <div
+                className="h-full"
+                style={{
+                  background: `url(${image3}) top center / 100% no-repeat`,
+                }}
+              />
             </div>
           </section>
         </div>
