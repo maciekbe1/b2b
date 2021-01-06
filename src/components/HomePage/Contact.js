@@ -20,9 +20,9 @@ export default function Contact({ setShow }) {
   const [email, setEmail] = useState("");
   const [phone, setPhone] = useState("");
 
-  const message = `email: ${email}%0Dnumer telefonu: ${phone}%0DPreferowana godzina kontaktu: ${dateUtil(
+  const message = `email: ${email}%0D%0Anumer telefonu: ${phone}%0D%0APreferowana godzina kontaktu: ${dateUtil(
     startDate
-  )}%0D%0DWyrażam zgodę na przetwarzanie moich danych osobowych w celach handlowych i marketingowych przez PUR Concept S.C.`;
+  )}%0D%0A%0D%0AWyrażam zgodę na przetwarzanie moich danych osobowych w celach handlowych i marketingowych przez PUR Concept S.C.`;
   return (
     <div className="bg-white lg:p-4 p-2">
       <div className="modal-header flex justify-between pb-2">
