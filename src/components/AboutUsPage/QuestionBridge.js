@@ -3,7 +3,7 @@ import React from "react";
 export default function QuestionBridge() {
   return (
     <div>
-      <span className="font-semibold text-sm  leading-relaxed mt-4 mb-4 text-gray-700">
+      <span className="font-medium text-sm  leading-relaxed mt-4 mb-4 text-gray-700">
         <strong>Mostek termiczny</strong> (zwany także cieplnym) to miejsce w
         warstwie izolacji, gdzie z powodu obniżonych własności termoizolacyjnych
         np. w miejscu występowania łączeń, następuje{" "}

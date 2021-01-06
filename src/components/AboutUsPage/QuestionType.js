@@ -3,7 +3,7 @@ import React from "react";
 export default function QuestionType() {
   return (
     <div>
-      <span className="font-semibold text-sm leading-relaxed mt-4 mb-4 text-gray-700">
+      <span className="text-sm font-medium leading-relaxed mt-4 mb-4 text-gray-700">
         Ze względu na strukturę, wyróżniamy piany o strukturze
         zamkniętokomórkowej (inaczej piana sztywna, piana twarda) oraz o
         strukturze otwartokomórkowej (inaczej piana półsztywna, piana miękka).

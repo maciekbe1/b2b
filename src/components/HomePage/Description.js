@@ -1,6 +1,7 @@
 import React from "react";
-import { Link } from "react-router-dom";
 import piana from "../../assets/img/piana.jpg";
+import Modal from "../Modal";
+import Contact from "../HomePage/Contact";
 
 export default function Description() {
   return (
@@ -23,7 +24,7 @@ export default function Description() {
                   />
                 </svg>
               </div>
-              <p className="text-xl font-light leading-relaxed text-gray-700">
+              <p className="text-md font-light leading-relaxed text-gray-700">
                 Budujesz lub remontujesz dom?
               </p>
             </div>
@@ -43,7 +44,7 @@ export default function Description() {
                 </svg>
               </div>
 
-              <p className="text-xl font-light leading-relaxed text-gray-700">
+              <p className="text-md font-light leading-relaxed text-gray-700">
                 Zastanawiasz się nad doborem odpowiedniego źródła ciepła?
               </p>
             </div>
@@ -62,7 +63,7 @@ export default function Description() {
                   />
                 </svg>
               </div>
-              <p className="text-xl font-light leading-relaxed text-gray-700">
+              <p className="text-md font-light leading-relaxed text-gray-700">
                 Myślisz o oszczędzaniu energii?
               </p>
             </div>
@@ -81,12 +82,13 @@ export default function Description() {
                   />
                 </svg>
               </div>
-              <p className="text-xl font-light leading-relaxed text-gray-700">
-                Chcesz mieć przyjemny chłód w lecie i kojące ciepło w zimie?
+              <p className="text-md font-light leading-relaxed text-gray-700">
+                Chcesz mieć przyjemny chłód w lecie, kojące ciepło w zimie i
+                błogą ciszę zawsze?
               </p>
             </div>
           </div>
-          <p className="text-lg font-light leading-relaxed mb-4 text-gray-700">
+          <p className="text-md font-light leading-relaxed mb-4 text-gray-700">
             Począwszy od fundamentów, przez posadzki, aż po poddasze, musisz
             zadbać o szereg elementów, które mają istotny wpływ na standard
             energetyczny Twojego domu. Ocieplenie oraz izolacja poddasza, dachu,
@@ -102,12 +104,19 @@ export default function Description() {
             energetyczne przez wiele lat eksploatacji.
           </p>
           <div className="lg:pt-4 mn:pt-2">
-            <Link
-              to="/oferta"
-              className="font-bold text-white bg-navy px-4 py-2 active:bg-gray-700"
+            <Modal
+              activator={({ setShow }) => (
+                <button
+                  type="button"
+                  className="font-bold text-white bg-navy px-4 py-2 active:bg-gray-700"
+                  onClick={() => setShow(true)}
+                >
+                  Sprawdź ofertę!
+                </button>
+              )}
             >
-              Sprawdź ofertę!
-            </Link>
+              <Contact />
+            </Modal>
           </div>
         </div>
 
@@ -134,15 +143,17 @@ export default function Description() {
                   className="text-navy fill-current"
                 ></polygon>
               </svg>
-              <h4 className="text-xl font-bold text-white">OCIEPLANIE PIANĄ</h4>
+              <h4 className="text-xl font-bold text-white">
+                ZASTOSOWANIE SYSTEMÓW POLIURETANOWYCH
+              </h4>
               <p className="text-md font-light mt-2 text-white">
                 Oferujemy wykonanie termoizolacji metodą natryskową nowoczesnym
-                urządzeniem natryskowym, znanej i renomowanej firmy GRACO
-                Specjalizujemy się w kompleksowym wykonaniu izolacji i
-                docieplenia domów, piwnic, hal przemysłowych, garaży,
-                pomieszczeń gospodarczych i innych budynków. Wykonujemy
-                ocieplenia poddaszy , izolacje dachów płaskich, ocieplenie i
-                izolacje fundamentów i posadzek oraz sufitów.
+                urządzeniem, znanej i renomowanej firmy GRACO. Specjalizujemy
+                się w kompleksowym wykonaniu izolacji i docieplenia domów,
+                piwnic, hal przemysłowych, garaży, pomieszczeń gospodarczych i
+                innych budynków. Wykonujemy ocieplenia poddaszy , izolacje
+                dachów płaskich, ocieplenie i izolacje fundamentów i posadzek
+                oraz sufitów.
               </p>
             </blockquote>
           </div>

@@ -3,7 +3,7 @@ import React from "react";
 export default function QuestionWhatIsPur() {
   return (
     <div>
-      <span className="font-semibold text-sm leading-relaxed mt-4 mb-4 text-gray-700">
+      <span className="font-medium text-sm leading-relaxed mt-4 mb-4 text-gray-700">
         <strong>Piana PUR czyli piana poliuretanowa,</strong> jest to stosowany
         powszechnie w budownictwie materiał termoizolacyjny, który nanosi się
         mechanicznie na izolowaną powierzchnię metodą natrysku. Służy do

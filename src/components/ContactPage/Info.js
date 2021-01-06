@@ -9,7 +9,7 @@ export default function Info() {
 
       <div className="pt-6">
         <h6 className="text-xl font-bold">Nazwa firmy</h6>
-        <p className="mt-1 text-sm text-gray-800 uppercase font-semibold">
+        <p className="mt-1 text-sm text-gray-600 uppercase font-semibold">
           Pur Concept s.c.
         </p>
       </div>
@@ -17,7 +17,7 @@ export default function Info() {
       <div>
         <div className="pt-6">
           <h6 className="text-xl font-bold">Adres</h6>
-          <p className="mt-1 text-sm text-gray-800 uppercase font-semibold">
+          <p className="mt-1 text-sm text-gray-600 uppercase font-semibold">
             ul. Działkowa 4a lok. 4 <br /> 55-002 Kamieniec Wrocławski
           </p>
         </div>
@@ -26,10 +26,10 @@ export default function Info() {
       <div>
         <div className="pt-6">
           <h6 className="text-xl font-bold">Kontakt</h6>
-          <p className="mt-1 text-sm text-gray-800 uppercase font-semibold">
+          <p className="mt-1 text-sm text-gray-600 uppercase font-semibold">
             Telefon: 510-510-499
           </p>
-          <p className="mt-1 text-sm text-gray-800 uppercase font-semibold">
+          <p className="mt-1 text-sm text-gray-600 uppercase font-semibold">
             Email: kontakt@purconcept.pl
           </p>
           <div className="mn:mt-2 mn:mb-2 mt-6">

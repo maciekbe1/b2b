@@ -1,6 +1,6 @@
 import React from "react";
 import parse from "html-react-parser";
-import Form from "../Form";
+import Form from "../ContactPage/Form";
 import Info from "../ContactPage/Info";
 import slider4 from "../../assets/img/ergopigg.jpg";
 import BackgroundImage from "../BackgroundImage";

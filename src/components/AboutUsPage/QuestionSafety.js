@@ -3,7 +3,7 @@ import React from "react";
 export default function QuestionSafety() {
   return (
     <div>
-      <span className="font-semibold text-sm  leading-relaxed mt-4 mb-4 text-gray-700">
+      <span className="font-medium text-sm  leading-relaxed mt-4 mb-4 text-gray-700">
         <strong>Piana PUR</strong> nie wchodzi w reakcje z parą wodną i środkami
         chemicznymi. Nie wydziela substancji toksycznych, a jej struktura jest
         fizjologicznie obojętna. Ponadto, piana PUR chroni Twoje najbliższe
