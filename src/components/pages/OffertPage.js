@@ -179,7 +179,7 @@ export default function OffertPage() {
             <li>nie jest szkodliwa dla zdrowia,</li>
             <li>jest bezwonna,</li>
             <li>jest odporna na działanie grzybów czy pleśni,</li>
-            <li>nie lubią jej owady i gryzonie </li>
+            <li>nie lubią jej owady i gryzonie,</li>
             <li>łatwo się przyczepia do różnego rodzaju nawierzchni,</li>
             <li>
               nie zmienia swoich właściwości po upływie czasu w przeciwieństwie
