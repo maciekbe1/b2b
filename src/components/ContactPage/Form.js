@@ -9,6 +9,7 @@ export default function Form({ text }) {
     { value: "fundament", label: "Fundament" },
     { value: "podłogi", label: "Podłogi" },
     { value: "ściany-wewnętrzne", label: "Ściany wewnętrzne" },
+    { value: "strop", label: "Strop" },
   ];
   const customStyles = {
     placeholder: () => ({
@@ -65,13 +66,13 @@ export default function Form({ text }) {
   };
   return (
     <form onSubmit={handleFormSubmit}>
-      <h4 className="text-2xl font-semibold text-navy">Napisz do nas</h4>
+      <h4 className="text-2xl font-light text-navy">Napisz do nas</h4>
       {text ? (
         <p className="leading-relaxed mt-1 mb-4 text-gray-600">{text}</p>
       ) : null}
       <div className="relative w-full mb-3 mt-8">
         <label
-          className="block uppercase text-gray-700 text-xs font-bold mb-2"
+          className="block uppercase text-gray-600 text-xs font-bold mb-2"
           htmlFor="full-name"
         >
           Imie i Nazwisko
@@ -79,7 +80,7 @@ export default function Form({ text }) {
         <input
           type="text"
           required
-          className="px-3 py-3 placeholder-gray-400 text-gray-700 bg-white rounded text-sm border border-gray-300 focus:outline-none focus:shadow-outline w-full"
+          className="px-3 py-3 placeholder-gray-400 text-gray-600 bg-white rounded text-sm border border-gray-300 focus:outline-none focus:shadow-outline w-full"
           placeholder="Imie i Nazwisko"
           style={{
             transition: "all .15s ease",
@@ -89,7 +90,7 @@ export default function Form({ text }) {
       </div>
       <div className="relative w-full mb-3">
         <label
-          className="block uppercase text-gray-700 text-xs font-bold mb-2"
+          className="block uppercase text-gray-600 text-xs font-bold mb-2"
           htmlFor="email"
         >
           Email
@@ -97,7 +98,7 @@ export default function Form({ text }) {
         <input
           type="email"
           required
-          className="px-3 py-3 placeholder-gray-400 text-gray-700 bg-white rounded text-sm border border-gray-300 focus:outline-none focus:shadow-outline w-full"
+          className="px-3 py-3 placeholder-gray-400 text-gray-600 bg-white rounded text-sm border border-gray-300 focus:outline-none focus:shadow-outline w-full"
           placeholder="Email"
           style={{
             transition: "all .15s ease",
@@ -106,7 +107,7 @@ export default function Form({ text }) {
         />
       </div>
       <div className="relative w-full mb-3">
-        <label className="block uppercase text-gray-700 text-xs font-bold mb-2">
+        <label className="block uppercase text-gray-600 text-xs font-bold mb-2">
           Miejse aplikacji piany
         </label>
         <Select
@@ -121,7 +122,7 @@ export default function Form({ text }) {
       </div>
       <div className="relative w-full mb-3">
         <label
-          className="block uppercase text-gray-700 text-xs font-bold mb-2"
+          className="block uppercase text-gray-600 text-xs font-bold mb-2"
           htmlFor="message"
         >
           Wiadomość

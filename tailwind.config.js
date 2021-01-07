@@ -12,7 +12,7 @@ module.exports = {
       colors: {
         navy: "#1A4F72",
         darkNavy: "#113248",
-        logoGreen: "#33B41A",
+        logoGreen: "#31B31B",
       },
       screens: {
         mn: { max: "639px" },

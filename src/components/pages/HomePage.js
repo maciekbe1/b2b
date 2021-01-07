@@ -15,10 +15,7 @@ export default function HomePage() {
         <section className="container mx-auto px-4 mn:hidden">
           <div className="flex justify-between items-center">
             <div className="lg:w-6/12 mr-auto ml-auto">
-              <div
-                className="maxlg:text-3xl mdlg:text-2xl md:text-xl text-center uppercase font-bold italic"
-                style={{ color: "#377D3B" }}
-              >
+              <div className="maxlg:text-3xl mdlg:text-2xl md:text-xl text-center uppercase font-bold italic text-logoGreen">
                 <p className="lg:py-1">Profesjonalna izolacja i</p>
                 <p className="lg:py-1">ocieplenie domu zapewnia</p>
                 <p className="lg:py-1">komfort i oszczędności na</p>

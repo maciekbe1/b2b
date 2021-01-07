@@ -632,7 +632,7 @@ video {
 
 .bg-logoGreen {
   --tw-bg-opacity: 1;
-  background-color: rgba(51, 180, 26, var(--tw-bg-opacity));
+  background-color: rgba(49, 179, 27, var(--tw-bg-opacity));
 }
 
 .hover\:bg-gray-700:hover {
@@ -850,11 +850,6 @@ video {
 
 .text-3xl {
   font-size: 1.875rem;
-  line-height: 2.5rem;
-}
-
-.text-4xl {
-  font-size: 2.25rem;
   line-height: 2.5rem;
 }
 
@@ -1083,10 +1078,6 @@ video {
   padding-top: 2rem;
 }
 
-.pt-16 {
-  padding-top: 4rem;
-}
-
 .pt-20 {
   padding-top: 5rem;
 }
@@ -1222,11 +1213,6 @@ video {
   color: rgba(229, 231, 235, var(--tw-text-opacity));
 }
 
-.text-gray-300 {
-  --tw-text-opacity: 1;
-  color: rgba(209, 213, 219, var(--tw-text-opacity));
-}
-
 .text-gray-400 {
   --tw-text-opacity: 1;
   color: rgba(156, 163, 175, var(--tw-text-opacity));
@@ -1259,7 +1245,7 @@ video {
 
 .text-logoGreen {
   --tw-text-opacity: 1;
-  color: rgba(51, 180, 26, var(--tw-text-opacity));
+  color: rgba(49, 179, 27, var(--tw-text-opacity));
 }
 
 .hover\:text-white:hover {
