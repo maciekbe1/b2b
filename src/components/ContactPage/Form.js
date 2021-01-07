@@ -66,7 +66,7 @@ export default function Form({ text }) {
   };
   return (
     <form onSubmit={handleFormSubmit}>
-      <h4 className="text-2xl font-light text-navy">Napisz do nas</h4>
+      <h4 className="text-2xl font-semibold text-navy">Napisz do nas</h4>
       {text ? (
         <p className="leading-relaxed mt-1 mb-4 text-gray-600">{text}</p>
       ) : null}
