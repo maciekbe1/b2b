@@ -36,7 +36,7 @@ export default function OffertPage() {
           </div>
         </section>
         <div className="pt-4">
-          <p className="text-md font-light text-gray-700 text-justify">
+          <p className="text-md leading-relaxed font-light text-gray-700 text-justify">
             Oferujemy wszystkim klientom systemy poliuretanowe indywidualnie
             dopasowane do ich potrzeb i oczekiwań. Wykonujemy bezpłatne
             oględziny miejsc natrysku piany PUR, podczas których uzgadniamy z
@@ -55,7 +55,7 @@ export default function OffertPage() {
             otrzymuje certyfikat zgodności.
           </p>
           <br />
-          <p className="text-md font-light text-gray-700 text-justify">
+          <p className="text-md leading-relaxed font-light text-gray-700 text-justify">
             Piana poliuretanowa (PUR) to materiał wytwarzany na budowie z
             gotowych składników i nanoszony za pomocą specjalnego agregatu. Na
             rynku spotkamy dwa rodzaje piany poliuretanowej układanej
@@ -66,7 +66,7 @@ export default function OffertPage() {
           <h3 className="font-xl font-bold text-navy mb-4 pt-6">
             PIANA OTWARTOKOMÓRKOWA
           </h3>
-          <p className="text-md font-light text-gray-700 text-justify">
+          <p className="text-md leading-relaxed font-light text-gray-700 text-justify">
             Pianę otwartokomórkową natryskuje się między elementy konstrukcji –
             krokwie, legary, jętki, elementy rusztu nośnego, do którego będą
             mocowane okładziny. Dzięki swojej dobrej przyczepności i niskiemu
@@ -89,7 +89,7 @@ export default function OffertPage() {
           <img src={pok2} className="h-60" alt="piana" />
         </div>
         <div>
-          <p className="text-md font-light text-gray-700 text-justify">
+          <p className="text-md leading-relaxed font-light text-gray-700 text-justify">
             Swoją strukturą przypomina gąbkę. Jej struktura składa się w minimum
             80% z komórek otwartych wypełnionych powietrzem. To właśnie
             powietrze jest izolatorem termicznym i akustycznym, przepuszcza parę
@@ -115,7 +115,7 @@ export default function OffertPage() {
             energetyczny budynku.
           </p>
           <br />
-          <p className="text-md font-light text-gray-700 text-justify">
+          <p className="text-md leading-relaxed font-light text-gray-700 text-justify">
             Producenci dają 25, a nawet 30-letnią gwarancję na niezmienność
             parametrów izolacji (mogą to zrobić na podstawie badań prowadzonych
             w krajach, gdzie już 30 lat temu tak ocieplano domy). Piana PUR nie
@@ -127,7 +127,7 @@ export default function OffertPage() {
           <h3 className="font-xl font-bold text-navy mb-4 pt-6">
             PIANA ZAMKNIĘTOKOMÓRKOWA
           </h3>
-          <p className="text-md font-light text-gray-700 text-justify">
+          <p className="text-md leading-relaxed font-light text-gray-700 text-justify">
             Natryskowa poliuretanowa piana PUR zamkniętokomórkowa doskonale
             sprawdza się przy ocieplaniu budynków zarówno wewnątrz jak i na
             zewnątrz. Piana zbudowana jest z mikroskopijnych zamkniętych
@@ -155,7 +155,7 @@ export default function OffertPage() {
           />
         </div>
         <div>
-          <p className="text-md font-light text-gray-700 text-justify">
+          <p className="text-md leading-relaxed font-light text-gray-700 text-justify">
             Po wyschnięciu jest twarda i sztywna, ma wytrzymałość na ściskanie
             rzędu 250 kPa. i bardzo niski współczynnik przewodzenia ciepła,
             dzięki czemu do zaizolowania fundamentów, ścian, piwnic czy podłogi
