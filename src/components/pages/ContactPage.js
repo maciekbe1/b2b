@@ -3,7 +3,7 @@ import parse from "html-react-parser";
 import Form from "../ContactPage/Form";
 import Info from "../ContactPage/Info";
 import slider4 from "../../assets/img/ergopigg.jpg";
-import BackgroundImage from "../BackgroundImage";
+import useWindowDimensions from "../utils/ViewPort";
 
 const createMap = () => {
   const address = "Kamieniec Wrocławski Działkowa 4a";
@@ -21,11 +21,6 @@ const createMap = () => {
 
   return parse(map);
 };
-const image = {
-  text: "Ocieplenie pianą natryskową PUR zapewnia oszczędności nawet do 50 % ",
-  backgroundSize: "100% 470px",
-  background: `url('${slider4}') 100% -68px no-repeat`,
-};
 
 export default function Contact() {
   const text = `Jeśli masz wątpliwości czy warto ocieplić poddasze lub dom pianą
@@ -33,20 +28,42 @@ export default function Contact() {
   pierwsze poznasz zalety ocieplenia pianą PUR, a po drugie dowiesz się
   czy w Twoim przypadku warto zastosować takie rozwiązanie. Zapraszamy –
   izolacje natryskowe, izolacja poddasza pianą, ocieplenie.`;
+  const { width } = useWindowDimensions();
+
   return (
     <>
       <div className="pt-24 container px-6 mn:px-4 mx-auto">
-        <section className="mn:hidden">
-          <BackgroundImage item={image} />
+        <section className="container mx-auto mn:hidden">
+          <div
+            className="flex justify-between items-center"
+            style={{ height: width > 1024 ? "360px" : "260px" }}
+          >
+            <div className="lg:w-6/12 md:w-5/12 sm:w-6/12 h-full">
+              <div
+                className="h-full"
+                style={{
+                  background: `url(${slider4}) center / cover no-repeat`,
+                }}
+              />
+            </div>
+            <div className="lg:w-6/12 md:w-7/12 sm:w-7/12 mr-auto ml-auto">
+              <div className="maxlg:text-3xl mdlg:text-2xl md:text-xl text-center uppercase font-bold italic text-logoGreen">
+                <p className="lg:py-1">OCIEPLENIE PIANĄ </p>
+                <p className="lg:py-1">NATRYSKOWĄ PUR </p>
+                <p className="lg:py-1">ZAPEWNIA OSZCZĘDNOŚCI </p>
+                <p className="lg:py-1">NAWET DO 50 %</p>
+              </div>
+            </div>
+          </div>
         </section>
 
         <div className="flex flex-wrap">
-          <div className="w-full md:w-6/12 lg:w-6/12 lg:mb-0 mb-4 lg:px-4">
-            <div className="flex-auto md:p-5 lg:p-10">
+          <div className="w-full md:w-6/12 lg:w-6/12 mb-4 pt-4 ">
+            <div className="flex-auto">
               <Form text={text} />
             </div>
           </div>
-          <div className="w-full md:w-6/12 lg:w-6/12 lg:mb-0 mb-12 lg:pt-48 md:pt-48">
+          <div className="w-full md:w-6/12 lg:w-6/12 mb-12 lg:pt-48 md:pt-48 sm:mb-4 mn:mb-4">
             <Info />
           </div>
         </div>

@@ -1,4 +1,5 @@
 import React from "react";
+import { Helmet } from "react-helmet";
 
 import pok1 from "../../assets/img/pok1.png";
 import pok2 from "../../assets/img/pok2.png";
@@ -7,15 +8,28 @@ import pianaZam from "../../assets/img/piana_zam.jpg";
 import pianaZam2 from "../../assets/img/piana_zam2.png";
 import slider2 from "../../assets/img/slider2.jpg";
 import Footer from "../Footer";
+import useWindowDimensions from "../utils/ViewPort";
 
 export default function OffertPage() {
+  const { width } = useWindowDimensions();
+
   return (
     <>
+      <Helmet>
+        <title>
+          Ocieplenie domu, poddasza pianą otwartokomórkową, zamkniętokomórkową,
+          PUR - Pur Concept
+        </title>
+        <meta
+          name="description"
+          content="Oferta naszego przedsiębiorstwa obejmuje wykonawstwo termoizolacji przy użyciu wysokiej klasy piany PUR zamknięto- lub otwartokomórkowej. Zajmujemy się też OCIEPLANIEM poddasza PIANĄ!"
+        />
+      </Helmet>
       <main className="pt-24 container mx-auto px-6 mn:px-4">
         <section className="container mx-auto mn:hidden">
           <div
             className="flex justify-between items-center"
-            style={{ height: "360px" }}
+            style={{ height: width > 1024 ? "360px" : "260px" }}
           >
             <div className="lg:w-6/12 md:w-5/12 sm:w-6/12 h-full">
               <div
@@ -63,7 +77,7 @@ export default function OffertPage() {
           </p>
         </div>
         <div>
-          <h3 className="font-xl font-bold text-navy mb-4 pt-6">
+          <h3 className="font-xl font-bold text-navy mb-1 pt-6">
             PIANA OTWARTOKOMÓRKOWA
           </h3>
           <p className="text-md leading-relaxed font-light text-gray-700 text-justify">
@@ -124,7 +138,7 @@ export default function OffertPage() {
           </p>
         </div>
         <div>
-          <h3 className="font-xl font-bold text-navy mb-4 pt-6">
+          <h3 className="font-xl font-bold text-navy mb-1 pt-6">
             PIANA ZAMKNIĘTOKOMÓRKOWA
           </h3>
           <p className="text-md leading-relaxed font-light text-gray-700 text-justify">
@@ -170,7 +184,7 @@ export default function OffertPage() {
           </p>
         </div>
         <div>
-          <h3 className="font-xl font-bold text-navy mb-4 pt-6">
+          <h3 className="font-xl font-bold text-navy mb-1 pt-6">
             NAJWAŻNIEJSZE ZALETY ZASTOSOWANIA PIANY POLIURETANOWEJ PUR
           </h3>
           <ul className="list-disc font-light pl-4 text-md text-gray-700">

@@ -6,10 +6,18 @@ import Description from "../HomePage/Description";
 
 import home from "../../assets/img/logo.png";
 import slider from "../../assets/img/slider1.jpg";
+import { Helmet } from "react-helmet";
 
 export default function HomePage() {
   return (
     <>
+      <Helmet>
+        <title>Ocieplenia i izolacje domu pianą - Pur Concept</title>
+        <meta
+          name="description"
+          content="Specjalizujemy się w wykonywaniu profesjonalnych termoizolacji domów oraz obiektów przemysłowych. Wykonujemy również OCIEPLANIE PIANĄ przy zastosowaniu metody natryskowej."
+        />
+      </Helmet>
       <main className="pt-24">
         <img src={home} className="hidden mn:block" alt="Logo" />
         <section className="container mx-auto px-4 mn:hidden">
