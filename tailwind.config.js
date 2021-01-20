@@ -32,6 +32,8 @@ module.exports = {
   },
   variants: {
     backgroundColor: ["responsive", "hover", "focus", "active"],
+    transform: ["hover", "focus"],
+    zIndex: ["hover", "active"],
   },
   plugins: [require("@tailwindcss/custom-forms")],
 };

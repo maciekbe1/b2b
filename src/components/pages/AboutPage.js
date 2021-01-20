@@ -2,6 +2,7 @@ import React from "react";
 import Footer from "../Footer";
 import warmHomeImage from "../../assets/img/warmHomeImage.jpg";
 import useWindowDimensions from "../utils/ViewPort";
+import Certificates from "../AboutUsPage/Certificates";
 
 export default function AboutPage() {
   const { width } = useWindowDimensions();
@@ -38,8 +39,8 @@ export default function AboutPage() {
                   <h1 className="font-semibold text-3xl mb-4 text-navy">
                     Świadczymy usługi na terenie całej polski
                   </h1>
+                  <hr />
                   <p className="text-lg text-gray-700">
-                    <hr />
                     Pracujemy na reaktorach GRACO, wykorzystujemy do natrysków
                     najwyższej jakości piany PUR. Każdy nasz klient otrzymuje
                     certyfikat aplikacji po skończonym natrysku.{" "}
@@ -52,6 +53,7 @@ export default function AboutPage() {
             </div>
           </div>
         </div>
+        <Certificates />
       </div>
       <Footer />
     </>
