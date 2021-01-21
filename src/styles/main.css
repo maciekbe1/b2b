@@ -1398,6 +1398,11 @@ video {
     height: 13rem;
   }
 
+  .md\:text-lg {
+    font-size: 1.125rem;
+    line-height: 1.75rem;
+  }
+
   .md\:text-xl {
     font-size: 1.25rem;
     line-height: 1.75rem;
@@ -1620,6 +1625,11 @@ video {
 }
 
 @media (max-width: 1280px) and (min-width: 1024px) {
+  .mdlg\:text-xl {
+    font-size: 1.25rem;
+    line-height: 1.75rem;
+  }
+
   .mdlg\:text-2xl {
     font-size: 1.5rem;
     line-height: 2rem;
@@ -1627,6 +1637,11 @@ video {
 }
 
 @media (min-width: 1280px) {
+  .maxlg\:text-2xl {
+    font-size: 1.5rem;
+    line-height: 2rem;
+  }
+
   .maxlg\:text-3xl {
     font-size: 1.875rem;
     line-height: 2.5rem;

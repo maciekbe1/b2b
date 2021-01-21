@@ -1,6 +1,6 @@
 import React from "react";
 import Footer from "../Footer";
-import warmHomeImage from "../../assets/img/warmHomeImage.jpg";
+import slider3 from "../../assets/img/slider3.jpeg";
 import useWindowDimensions from "../utils/ViewPort";
 import Certificates from "../AboutUsPage/Certificates";
 
@@ -25,7 +25,7 @@ export default function AboutPage() {
               <div
                 className="h-full"
                 style={{
-                  background: `url(${warmHomeImage}) left 40% / cover no-repeat`,
+                  background: `url(${slider3}) left 40% / cover no-repeat`,
                 }}
               />
             </div>
@@ -41,9 +41,9 @@ export default function AboutPage() {
                   </h1>
                   <hr />
                   <p className="text-lg text-gray-700">
-                    Pracujemy na reaktorach GRACO, wykorzystujemy do natrysków
-                    najwyższej jakości piany PUR. Każdy nasz klient otrzymuje
-                    certyfikat aplikacji po skończonym natrysku.{" "}
+                    Pracujemy na reaktorach marki GRACO, wykorzystujemy do
+                    natrysków najwyższej jakości piany PUR. Każdy nasz klient
+                    otrzymuje certyfikat aplikacji po skończonym natrysku.{" "}
                     <strong className="text-logoGreen">
                       Oferujemy bezpłatną wycenę na miejscu inwestycji.
                     </strong>
@@ -53,6 +53,9 @@ export default function AboutPage() {
             </div>
           </div>
         </div>
+        <h3 className="text-navy maxlg:text-2xl mdlg:text-xl md:text-lg text-center uppercase font-bold pt-4">
+          Jesteśmy autoryzowanym wykonawcą Synthesia Techlology
+        </h3>
         <Certificates />
       </div>
       <Footer />
