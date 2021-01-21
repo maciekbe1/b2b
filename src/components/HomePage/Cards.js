@@ -16,7 +16,7 @@ export default function Cards() {
                 </i>
               </div>
               <h6 className="text-xl font-semibold text-navy">Bezpiecznie</h6>
-              <p className="mt-2 mb-4 text-gray-600">
+              <p className="text-md leading-relaxed font-light text-gray-700 mt-2 mb-4">
                 Piana PUR jest systemem nietoksycznym i bezzapachowym
               </p>
             </div>
@@ -32,7 +32,7 @@ export default function Cards() {
                 </i>
               </div>
               <h6 className="text-xl font-semibold text-navy">Ekonomicznie</h6>
-              <p className="mt-2 mb-4 text-gray-600">
+              <p className="text-md leading-relaxed font-light text-gray-700 mt-2 mb-4">
                 Ocieplenie i izolacja pianą PUR to mniejsze zużycie energii
                 nawet 50 %
               </p>
@@ -51,7 +51,7 @@ export default function Cards() {
               <h6 className="text-xl font-semibold text-navy">
                 Przyjazne Alergikom
               </h6>
-              <p className="mt-2 mb-4 text-gray-600">
+              <p className="text-md leading-relaxed font-light text-gray-700 mt-2 mb-4">
                 Piana PUR nie pyli i nie zawiera żadnych środków alergennych
               </p>
             </div>

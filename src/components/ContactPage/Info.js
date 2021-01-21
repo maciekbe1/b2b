@@ -5,7 +5,7 @@ import youtube from "../../assets/img/youtube.png";
 export default function Info() {
   return (
     <div className="flex-auto lg:px-20 md:px-10">
-      <h4 className="text-2xl font-semibold text-navy">Dane kontaktowe</h4>
+      <h4 className="text-xl font-semibold text-navy">Dane kontaktowe</h4>
 
       <div className="pt-6">
         <p className="mt-1 text-sm text-gray-600 font-semibold">

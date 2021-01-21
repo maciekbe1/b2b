@@ -30,7 +30,7 @@ export default function Certificates() {
                 setIndex(index);
               }}
             />
-            <img src={workImage[index]} alt="work" className="mt-2" />
+            <img src={workImage[index]} alt="work" className="mt-8" />
           </div>
         );
       })}

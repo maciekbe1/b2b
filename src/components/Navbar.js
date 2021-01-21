@@ -68,7 +68,7 @@ export default function Navbar(props) {
             </Link>
             <div className="flex-1 flex items-center justify-center sm:items-stretch">
               <div className="hidden sm:block">
-                <div className="flex space-x-4">
+                <div className="flex lg:space-x-4 md:space-x-2">
                   <NavLink
                     to="/"
                     className="px-3 py-2 text-sm font-medium hover:bg-navy hover:text-white"

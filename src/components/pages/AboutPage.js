@@ -36,24 +36,24 @@ export default function AboutPage() {
             <div className="items-center flex flex-wrap">
               <div className="w-full lg:w-6/12 px-4 ml-auto mr-auto text-center">
                 <div className="">
-                  <h1 className="font-semibold text-3xl mb-4 text-navy">
+                  <h1 className="font-semibold text-xl mb-4 text-navy">
                     Świadczymy usługi na terenie całej polski
                   </h1>
                   <hr />
-                  <p className="text-lg text-gray-700">
+                  <p className="text-md text-gray-700 leading-relaxed font-light">
                     Pracujemy na reaktorach marki GRACO, wykorzystujemy do
                     natrysków najwyższej jakości piany PUR. Każdy nasz klient
                     otrzymuje certyfikat aplikacji po skończonym natrysku.{" "}
-                    <strong className="text-logoGreen">
-                      Oferujemy bezpłatną wycenę na miejscu inwestycji.
-                    </strong>
+                  </p>
+                  <p className="text-logoGreen text-md leading-relaxed font-light">
+                    Oferujemy bezpłatną wycenę na miejscu inwestycji.
                   </p>
                 </div>
               </div>
             </div>
           </div>
         </div>
-        <h3 className="text-navy maxlg:text-2xl mdlg:text-xl md:text-lg text-center uppercase font-bold pt-4">
+        <h3 className="text-navy text-xl font-semibold text-center pt-8 pb-2">
           Jesteśmy autoryzowanym wykonawcą Synthesia Techlology
         </h3>
         <Certificates />
