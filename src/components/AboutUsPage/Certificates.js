@@ -3,12 +3,12 @@ import ok from "../../assets/img/CERTYFIKAT-OK.jpeg";
 import po from "../../assets/img/CERTYFIKAT-PO.jpeg";
 import zk from "../../assets/img/CERTYFIKAT-ZK.jpeg";
 
-import work1 from "../../assets/img/work1.jpeg";
-import work2 from "../../assets/img/work2.jpeg";
-import work3 from "../../assets/img/work3.jpeg";
+import work1 from "../../assets/img/work1.jpg";
+import work2 from "../../assets/img/work2.jpg";
+import work3 from "../../assets/img/work3.jpg";
 
 import Lightbox from "react-image-lightbox";
-import "react-image-lightbox/style.css"; // This only needs to be imported once in your app
+import "react-image-lightbox/style.css";
 
 const certificatesImage = [ok, zk, po];
 const workImage = [work2, work1, work3];

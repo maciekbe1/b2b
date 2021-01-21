@@ -1,11 +1,16 @@
 import React from "react";
 import Footer from "../Footer";
-import slider3 from "../../assets/img/slider3.jpeg";
+import slider3 from "../../assets/img/slider3.jpg";
+import slider3Min from "../../assets/img/slider3-min.jpg";
+
 import useWindowDimensions from "../utils/ViewPort";
 import Certificates from "../AboutUsPage/Certificates";
+import useProgressiveImg from "../utils/useProgressiveImg";
 
 export default function AboutPage() {
   const { width } = useWindowDimensions();
+  const [src, { blur }] = useProgressiveImg(slider3Min, slider3);
+
   return (
     <>
       <div className="pt-24 container px-6 mn:px-2 mx-auto">
@@ -25,7 +30,9 @@ export default function AboutPage() {
               <div
                 className="h-full"
                 style={{
-                  background: `url(${slider3}) left 40% / cover no-repeat`,
+                  background: `url(${src}) center / cover no-repeat`,
+                  filter: blur ? "blur(20px)" : "none",
+                  transition: blur ? "none" : "filter 0.3s ease-out",
                 }}
               />
             </div>

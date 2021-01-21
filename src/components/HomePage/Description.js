@@ -1,9 +1,14 @@
 import React from "react";
 import piana from "../../assets/img/piana.jpg";
+import pianaMin from "../../assets/img/piana-min.jpg";
+
 import Modal from "../Modal";
 import Contact from "../HomePage/Contact";
+import useProgressiveImg from "../utils/useProgressiveImg";
 
 export default function Description() {
+  const [src, { blur }] = useProgressiveImg(pianaMin, piana);
+
   return (
     <div className="flex mt-2">
       <div className="flex mn:flex-col-reverse mt-10 mn:mt-0">
@@ -123,9 +128,13 @@ export default function Description() {
         <div className="w-5/12 mn:w-full mr-auto ml-auto mn:mt-6">
           <div className="relative flex flex-col min-w-0 break-words w-full mb-6 shadow-lg bg-navy">
             <img
-              alt="..."
-              src={piana}
-              className="w-full align-middle rounded-t-lg "
+              className="w-full align-middle rounded-t-lg"
+              src={src}
+              style={{
+                filter: blur ? "blur(20px)" : "none",
+                transition: blur ? "none" : "filter 0.3s ease-out",
+              }}
+              alt="piana"
             />
             <blockquote className="relative p-8 mb-4">
               <svg

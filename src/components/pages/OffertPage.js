@@ -7,11 +7,15 @@ import pianaOtw from "../../assets/img/piana_otw.jpg";
 import pianaZam from "../../assets/img/piana_zam.jpg";
 import pianaZam2 from "../../assets/img/piana_zam2.png";
 import slider2 from "../../assets/img/slider2.jpg";
+import slider2min from "../../assets/img/slider2-min.jpg";
+
 import Footer from "../Footer";
 import useWindowDimensions from "../utils/ViewPort";
+import useProgressiveImg from "../utils/useProgressiveImg";
 
 export default function OffertPage() {
   const { width } = useWindowDimensions();
+  const [src, { blur }] = useProgressiveImg(slider2min, slider2);
 
   return (
     <>
@@ -35,7 +39,9 @@ export default function OffertPage() {
               <div
                 className="h-full"
                 style={{
-                  background: `url(${slider2}) center / cover no-repeat`,
+                  background: `url(${src}) center / cover no-repeat`,
+                  filter: blur ? "blur(20px)" : "none",
+                  transition: blur ? "none" : "filter 0.3s ease-out",
                 }}
               />
             </div>
