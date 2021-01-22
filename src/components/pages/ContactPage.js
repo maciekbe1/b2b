@@ -32,13 +32,13 @@ export default function Contact() {
 
   return (
     <>
-      <div className="pt-24 container px-6 mn:px-4 mx-auto">
+      <div className="sm:pt-32 mn:pt-24 container px-6 mn:px-4 mx-auto">
         <section className="container mx-auto mn:hidden">
           <div
             className="flex justify-between items-center"
             style={{ height: width > 1024 ? "360px" : "260px" }}
           >
-            <div className="lg:w-6/12 md:w-5/12 sm:w-6/12 h-full py-4">
+            <div className="lg:w-6/12 md:w-5/12 sm:w-6/12 h-full">
               <div
                 className="h-full"
                 style={{

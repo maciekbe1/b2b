@@ -26,13 +26,13 @@ export default function OffertPage() {
           content="Oferta naszego przedsiębiorstwa obejmuje wykonawstwo termoizolacji przy użyciu wysokiej klasy piany PUR zamknięto- lub otwartokomórkowej. Zajmujemy się też OCIEPLANIEM poddasza PIANĄ!"
         />
       </Helmet>
-      <main className="pt-24 container mx-auto px-6 mn:px-4">
+      <main className="sm:pt-32 mn:pt-24 container mx-auto px-6 mn:px-4">
         <section className="container mx-auto mn:hidden">
           <div
             className="flex justify-between items-center"
             style={{ height: width > 1024 ? "360px" : "260px" }}
           >
-            <div className="lg:w-6/12 md:w-5/12 sm:w-6/12 h-full py-4">
+            <div className="lg:w-6/12 md:w-5/12 sm:w-6/12 h-full pb-6">
               <div
                 className="h-full"
                 style={{
@@ -50,7 +50,7 @@ export default function OffertPage() {
             </div>
           </div>
         </section>
-        <div className="pt-4">
+        <div className="mn:pt-4">
           <p className="text-md leading-relaxed font-light text-gray-700 text-justify">
             Oferujemy wszystkim klientom systemy poliuretanowe indywidualnie
             dopasowane do ich potrzeb i oczekiwań. Wykonujemy bezpłatne

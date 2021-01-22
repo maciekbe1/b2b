@@ -10,7 +10,7 @@ export default function AboutPage() {
 
   return (
     <>
-      <div className="pt-24 container px-6 mn:px-2 mx-auto">
+      <div className="sm:pt-32 mn:pt-24 container px-6 mn:px-2 mx-auto">
         <section className="container mx-auto mn:hidden">
           <div
             className="flex justify-between items-center"
@@ -23,7 +23,7 @@ export default function AboutPage() {
                 <p className="lg:py-1">STANDARD TERMICZNY</p>
               </div>
             </div>
-            <div className="lg:w-6/12 md:w-5/12 sm:w-6/12 h-full py-4">
+            <div className="lg:w-6/12 md:w-5/12 sm:w-6/12 h-full">
               <div
                 className="h-full"
                 style={{
