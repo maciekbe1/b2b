@@ -5,15 +5,11 @@ import Cards from "../HomePage/Cards";
 import Description from "../HomePage/Description";
 
 import home from "../../assets/img/logo.png";
-import slider from "../../assets/img/slider1.jpg";
-import sliderMin from "../../assets/img/slider1-min.jpg";
+import slider from "../../assets/img/slider1.webp";
 
 import { Helmet } from "react-helmet";
-import useProgressiveImg from "../utils/useProgressiveImg";
 
 export default function HomePage() {
-  const [src, { blur }] = useProgressiveImg(sliderMin, slider);
-
   return (
     <>
       <Helmet>
@@ -38,12 +34,8 @@ export default function HomePage() {
             <div className="w-5/12 mr-auto ml-auto">
               <img
                 className="w-full align-middle rounded-t-lg"
-                src={src}
+                src={slider}
                 alt="energo-home"
-                style={{
-                  filter: blur ? "blur(20px)" : "none",
-                  transition: blur ? "none" : "filter 0.3s ease-out",
-                }}
               />
             </div>
           </div>

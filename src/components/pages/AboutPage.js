@@ -1,15 +1,12 @@
 import React from "react";
 import Footer from "../Footer";
-import slider3 from "../../assets/img/slider3.jpg";
-import slider3Min from "../../assets/img/slider3-min.jpg";
+import slider3 from "../../assets/img/slider3.webp";
 
 import useWindowDimensions from "../utils/ViewPort";
 import Certificates from "../AboutUsPage/Certificates";
-import useProgressiveImg from "../utils/useProgressiveImg";
 
 export default function AboutPage() {
   const { width } = useWindowDimensions();
-  const [src, { blur }] = useProgressiveImg(slider3Min, slider3);
 
   return (
     <>
@@ -26,13 +23,11 @@ export default function AboutPage() {
                 <p className="lg:py-1">STANDARD TERMICZNY</p>
               </div>
             </div>
-            <div className="lg:w-6/12 md:w-5/12 sm:w-6/12 h-full">
+            <div className="lg:w-6/12 md:w-5/12 sm:w-6/12 h-full py-4">
               <div
                 className="h-full"
                 style={{
-                  background: `url(${src}) center / cover no-repeat`,
-                  filter: blur ? "blur(20px)" : "none",
-                  transition: blur ? "none" : "filter 0.3s ease-out",
+                  background: `url(${slider3}) center / cover no-repeat`,
                 }}
               />
             </div>

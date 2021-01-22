@@ -6,16 +6,13 @@ import pok2 from "../../assets/img/pok2.png";
 import pianaOtw from "../../assets/img/piana_otw.jpg";
 import pianaZam from "../../assets/img/piana_zam.jpg";
 import pianaZam2 from "../../assets/img/piana_zam2.png";
-import slider2 from "../../assets/img/slider2.jpg";
-import slider2min from "../../assets/img/slider2-min.jpg";
+import slider2 from "../../assets/img/slider2.webp";
 
 import Footer from "../Footer";
 import useWindowDimensions from "../utils/ViewPort";
-import useProgressiveImg from "../utils/useProgressiveImg";
 
 export default function OffertPage() {
   const { width } = useWindowDimensions();
-  const [src, { blur }] = useProgressiveImg(slider2min, slider2);
 
   return (
     <>
@@ -35,13 +32,11 @@ export default function OffertPage() {
             className="flex justify-between items-center"
             style={{ height: width > 1024 ? "360px" : "260px" }}
           >
-            <div className="lg:w-6/12 md:w-5/12 sm:w-6/12 h-full">
+            <div className="lg:w-6/12 md:w-5/12 sm:w-6/12 h-full py-4">
               <div
                 className="h-full"
                 style={{
-                  background: `url(${src}) center / cover no-repeat`,
-                  filter: blur ? "blur(20px)" : "none",
-                  transition: blur ? "none" : "filter 0.3s ease-out",
+                  background: `url(${slider2}) center / cover no-repeat`,
                 }}
               />
             </div>

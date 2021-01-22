@@ -3,9 +3,9 @@ import ok from "../../assets/img/CERTYFIKAT-OK.jpeg";
 import po from "../../assets/img/CERTYFIKAT-PO.jpeg";
 import zk from "../../assets/img/CERTYFIKAT-ZK.jpeg";
 
-import work1 from "../../assets/img/work1.jpg";
-import work2 from "../../assets/img/work2.jpg";
-import work3 from "../../assets/img/work3.jpg";
+import work1 from "../../assets/img/work1.webp";
+import work2 from "../../assets/img/work2.webp";
+import work3 from "../../assets/img/work3.webp";
 
 import Lightbox from "react-image-lightbox";
 import "react-image-lightbox/style.css";

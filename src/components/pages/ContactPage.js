@@ -2,10 +2,8 @@ import React from "react";
 import parse from "html-react-parser";
 import Form from "../ContactPage/Form";
 import Info from "../ContactPage/Info";
-import slider4 from "../../assets/img/ergopigg.jpg";
-import slider4Min from "../../assets/img/ergopigg-min.jpg";
+import slider4 from "../../assets/img/slider4.webp";
 import useWindowDimensions from "../utils/ViewPort";
-import useProgressiveImg from "../utils/useProgressiveImg";
 
 const createMap = () => {
   const address = "Kamieniec Wrocławski Działkowa 4a";
@@ -31,7 +29,7 @@ export default function Contact() {
   czy w Twoim przypadku warto zastosować takie rozwiązanie. Zapraszamy –
   izolacje natryskowe, izolacja poddasza pianą, ocieplenie.`;
   const { width } = useWindowDimensions();
-  const [src, { blur }] = useProgressiveImg(slider4Min, slider4);
+
   return (
     <>
       <div className="pt-24 container px-6 mn:px-4 mx-auto">
@@ -40,13 +38,11 @@ export default function Contact() {
             className="flex justify-between items-center"
             style={{ height: width > 1024 ? "360px" : "260px" }}
           >
-            <div className="lg:w-6/12 md:w-5/12 sm:w-6/12 h-full">
+            <div className="lg:w-6/12 md:w-5/12 sm:w-6/12 h-full py-4">
               <div
                 className="h-full"
                 style={{
-                  background: `url(${src}) center / cover no-repeat`,
-                  filter: blur ? "blur(20px)" : "none",
-                  transition: blur ? "none" : "filter 0.3s ease-out",
+                  background: `url(${slider4}) center / cover no-repeat`,
                 }}
               />
             </div>
