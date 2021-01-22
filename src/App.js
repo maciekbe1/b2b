@@ -9,20 +9,23 @@ const Navbar = lazy(() => import("./components/Navbar"));
 const AboutPage = lazy(() => import("./components/pages/AboutPage"));
 const OffertPage = lazy(() => import("./components/pages/OffertPage"));
 const ScrollToTop = lazy(() => import("./components/ScrollToTop"));
+const Layout = lazy(() => import("./components/Layout"));
 
 export default function App() {
   return (
     <BrowserRouter>
       <Suspense fallback={<div></div>}>
-        <ScrollToTop>
-          <Navbar />
-          <Switch>
-            <Route path="/" exact component={HomePage} />
-            <Route path="/kontakt" component={ContactPage} />
-            <Route path="/o-nas" component={AboutPage} />
-            <Route path="/oferta" component={OffertPage} />
-          </Switch>
-        </ScrollToTop>
+        <Layout>
+          <ScrollToTop>
+            <Navbar />
+            <Switch>
+              <Route path="/" exact component={HomePage} />
+              <Route path="/kontakt" component={ContactPage} />
+              <Route path="/o-nas" component={AboutPage} />
+              <Route path="/oferta" component={OffertPage} />
+            </Switch>
+          </ScrollToTop>
+        </Layout>
       </Suspense>
     </BrowserRouter>
   );
