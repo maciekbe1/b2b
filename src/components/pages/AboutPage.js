@@ -10,20 +10,21 @@ export default function AboutPage() {
 
   return (
     <>
-      <div className="sm:pt-32 mn:pt-24 container px-6 mn:px-2 mx-auto">
+      <div className="container px-6 mx-auto sm:pt-32 mn:pt-24 mn:px-2">
         <section className="container mx-auto mn:hidden">
           <div
-            className="flex justify-between items-center"
+            className="flex items-center justify-between"
             style={{ height: width > 1024 ? "360px" : "260px" }}
           >
-            <div className="lg:w-6/12 md:w-7/12 sm:w-7/12 mr-auto ml-auto">
-              <div className="maxlg:text-3xl mdlg:text-2xl md:text-xl text-center uppercase font-bold italic text-logoGreen">
+            <div className="ml-auto mr-auto lg:w-6/12 md:w-7/12 sm:w-7/12">
+              <div className="italic font-bold text-center uppercase maxlg:text-3xl mdlg:text-2xl md:text-xl text-logoGreen">
                 <p className="lg:py-1">IZOLACJA PIANĄ NATRYSKOWĄ </p>
                 <p className="lg:py-1">PUR ZAPEWNIA NAJLEPSZY </p>
-                <p className="lg:py-1">STANDARD TERMICZNY</p>
+                <p className="lg:py-1">STANDARD TERMICZNY </p>
+                <p className="lg:py-1">I AKUSTYCZNY</p>
               </div>
             </div>
-            <div className="lg:w-6/12 md:w-5/12 sm:w-6/12 h-full">
+            <div className="h-full lg:w-6/12 md:w-5/12 sm:w-6/12">
               <div
                 className="h-full"
                 style={{
@@ -33,21 +34,21 @@ export default function AboutPage() {
             </div>
           </div>
         </section>
-        <div className="relative pt-8 flex content-center items-center justify-center">
+        <div className="relative flex items-center content-center justify-center pt-6">
           <div className="container relative mx-auto">
-            <div className="items-center flex flex-wrap">
-              <div className="w-full lg:w-6/12 px-4 ml-auto mr-auto text-center">
+            <div className="flex flex-wrap items-center">
+              <div className="w-full px-4 ml-auto mr-auto text-center lg:w-6/12">
                 <div className="">
-                  <h1 className="font-semibold text-xl mb-4 text-navy">
+                  <h1 className="mb-4 text-xl font-semibold text-navy">
                     Świadczymy usługi na terenie całej polski
                   </h1>
                   <hr />
-                  <p className="text-md text-gray-700 leading-relaxed font-light">
+                  <p className="font-light leading-relaxed text-gray-700 text-md">
                     Pracujemy na reaktorach marki GRACO, wykorzystujemy do
                     natrysków najwyższej jakości piany PUR. Każdy nasz klient
                     otrzymuje certyfikat aplikacji po skończonym natrysku.{" "}
                   </p>
-                  <p className="text-logoGreen text-md leading-relaxed font-light">
+                  <p className="font-light leading-relaxed text-logoGreen text-md">
                     Oferujemy bezpłatną wycenę na miejscu inwestycji.
                   </p>
                 </div>
@@ -55,7 +56,7 @@ export default function AboutPage() {
             </div>
           </div>
         </div>
-        <h3 className="text-navy text-xl font-semibold text-center pt-8 pb-2">
+        <h3 className="pt-8 pb-2 text-xl font-semibold text-center text-navy">
           Jesteśmy autoryzowanym wykonawcą Synthesia Techlology
         </h3>
         <Certificates />

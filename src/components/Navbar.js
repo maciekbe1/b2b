@@ -8,8 +8,8 @@ export default function Navbar(props) {
   const [navbarOpen, setNavbarOpen] = React.useState(false);
   return (
     <>
-      <nav className="fixed z-10 bg-white w-full border-b-2 border-navy">
-        <div className="max-w-7xl mx-auto px-2 sm:px-6 lg:px-8">
+      <nav className="fixed z-10 w-full bg-white border-b-2 border-navy">
+        <div className="px-2 mx-auto max-w-7xl sm:px-6 lg:px-8">
           <div className="relative flex items-center justify-between h-24">
             <div className="absolute inset-y-0 left-0 flex items-center sm:hidden">
               {/* <!-- Mobile menu button--> */}
@@ -63,10 +63,10 @@ export default function Navbar(props) {
                 </svg>
               </button>
             </div>
-            <Link className="hidden lg:block w-auto absolute" to="/">
+            <Link className="absolute hidden w-auto lg:block" to="/">
               <img className="h-24" src={logo} alt="Logo" />
             </Link>
-            <div className="flex-1 flex items-center justify-center sm:items-stretch">
+            <div className="flex items-center justify-center flex-1 sm:items-stretch">
               <div className="hidden sm:block">
                 <div className="flex lg:space-x-4 md:space-x-2">
                   <NavLink
@@ -98,11 +98,18 @@ export default function Navbar(props) {
                   >
                     Kontakt
                   </NavLink>
+                  <NavLink
+                    to="/synthesia-technology"
+                    className="px-3 py-2 text-sm font-medium hover:bg-navy hover:text-white"
+                    activeClassName="bg-navy text-white hover:text-white"
+                  >
+                    Synthesia Technology
+                  </NavLink>
                 </div>
               </div>
             </div>
-            <div className="flex align-middle justify-center absolute right-0 flex-col bottom-3">
-              <div className="lg:flex justify-center sm:hidden mn:flex">
+            <div className="absolute right-0 flex flex-col justify-center align-middle bottom-3">
+              <div className="justify-center lg:flex sm:hidden mn:flex">
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
                   viewBox="0 0 20 20"
@@ -116,7 +123,7 @@ export default function Navbar(props) {
 
                 <a
                   href="tel:510 510 499"
-                  className="text-md text-navy font-bold "
+                  className="font-bold text-md text-navy "
                 >
                   510 510 499
                 </a>
@@ -124,19 +131,19 @@ export default function Navbar(props) {
               <div className="ml-2 sm:hidden lg:block">
                 <div className="flex justify-center sm:hidden lg:flex">
                   <button
-                    className="bg-white text-blue-600 font-normal h-10 w-10 items-center justify-center align-center outline-none focus:outline-none p-3"
+                    className="items-center justify-center w-10 h-10 p-3 font-normal text-blue-600 bg-white outline-none align-center focus:outline-none"
                     type="button"
                   >
                     <img src={facebook} alt="" />
                   </button>
                   <button
-                    className="bg-white text-pink-400 font-normal h-10 w-10 items-center justify-center align-center outline-none focus:outline-none p-3"
+                    className="items-center justify-center w-10 h-10 p-3 font-normal text-pink-400 bg-white outline-none align-center focus:outline-none"
                     type="button"
                   >
                     <img src={instagram} alt="" />
                   </button>
                   <button
-                    className="bg-white text-pink-400 font-normal h-10 w-10 items-center justify-center align-center outline-none focus:outline-none p-3"
+                    className="items-center justify-center w-10 h-10 p-3 font-normal text-pink-400 bg-white outline-none align-center focus:outline-none"
                     type="button"
                   >
                     <img src={youtube} alt="" />
@@ -155,11 +162,11 @@ export default function Navbar(props) {
         <div
           className={`${navbarOpen ? "block" : "hidden"} sm:hidden mn:-mt-8`}
         >
-          <div className="px-2 pt-2 pb-3 space-y-1 flex flex-col">
+          <div className="flex flex-col px-2 pt-2 pb-3 space-y-1">
             <NavLink
               to="/"
               exact
-              className="px-3 py-2 text-sm font-medium z-10"
+              className="z-10 px-3 py-2 text-sm font-medium"
               activeClassName="bg-gray-900 text-white"
               onClick={() => setNavbarOpen(!navbarOpen)}
             >
@@ -188,6 +195,14 @@ export default function Navbar(props) {
               onClick={() => setNavbarOpen(!navbarOpen)}
             >
               Kontakt
+            </NavLink>
+            <NavLink
+              to="/synthesia-technology"
+              className="px-3 py-2 text-sm font-medium"
+              activeClassName="bg-gray-900 text-white"
+              onClick={() => setNavbarOpen(!navbarOpen)}
+            >
+              Synthesia Technology
             </NavLink>
           </div>
         </div>

@@ -32,13 +32,13 @@ export default function Contact() {
 
   return (
     <>
-      <div className="sm:pt-32 mn:pt-24 container px-6 mn:px-4 mx-auto">
+      <div className="container px-6 mx-auto sm:pt-32 mn:pt-24 mn:px-4">
         <section className="container mx-auto mn:hidden">
           <div
-            className="flex justify-between items-center"
+            className="flex items-center justify-between"
             style={{ height: width > 1024 ? "360px" : "260px" }}
           >
-            <div className="lg:w-6/12 md:w-5/12 sm:w-6/12 h-full">
+            <div className="h-full lg:w-6/12 md:w-5/12 sm:w-6/12">
               <div
                 className="h-full"
                 style={{
@@ -46,8 +46,8 @@ export default function Contact() {
                 }}
               />
             </div>
-            <div className="lg:w-6/12 md:w-7/12 sm:w-7/12 mr-auto ml-auto">
-              <div className="maxlg:text-3xl mdlg:text-2xl md:text-xl text-center uppercase font-bold italic text-logoGreen">
+            <div className="ml-auto mr-auto lg:w-6/12 md:w-7/12 sm:w-7/12">
+              <div className="italic font-bold text-center uppercase maxlg:text-3xl mdlg:text-2xl md:text-xl text-logoGreen">
                 <p className="lg:py-1">OCIEPLENIE PIANĄ </p>
                 <p className="lg:py-1">NATRYSKOWĄ PUR </p>
                 <p className="lg:py-1">ZAPEWNIA OSZCZĘDNOŚCI </p>
@@ -58,12 +58,12 @@ export default function Contact() {
         </section>
 
         <div className="flex flex-wrap">
-          <div className="w-full md:w-6/12 lg:w-6/12 mb-4 pt-4 ">
+          <div className="w-full pt-4 mb-4 md:w-6/12 lg:w-6/12">
             <div className="flex-auto">
               <Form text={text} />
             </div>
           </div>
-          <div className="w-full md:w-6/12 lg:w-6/12 mb-12 lg:pt-48 md:pt-48 sm:mb-4 mn:mb-4">
+          <div className="w-full mb-12 md:w-6/12 lg:w-6/12 lg:pt-48 md:pt-48 sm:mb-4 mn:mb-4">
             <Info />
           </div>
         </div>

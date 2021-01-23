@@ -26,13 +26,13 @@ export default function OffertPage() {
           content="Oferta naszego przedsiębiorstwa obejmuje wykonawstwo termoizolacji przy użyciu wysokiej klasy piany PUR zamknięto- lub otwartokomórkowej. Zajmujemy się też OCIEPLANIEM poddasza PIANĄ!"
         />
       </Helmet>
-      <main className="sm:pt-32 mn:pt-24 container mx-auto px-6 mn:px-4">
+      <main className="container px-6 mx-auto sm:pt-32 mn:pt-24 mn:px-4">
         <section className="container mx-auto mn:hidden">
           <div
-            className="flex justify-between items-center"
+            className="flex items-center justify-between"
             style={{ height: width > 1024 ? "360px" : "260px" }}
           >
-            <div className="lg:w-6/12 md:w-5/12 sm:w-6/12 h-full pb-6">
+            <div className="h-full pb-6 lg:w-6/12 md:w-5/12 sm:w-6/12">
               <div
                 className="h-full"
                 style={{
@@ -40,8 +40,8 @@ export default function OffertPage() {
                 }}
               />
             </div>
-            <div className="lg:w-6/12 md:w-7/12 sm:w-7/12 mr-auto ml-auto">
-              <div className="maxlg:text-3xl mdlg:text-2xl md:text-xl text-center uppercase font-bold italic text-logoGreen">
+            <div className="ml-auto mr-auto lg:w-6/12 md:w-7/12 sm:w-7/12">
+              <div className="italic font-bold text-center uppercase maxlg:text-3xl mdlg:text-2xl md:text-xl text-logoGreen">
                 <p className="lg:py-1">BEZ MOSTKÓW TERMICZNYCH</p>
                 <p className="lg:py-1">BEZ WILGOCI I GRZYBÓW</p>
                 <p className="lg:py-1">BEZ PYŁÓW I KURZU</p>
@@ -50,8 +50,11 @@ export default function OffertPage() {
             </div>
           </div>
         </section>
-        <div className="mn:pt-4">
-          <p className="text-md leading-relaxed font-light text-gray-700 text-justify">
+        <div className="mn:pt-2">
+          <h3 className="hidden text-xl font-semibold mn:block text-navy mn:pb-2">
+            Offerta
+          </h3>
+          <p className="font-light leading-relaxed text-justify text-gray-700 text-md">
             Oferujemy wszystkim klientom systemy poliuretanowe indywidualnie
             dopasowane do ich potrzeb i oczekiwań. Wykonujemy bezpłatne
             oględziny miejsc natrysku piany PUR, podczas których uzgadniamy z
@@ -70,7 +73,7 @@ export default function OffertPage() {
             otrzymuje certyfikat zgodności.
           </p>
           <br />
-          <p className="text-md leading-relaxed font-light text-gray-700 text-justify">
+          <p className="font-light leading-relaxed text-justify text-gray-700 text-md">
             Piana poliuretanowa (PUR) to materiał wytwarzany na budowie z
             gotowych składników i nanoszony za pomocą specjalnego agregatu. Na
             rynku spotkamy dwa rodzaje piany poliuretanowej układanej
@@ -78,10 +81,10 @@ export default function OffertPage() {
           </p>
         </div>
         <div>
-          <h3 className="font-xl font-bold text-navy mb-1 pt-6">
-            PIANA OTWARTOKOMÓRKOWA
+          <h3 className="pt-6 mb-1 text-xl font-semibold text-navy">
+            Piana otwartokomórkowa
           </h3>
-          <p className="text-md leading-relaxed font-light text-gray-700 text-justify">
+          <p className="font-light leading-relaxed text-justify text-gray-700 text-md">
             Pianę otwartokomórkową natryskuje się między elementy konstrukcji –
             krokwie, legary, jętki, elementy rusztu nośnego, do którego będą
             mocowane okładziny. Dzięki swojej dobrej przyczepności i niskiemu
@@ -100,11 +103,11 @@ export default function OffertPage() {
         </div>
         <div className="flex flex-wrap justify-center py-8">
           <img src={pok1} className="h-60" alt="piana" />
-          <img src={pianaOtw} className="h-60 px-6 mn:h-48" alt="piana" />
+          <img src={pianaOtw} className="px-6 h-60 mn:h-48" alt="piana" />
           <img src={pok2} className="h-60" alt="piana" />
         </div>
         <div>
-          <p className="text-md leading-relaxed font-light text-gray-700 text-justify">
+          <p className="font-light leading-relaxed text-justify text-gray-700 text-md">
             Swoją strukturą przypomina gąbkę. Jej struktura składa się w minimum
             80% z komórek otwartych wypełnionych powietrzem. To właśnie
             powietrze jest izolatorem termicznym i akustycznym, przepuszcza parę
@@ -130,7 +133,7 @@ export default function OffertPage() {
             energetyczny budynku.
           </p>
           <br />
-          <p className="text-md leading-relaxed font-light text-gray-700 text-justify">
+          <p className="font-light leading-relaxed text-justify text-gray-700 text-md">
             Producenci dają 25, a nawet 30-letnią gwarancję na niezmienność
             parametrów izolacji (mogą to zrobić na podstawie badań prowadzonych
             w krajach, gdzie już 30 lat temu tak ocieplano domy). Piana PUR nie
@@ -139,10 +142,10 @@ export default function OffertPage() {
           </p>
         </div>
         <div>
-          <h3 className="font-xl font-bold text-navy mb-1 pt-6">
-            PIANA ZAMKNIĘTOKOMÓRKOWA
+          <h3 className="pt-6 mb-1 text-xl font-semibold text-navy">
+            Piana zamkniętokomórkowa
           </h3>
-          <p className="text-md leading-relaxed font-light text-gray-700 text-justify">
+          <p className="font-light leading-relaxed text-justify text-gray-700 text-md">
             Natryskowa poliuretanowa piana PUR zamkniętokomórkowa doskonale
             sprawdza się przy ocieplaniu budynków zarówno wewnątrz jak i na
             zewnątrz. Piana zbudowana jest z mikroskopijnych zamkniętych
@@ -170,7 +173,7 @@ export default function OffertPage() {
           />
         </div>
         <div>
-          <p className="text-md leading-relaxed font-light text-gray-700 text-justify">
+          <p className="font-light leading-relaxed text-justify text-gray-700 text-md">
             Po wyschnięciu jest twarda i sztywna, ma wytrzymałość na ściskanie
             rzędu 250 kPa. i bardzo niski współczynnik przewodzenia ciepła,
             dzięki czemu do zaizolowania fundamentów, ścian, piwnic czy podłogi
@@ -185,10 +188,10 @@ export default function OffertPage() {
           </p>
         </div>
         <div>
-          <h3 className="font-xl font-bold text-navy mb-1 pt-6">
-            NAJWAŻNIEJSZE ZALETY ZASTOSOWANIA PIANY POLIURETANOWEJ PUR
+          <h3 className="pt-6 mb-1 text-xl font-semibold text-navy">
+            Najważniejsze zalety zastosowania piany poliuretanowej pur
           </h3>
-          <ul className="list-disc font-light pl-4 text-md text-gray-700">
+          <ul className="pl-4 font-light text-gray-700 list-disc text-md">
             <li>zapewnia bardzo dobrą izolację cieplną,</li>
             <li> zapewnia doskonałą izolację akustyczną,</li>
             <li>nie jest szkodliwa dla zdrowia,</li>
