@@ -21,7 +21,7 @@ export default function Layout({ children }) {
   return (
     <>
       <Helmet>
-        <script className="structured-data-list" type="application/ld+json">
+        <script type="application/ld+json">
           {JSON.stringify(structuredJSON)}
         </script>
       </Helmet>
