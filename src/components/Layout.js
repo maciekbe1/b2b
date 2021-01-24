@@ -14,7 +14,7 @@ const structuredJSON = {
   name: "Pur Concept s.c.",
   telephone: "510510499",
   vatID: "8942322883",
-  image: "https://www.purconcept.pl/static/media/logo-3.7a30d2d9.png",
+  image: "https://www.purconcept.pl/static/media/logo-3.7807ef8f.png",
 };
 
 export default function Layout({ children }) {
