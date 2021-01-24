@@ -1,9 +1,8 @@
 import React from "react";
 import Footer from "../Footer";
-import slider3 from "../../assets/img/slider3.webp";
-
 import useWindowDimensions from "../utils/ViewPort";
 import Certificates from "../AboutUsPage/Certificates";
+import slider3 from "../../assets/img/slider3.webp";
 
 export default function AboutPage() {
   const { width } = useWindowDimensions();

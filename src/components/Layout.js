@@ -1,5 +1,6 @@
 import React from "react";
 import { Helmet } from "react-helmet";
+import logo from "../assets/img/logo-3.webp";
 
 const structuredJSON = {
   "@context": "http://schema.org",
@@ -13,8 +14,8 @@ const structuredJSON = {
   },
   name: "Pur Concept s.c.",
   telephone: "510510499",
-  vatID: "8942322883",
-  image: "https://www.purconcept.pl/static/media/logo-3.7807ef8f.png",
+  vatID: "8961599491",
+  image: `https://www.purconcept.pl${logo}`,
 };
 
 export default function Layout({ children }) {

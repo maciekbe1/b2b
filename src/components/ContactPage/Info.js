@@ -30,10 +30,10 @@ export default function Info() {
 
       <div className="pt-6">
         <p className="mt-1 text-sm font-semibold text-gray-600">
-          NIP: 8942322883
+          NIP: 8961599491
         </p>
         <p className="mt-1 text-sm font-semibold text-gray-600">
-          REGON: 020144019
+          REGON: 387683401
         </p>
       </div>
 
