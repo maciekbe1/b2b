@@ -1,9 +1,9 @@
 import React from "react";
 import { NavLink, Link } from "react-router-dom";
-import logo from "../assets/img/logo-3.png";
-import instagram from "../assets/img/instagram.png";
-import facebook from "../assets/img/facebook.png";
-import youtube from "../assets/img/youtube.png";
+import logo from "../assets/img/logo-3.webp";
+import instagram from "../assets/img/instagram.webp";
+import facebook from "../assets/img/facebook.webp";
+import youtube from "../assets/img/youtube.webp";
 export default function Navbar(props) {
   const [navbarOpen, setNavbarOpen] = React.useState(false);
   return (

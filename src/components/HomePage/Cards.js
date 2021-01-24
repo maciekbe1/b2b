@@ -1,7 +1,7 @@
 import React from "react";
-import shield from "../../assets/img/shield.png";
-import economic from "../../assets/img/profits.png";
-import ecology from "../../assets/img/plant.png";
+import shield from "../../assets/img/shield.webp";
+import economic from "../../assets/img/profits.webp";
+import ecology from "../../assets/img/plant.webp";
 
 export default function Cards() {
   return (

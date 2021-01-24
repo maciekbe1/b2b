@@ -1,7 +1,7 @@
 import React from "react";
-import instagram from "../../assets/img/instagram.png";
-import facebook from "../../assets/img/facebook.png";
-import youtube from "../../assets/img/youtube.png";
+import instagram from "../../assets/img/instagram.webp";
+import facebook from "../../assets/img/facebook.webp";
+import youtube from "../../assets/img/youtube.webp";
 export default function Info() {
   return (
     <div className="flex-auto lg:px-20 md:px-10">

@@ -1,7 +1,7 @@
 import React from "react";
 import useWindowDimensions from "../utils/ViewPort";
 import Footer from "../Footer";
-import synthesiaMap from "../../assets/img/synthesiaMap.png";
+import synthesiaMap from "../../assets/img/synthesiaMap.webp";
 import SynthesiaHome from "../../assets/img/synthesiaHome.webp";
 export default function Synthesia() {
   const { width } = useWindowDimensions();

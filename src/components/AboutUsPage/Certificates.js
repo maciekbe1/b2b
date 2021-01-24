@@ -1,7 +1,7 @@
 import React, { useState } from "react";
-import ok from "../../assets/img/CERTYFIKAT-OK.jpeg";
-import po from "../../assets/img/CERTYFIKAT-PO.jpeg";
-import zk from "../../assets/img/CERTYFIKAT-ZK.jpeg";
+import ok from "../../assets/img/CERTYFIKAT-OK.webp";
+import po from "../../assets/img/CERTYFIKAT-PO.webp";
+import zk from "../../assets/img/CERTYFIKAT-ZK.webp";
 
 import work1 from "../../assets/img/work1.webp";
 import work2 from "../../assets/img/work2.webp";
@@ -20,9 +20,9 @@ export default function Certificates() {
     <div className="flex flex-wrap justify-center">
       {certificatesImage.map((image, index) => {
         return (
-          <div className="lg:w-1/3 md:w-1/2 w-full p-4" key={index}>
+          <div className="w-full p-4 lg:w-1/3 md:w-1/2" key={index}>
             <img
-              className="shadow-lg cursor-pointer transform transition duration-500  hover:scale-110 hover:z-10"
+              className="transition duration-500 transform shadow-lg cursor-pointer hover:scale-110 hover:z-10"
               src={image}
               alt="certificate"
               onClick={() => {
