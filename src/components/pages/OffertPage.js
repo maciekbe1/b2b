@@ -52,7 +52,7 @@ export default function OffertPage() {
         </section>
         <div className="mn:pt-2">
           <h3 className="hidden text-xl font-semibold mn:block text-navy mn:pb-2">
-            Offerta
+            Oferta
           </h3>
           <p className="font-light leading-relaxed text-justify text-gray-700 text-md">
             Oferujemy wszystkim klientom systemy poliuretanowe indywidualnie

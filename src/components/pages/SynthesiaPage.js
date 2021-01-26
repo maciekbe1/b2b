@@ -74,7 +74,7 @@ export default function Synthesia() {
             izolacyjnych.
           </p>
           <p className="mt-2 font-light leading-relaxed text-justify text-gray-700 text-md">
-            <span className="font-semibold">Systemy otwartokomórkowe </span>z
+            <span className="font-semibold">Systemy zamkniętokomórkowe </span>z
             kolei doskonale sprawdzają się w izolacjach termicznych stropów,
             posadzek, fundamentów, ścian zewnętrznych, czy dachów zarówno od
             zewnątrz jak i od wewnątrz. Ze względu na swoje cechy
