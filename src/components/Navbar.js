@@ -8,7 +8,7 @@ export default function Navbar(props) {
   const [navbarOpen, setNavbarOpen] = React.useState(false);
   return (
     <>
-      <nav className="fixed z-10 w-full bg-white border-b-2 border-navy">
+      <nav className="fixed z-20 w-full bg-white border-b-2 border-navy">
         <div className="px-2 mx-auto max-w-7xl sm:px-6 lg:px-8">
           <div className="relative flex items-center justify-between h-24">
             <div className="absolute inset-y-0 left-0 flex items-center sm:hidden">
@@ -104,6 +104,13 @@ export default function Navbar(props) {
                     activeClassName="bg-navy text-white hover:text-white"
                   >
                     Synthesia Technology
+                  </NavLink>
+                  <NavLink
+                    to="/rodo"
+                    className="px-3 py-2 text-sm font-medium hover:bg-navy hover:text-white"
+                    activeClassName="bg-navy text-white hover:text-white"
+                  >
+                    RODO
                   </NavLink>
                 </div>
               </div>
@@ -203,6 +210,14 @@ export default function Navbar(props) {
               onClick={() => setNavbarOpen(!navbarOpen)}
             >
               Synthesia Technology
+            </NavLink>
+            <NavLink
+              to="/rodo"
+              className="px-3 py-2 text-sm font-medium"
+              activeClassName="bg-gray-900 text-white"
+              onClick={() => setNavbarOpen(!navbarOpen)}
+            >
+              RODO
             </NavLink>
           </div>
         </div>

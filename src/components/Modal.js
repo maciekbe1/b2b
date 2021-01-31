@@ -5,12 +5,12 @@ const Modal = ({ children, activator }) => {
   const [show, setShow] = useState(false);
 
   const content = show && (
-    <div className="fixed inset-0 z-10 flex lg:items-center justify-center">
+    <div className="fixed inset-0 z-30 flex justify-center lg:items-center">
       <span
         id="blackOverlay"
-        className="w-full h-full absolute opacity-60 bg-black"
+        className="absolute w-full h-full bg-black opacity-60"
       ></span>
-      <div className="modal relative lg:w-2/6 sm:w-4/6 mn:w-11/12 mn:top-20">
+      <div className="relative modal lg:w-2/6 sm:w-4/6 mn:w-11/12 mn:top-20">
         {React.cloneElement(children, { setShow })}
       </div>
     </div>

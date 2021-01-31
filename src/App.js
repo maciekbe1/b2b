@@ -9,6 +9,8 @@ const Navbar = lazy(() => import("./components/Navbar"));
 const AboutPage = lazy(() => import("./components/pages/AboutPage"));
 const OffertPage = lazy(() => import("./components/pages/OffertPage"));
 const SynthesiaPage = lazy(() => import("./components/pages/SynthesiaPage"));
+const RodoPage = lazy(() => import("./components/pages/RodoPage"));
+
 const ScrollToTop = lazy(() => import("./components/ScrollToTop"));
 const Layout = lazy(() => import("./components/Layout"));
 
@@ -25,6 +27,7 @@ export default function App() {
               <Route path="/o-nas" component={AboutPage} />
               <Route path="/oferta" component={OffertPage} />
               <Route path="/synthesia-technology" component={SynthesiaPage} />
+              <Route path="/rodo" component={RodoPage} />
             </Switch>
           </ScrollToTop>
         </Layout>

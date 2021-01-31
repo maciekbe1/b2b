@@ -26,7 +26,7 @@ export default function OffertPage() {
           content="Oferta naszego przedsiębiorstwa obejmuje wykonawstwo termoizolacji przy użyciu wysokiej klasy piany PUR zamknięto- lub otwartokomórkowej. Zajmujemy się też OCIEPLANIEM poddasza PIANĄ!"
         />
       </Helmet>
-      <main className="container px-6 mx-auto sm:pt-32 mn:pt-24 mn:px-4">
+      <div className="container px-6 mx-auto sm:pt-32 mn:pt-24 mn:px-4">
         <section className="container mx-auto mn:hidden">
           <div
             className="flex items-center justify-between"
@@ -206,7 +206,7 @@ export default function OffertPage() {
             <li>może być pokrywana lakierem lub farbami.</li>
           </ul>
         </div>
-      </main>
+      </div>
       <Footer />
     </>
   );
