@@ -3,8 +3,7 @@ import Footer from "../Footer";
 import useWindowDimensions from "../utils/ViewPort";
 import Certificates from "../AboutUsPage/Certificates";
 import slider3 from "../../assets/img/slider3.webp";
-import wiazar_pl from "../../assets/img/wiazar_pl.webp";
-
+import Partners from "../AboutUsPage/Partners";
 export default function AboutPage() {
   const { width } = useWindowDimensions();
 
@@ -56,20 +55,8 @@ export default function AboutPage() {
             </div>
           </div>
         </div>
-        <h3 className="pt-8 pb-2 text-xl font-semibold text-center text-navy">
-          Jesteśmy autoryzowanym wykonawcą Synthesia Techlology
-        </h3>
         <Certificates />
-        <h3 className="pt-8 pb-2 text-xl font-semibold text-center text-navy">
-          Nasi partnerzy
-        </h3>
-        <a href="https://wiazarpolska.pl/" className="inline-block">
-          <img
-            src={wiazar_pl}
-            alt="Wiązar Polska"
-            className="pt-4 lg:h-40 md:h-36 sm:h-24 mn:h-auto mn:w-full"
-          />
-        </a>
+        <Partners />
       </div>
       <Footer />
     </>

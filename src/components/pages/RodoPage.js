@@ -17,7 +17,7 @@ export default function RodoPage() {
               <div
                 className="h-full"
                 style={{
-                  background: `url(${privacy}) center / cover no-repeat`,
+                  background: `url(${privacy}) center / contain no-repeat`,
                 }}
               />
             </div>
@@ -28,12 +28,12 @@ export default function RodoPage() {
             </div>
           </div>
         </section>
-        <h3 className="hidden text-xl font-semibold mn:block text-navy mn:pb-2">
-          Polityka prywatności
-        </h3>
+        <h1 className="hidden pt-2 text-xl font-semibold mn:block text-navy">
+          POLITYKA PRYWATNOŚCI
+        </h1>
 
         <div>
-          <h3 className="pt-6 mb-1 text-xl font-semibold mn:block text-navy">
+          <h3 className="pt-6 mb-1 text-xl font-semibold mn:pt-2 mn:block text-navy">
             Administrator danych osobowych
           </h3>
           <p className="font-light leading-relaxed text-justify text-gray-700 text-md">
@@ -65,38 +65,58 @@ export default function RodoPage() {
             1. Administrator przetwarza dane osobowe Użytkownika w celu:
           </p>
           <p className="mb-2 ml-8 font-light leading-relaxed text-justify text-gray-700 text-md">
-            rzetelnego wykonywania kosztorysów inwestorskich na świadczone
+            a. prezentowania oferty produktowej Pur Concept,
+          </p>
+          <p className="mb-2 ml-8 font-light leading-relaxed text-justify text-gray-700 text-md">
+            b. czynności związanych z zawarciem, wykonywaniem lub rozwiązywaniem
+            umowy, dotyczącej usług i towarów oferowanych przez Pur Concept,
+          </p>
+          <p className="mb-2 ml-8 font-light leading-relaxed text-justify text-gray-700 text-md">
+            c. obsługi posprzedażowej,
+          </p>
+          <p className="mb-2 ml-8 font-light leading-relaxed text-justify text-gray-700 text-md">
+            d. udzielania odpowiedzi na Państwa pisma, zapytania, wnioski,
+          </p>
+          <p className="mb-2 ml-8 font-light leading-relaxed text-justify text-gray-700 text-md">
+            e. podejmowanie działań marketingowych podejmowanych przez Pur
+            Concept samodzielnie lub we współpracy z innymi podmiotami,
+          </p>
+          <p className="mb-2 ml-8 font-light leading-relaxed text-justify text-gray-700 text-md">
+            f. archiwizacja danych klientów i kontrahentów Pur Concept,
+          </p>
+          <p className="mb-2 ml-8 font-light leading-relaxed text-justify text-gray-700 text-md">
+            g. prowadzenie analiz i statystyk na potrzeby prowadzonej przez Pur
+            Concept działalności gospodarczej,
+          </p>
+          <p className="mb-2 ml-8 font-light leading-relaxed text-justify text-gray-700 text-md">
+            h. wykonywania prawnie uzasadnionych interesów Pur Concept, które
+            zostały wskazane powyżej, a także takich interesów jak dochodzenie
+            lub obrona w sprawie roszczeń lub praw Pur Concept lub podmiotu,
+            który Pur Concept reprezentuje,
+          </p>
+          <p className="mb-2 ml-8 font-light leading-relaxed text-justify text-gray-700 text-md">
+            i. wykonywania obowiązku prawnego – obowiązki takie wynikają z
+            przepisów powszechnie obowiązującego prawa, w tym przepisów prawa
+            wspólnotowego (prawa Unii europejskiej) lub prawa polskiego.
+          </p>
+          <p className="mb-2 ml-8 font-light leading-relaxed text-justify text-gray-700 text-md">
+            j. wykonywania zaleceń lub rekomendacji wydawanych przez uprawnione
+            organy lub instytucje
+          </p>
+          <p className="mb-2 ml-8 font-light leading-relaxed text-justify text-gray-700 text-md">
+            k. utrzymywania, wyświetlania stron internetowych lub komunikowania
+            się przez te strony – wykorzystywane są do tego dane identyfikujące
+            takie jak numer IP, numery urządzenia oraz inne dane np. imię i
+            nazwisko, mail, jeżeli zostaną przez Państwa podane w formularzu
+            kontaktowym. Dane te wykorzystywane są w zakresie i na podstawie
+            zgody lub na podstawie właściwych przepisów prawa, w tym prawa
+            telekomunikacyjnego lub prawa wspólnotowego. Te przepisy określają,
+            kiedy przetwarzanie danych wymaga zgody. Opisują również sposób
+            udzielania zgody lub jej odwołania.
+          </p>
+          <p className="mb-2 ml-8 font-light leading-relaxed text-justify text-gray-700 text-md">
+            l. rzetelnego wykonywania kosztorysów inwestorskich na świadczone
             usługi polegające na izolacji i ocieplaniu pianą PUR.
-          </p>
-          <p className="mb-2 font-light leading-relaxed text-justify text-gray-700 text-md">
-            2. Oznacza to, że dane te są potrzebne w szczególności do:
-          </p>
-          <p className="mb-2 ml-8 font-light leading-relaxed text-justify text-gray-700 text-md">
-            a. Kontaktu telefonicznego z Inwestorem  
-          </p>
-          <p className="mb-2 ml-8 font-light leading-relaxed text-justify text-gray-700 text-md">
-            b. Kontaktu mailowego z Inwestorem
-          </p>
-          <p className="mb-2 font-light leading-relaxed text-justify text-gray-700 text-md">
-            3. Użytkownik może również wyrazić zgodę na otrzymywanie informacji
-            o nowościach i promocjach, co spowoduje, że administrator będzie
-            również przetwarzać dane osobowe w celu przesyłania Użytkownikowi
-            informacji handlowych dotyczących m.in. nowych produktów lub usług,
-            promocji czy wyprzedaży.
-          </p>
-          <p className="mb-2 font-light leading-relaxed text-justify text-gray-700 text-md">
-            4. Dane osobowe są również przetwarzane w ramach wypełnienia
-            prawnych obowiązków ciążących na administratorze danych oraz
-            realizacji zadań w interesie publicznym m.in. do wykonywania zadań
-            związanych z bezpieczeństwem i obronnością lub przechowywaniem
-            dokumentacji podatkowej.
-          </p>
-          <p className="font-light leading-relaxed text-justify text-gray-700 text-md">
-            5. Dane osobowe mogą być również przetwarzane w celach marketingu
-            bezpośredniego produktów, zabezpieczenia i dochodzenia roszczeń
-            lub ochrony przed roszczeniami Użytkownika lub osoby trzeciej, jak
-            również marketingu usług i produktów podmiotów trzecich
-            lub marketingu własnego, niebędącego marketingiem bezpośrednim.
           </p>
         </div>
 
@@ -106,13 +126,32 @@ export default function RodoPage() {
           </h3>
           <p className="font-light leading-relaxed text-justify text-gray-700 text-md">
             Administrator przetwarza następujące dane osobowe, których podanie
-            jest niezbędne do:
+            jest niezbędne do korzystania przez Państwa z usług Pur Concept. Są
+            to między innymi:
           </p>
           <p className="mb-2 ml-8 font-light leading-relaxed text-justify text-gray-700 text-md">
-            a. Dane podawane przez Użytkownika opcjonalnie:
+            a. imiona, nazwiska,
           </p>
-          <p className="mb-2 font-light leading-relaxed text-justify text-gray-700 indent-lg text-md">
-            - data urodzenia;
+          <p className="mb-2 ml-8 font-light leading-relaxed text-justify text-gray-700 text-md">
+            b. adres miejsca zamieszkania oraz adres korespondencyjny,
+          </p>
+          <p className="mb-2 ml-8 font-light leading-relaxed text-justify text-gray-700 text-md">
+            c. numer kontaktowy oraz adres e-mail,
+          </p>
+          <p className="mb-2 ml-8 font-light leading-relaxed text-justify text-gray-700 text-md">
+            d. adres miejsca zamieszkania oraz adres korespondencyjny,
+          </p>
+          <p className="mb-2 ml-8 font-light leading-relaxed text-justify text-gray-700 text-md">
+            e. numer ewidencyjny PESEL – w przypadku obywatela Rzeczpospolitej
+            Polskiej,
+          </p>
+          <p className="mb-2 ml-8 font-light leading-relaxed text-justify text-gray-700 text-md">
+            f. nazwa, seria i numer dokumentu potwierdzającego tożsamość, a w
+            przypadku cudzoziemca – numer paszportu lub katy pobytu,
+          </p>
+          <p className="mb-2 ml-8 font-light leading-relaxed text-justify text-gray-700 text-md">
+            g. inne Państwa dane osobowe, z zachowaniem warunków wskazanych w
+            pkt. 3 i 4 powyżej.
           </p>
         </div>
 
@@ -341,27 +380,27 @@ export default function RodoPage() {
             a. Tworzenia specjalnej sesji logowania dla Użytkownika strony
             internetowej, aby strona zapamiętała, że Użytkownik jest zalogowany,
             a jego żądania były dostarczane w sposób skuteczny, bezpieczny
-            i spójny;
+            i spójny,
           </p>
           <p className="mb-2 ml-8 font-light leading-relaxed text-justify text-gray-700 text-md">
             b. Rozpoznawania Użytkownika, który już wcześniej odwiedził stronę
             internetową, co pozwala na identyfikację liczby unikalnych
             użytkowników, którzy skorzystali z serwisu i pozwala upewnić się co
-            do wystarczającej pojemności serwisu dla liczby nowych użytkowników;
+            do wystarczającej pojemności serwisu dla liczby nowych użytkowników,
           </p>
           <p className="mb-2 ml-8 font-light leading-relaxed text-justify text-gray-700 text-md">
             c. Rozpoznawania, czy osoba odwiedzająca stronę internetową jest
-            zarejestrowana na stronie internetowej;
+            zarejestrowana na stronie internetowej,
           </p>
           <p className="mb-2 ml-8 font-light leading-relaxed text-justify text-gray-700 text-md">
             d. Rejestrowanie informacji z urządzenia Użytkownika, w tym: pliki
             cookies, adres IP i informacje o używanej przeglądarce, w celu
             możliwości diagnozowania problemów, administrowania i śledzenia
-            Użytkowania witryny;
+            Użytkowania witryny,
           </p>
           <p className="mb-2 ml-8 font-light leading-relaxed text-justify text-gray-700 text-md">
             e. Dostosowywania elementów układu szaty graficznej lub zawartości
-            strony internetowej;
+            strony internetowej,
           </p>
           <p className="mb-2 ml-8 font-light leading-relaxed text-justify text-gray-700 text-md ">
             f. Zbierania informacji statystycznych o tym, jak Użytkownik
@@ -432,8 +471,7 @@ export default function RodoPage() {
             USA, Google podporządkowuje się porozumieniu EU-US Privacy Shield,
             www.privacyshield.gov/EU-US-Framework. Podstawę prawną dla
             korzystania z Google Analytics stanowi art. 6 ust. 1 zd. 1 lit.{" "}
-            {"f)"}
-            RODO.
+            {"f) "}RODO.
           </p>
           <p className="mb-2 font-light leading-relaxed text-justify text-gray-700 text-md">
             6. Informacje dostawcy zewnętrznego: Google Dublin, Google Ireland

@@ -17,43 +17,50 @@ export default function Certificates() {
   const [isOpen, setIsOpen] = useState(false);
 
   return (
-    <div className="flex flex-wrap justify-center">
-      {certificatesImage.map((image, index) => {
-        return (
-          <div className="w-full p-4 lg:w-1/3 md:w-1/2" key={index}>
-            <img
-              className="transition duration-500 transform shadow-lg cursor-pointer hover:scale-110 hover:z-10"
-              src={image}
-              alt="certificate"
-              onClick={() => {
-                setIsOpen(true);
-                setIndex(index);
-              }}
-            />
-            <img src={workImage[index]} alt="work" className="w-full mt-8 " />
-          </div>
-        );
-      })}
-      {isOpen && (
-        <Lightbox
-          mainSrc={certificatesImage[index]}
-          nextSrc={certificatesImage[(index + 1) % certificatesImage.length]}
-          prevSrc={
-            certificatesImage[
-              (index + certificatesImage.length - 1) % certificatesImage.length
-            ]
-          }
-          onCloseRequest={() => setIsOpen(false)}
-          onMovePrevRequest={() =>
-            setIndex(
-              (index + certificatesImage.length - 1) % certificatesImage.length
-            )
-          }
-          onMoveNextRequest={() =>
-            setIndex((index + 1) % certificatesImage.length)
-          }
-        />
-      )}
+    <div>
+      <h3 className="pt-8 pb-2 text-xl font-semibold text-center text-navy">
+        Jesteśmy autoryzowanym wykonawcą Synthesia Techlology
+      </h3>
+      <div className="flex flex-wrap justify-center">
+        {certificatesImage.map((image, index) => {
+          return (
+            <div className="w-full p-4 lg:w-1/3 md:w-1/2" key={index}>
+              <img
+                className="transition duration-500 transform shadow-lg cursor-pointer hover:scale-110 hover:z-10"
+                src={image}
+                alt="certificate"
+                onClick={() => {
+                  setIsOpen(true);
+                  setIndex(index);
+                }}
+              />
+              <img src={workImage[index]} alt="work" className="w-full mt-8 " />
+            </div>
+          );
+        })}
+        {isOpen && (
+          <Lightbox
+            mainSrc={certificatesImage[index]}
+            nextSrc={certificatesImage[(index + 1) % certificatesImage.length]}
+            prevSrc={
+              certificatesImage[
+                (index + certificatesImage.length - 1) %
+                  certificatesImage.length
+              ]
+            }
+            onCloseRequest={() => setIsOpen(false)}
+            onMovePrevRequest={() =>
+              setIndex(
+                (index + certificatesImage.length - 1) %
+                  certificatesImage.length
+              )
+            }
+            onMoveNextRequest={() =>
+              setIndex((index + 1) % certificatesImage.length)
+            }
+          />
+        )}
+      </div>
     </div>
   );
 }

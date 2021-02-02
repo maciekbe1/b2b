@@ -50,7 +50,7 @@ export default function Layout({ children }) {
         location="bottom"
         buttonText="Zgadzam się"
         cookieName="CookieConsent"
-        containerClasses="opacity-95 bg-darkNavy flex flex-wrap justify-between left-o fixed w-full z-10 bottom-0 px-4 py-2 text-white text-md font-light leading-relaxed"
+        containerClasses="opacity-95 bg-darkNavy flex flex-wrap justify-between left-o fixed w-full z-10 bottom-0 px-4 py-2 text-white text-md font-light leading-relaxed text-xs items-center"
         disableStyles
         buttonClasses="text-white px-2 py-1 bg-navy text-xs"
         expires={150}
