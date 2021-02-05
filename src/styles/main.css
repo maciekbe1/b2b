@@ -944,10 +944,6 @@ video {
   margin-left: auto;
 }
 
-.max-w-7xl {
-  max-width: 80rem;
-}
-
 .min-w-0 {
   min-width: 0px;
 }
@@ -1493,8 +1489,8 @@ video {
     align-items: center;
   }
 
-  .lg\:justify-start {
-    justify-content: flex-start;
+  .lg\:justify-evenly {
+    justify-content: space-evenly;
   }
 
   .lg\:h-40 {
@@ -1575,10 +1571,6 @@ video {
 
   .mn\:block {
     display: block;
-  }
-
-  .mn\:flex {
-    display: flex;
   }
 
   .mn\:hidden {
@@ -1682,6 +1674,10 @@ video {
 }
 
 @media (max-width: 1280px) and (min-width: 1024px) {
+  .mdlg\:justify-center {
+    justify-content: center;
+  }
+
   .mdlg\:text-2xl {
     font-size: 1.5rem;
     line-height: 2rem;

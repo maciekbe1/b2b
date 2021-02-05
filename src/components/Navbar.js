@@ -9,7 +9,7 @@ export default function Navbar(props) {
   return (
     <>
       <nav className="fixed z-20 w-full bg-white border-b-2 border-navy">
-        <div className="px-2 mx-auto max-w-7xl sm:px-6 lg:px-8">
+        <div className="container px-2 mx-auto sm:px-6 lg:px-8">
           <div className="relative flex items-center justify-between h-24">
             <div className="absolute inset-y-0 left-0 flex items-center sm:hidden">
               {/* <!-- Mobile menu button--> */}
@@ -115,8 +115,8 @@ export default function Navbar(props) {
                 </div>
               </div>
             </div>
-            <div className="absolute right-0 flex flex-col justify-center align-middle bottom-3">
-              <div className="justify-center lg:flex sm:hidden mn:flex">
+            <div className="absolute right-0 flex flex-col justify-center align-middle lg:flex sm:hidden bottom-3">
+              <div className="flex justify-center">
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
                   viewBox="0 0 20 20"
@@ -135,8 +135,8 @@ export default function Navbar(props) {
                   510 510 499
                 </a>
               </div>
-              <div className="ml-2 sm:hidden lg:block">
-                <div className="flex justify-center sm:hidden lg:flex">
+              <div className="ml-2">
+                <div className="flex justify-center">
                   <button
                     className="items-center justify-center w-10 h-10 p-3 font-normal text-blue-600 bg-white outline-none align-center focus:outline-none"
                     type="button"

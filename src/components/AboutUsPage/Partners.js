@@ -1,6 +1,7 @@
 import React from "react";
 import wiazar_pl from "../../assets/img/wiazar_pl.webp";
 import rekuperatory from "../../assets/img/REKU_LOGO.webp";
+import mir from "../../assets/img/logo_mir.webp";
 
 export default function Partners() {
   return (
@@ -8,7 +9,7 @@ export default function Partners() {
       <h3 className="pt-8 pb-2 text-xl font-semibold text-center text-navy">
         Nasi partnerzy
       </h3>
-      <div className="flex flex-wrap items-center justify-center lg:justify-start">
+      <div className="flex flex-wrap items-center justify-center mdlg:justify-center lg:justify-evenly">
         <div className="p-4">
           <a target="_blank" rel="noreferrer" href="https://wiazarpolska.pl/">
             <img
@@ -28,6 +29,15 @@ export default function Partners() {
               src={rekuperatory}
               alt="Rekuperatory"
               className="h-16 mn:h-auto mn:w-full"
+            />
+          </a>
+        </div>
+        <div className="p-4">
+          <a target="_blank" href="https://www.mirenergia.pl/" rel="noreferrer">
+            <img
+              src={mir}
+              alt="Mir"
+              className="lg:h-40 md:h-36 sm:h-36 mn:h-36"
             />
           </a>
         </div>
