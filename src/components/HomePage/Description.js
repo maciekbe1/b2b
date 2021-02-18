@@ -7,14 +7,17 @@ import Contact from "../HomePage/Contact";
 export default function Description() {
   return (
     <div className="flex mt-2">
-      <div className="flex mn:flex-col-reverse mt-10 mn:mt-0">
-        <div className="w-6/12 mn:w-full mr-auto ml-auto">
+      <div className="flex mt-10 mn:flex-col-reverse mn:mt-0">
+        <div className="w-6/12 ml-auto mr-auto mn:w-full">
+          <h1 className="mb-2 text-xl font-semibold text-navy">
+            Izolacje i ocieplenia domu
+          </h1>
           <div>
             <div className="flex pb-2">
               <div className="mr-2">
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
-                  className="text-logoGreen h-6 w-6"
+                  className="w-6 h-6 text-logoGreen"
                   viewBox="0 0 20 20"
                   fill="currentColor"
                 >
@@ -25,7 +28,7 @@ export default function Description() {
                   />
                 </svg>
               </div>
-              <p className="text-md font-light leading-relaxed text-gray-700">
+              <p className="font-light leading-relaxed text-gray-700 text-md">
                 Budujesz lub remontujesz dom?
               </p>
             </div>
@@ -33,7 +36,7 @@ export default function Description() {
               <div className="mr-2">
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
-                  className="text-logoGreen h-6 w-6"
+                  className="w-6 h-6 text-logoGreen"
                   viewBox="0 0 20 20"
                   fill="currentColor"
                 >
@@ -45,7 +48,7 @@ export default function Description() {
                 </svg>
               </div>
 
-              <p className="text-md font-light leading-relaxed text-gray-700">
+              <p className="font-light leading-relaxed text-gray-700 text-md">
                 Zastanawiasz się nad doborem odpowiedniego źródła ciepła?
               </p>
             </div>
@@ -53,7 +56,7 @@ export default function Description() {
               <div className="mr-2">
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
-                  className="text-logoGreen h-6 w-6"
+                  className="w-6 h-6 text-logoGreen"
                   viewBox="0 0 20 20"
                   fill="currentColor"
                 >
@@ -64,7 +67,7 @@ export default function Description() {
                   />
                 </svg>
               </div>
-              <p className="text-md font-light leading-relaxed text-gray-700">
+              <p className="font-light leading-relaxed text-gray-700 text-md">
                 Myślisz o oszczędzaniu energii?
               </p>
             </div>
@@ -72,7 +75,7 @@ export default function Description() {
               <div className="mr-2">
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
-                  className="text-logoGreen h-6 w-6"
+                  className="w-6 h-6 text-logoGreen"
                   viewBox="0 0 20 20"
                   fill="currentColor"
                 >
@@ -83,33 +86,41 @@ export default function Description() {
                   />
                 </svg>
               </div>
-              <p className="text-md font-light leading-relaxed text-gray-700">
+              <p className="font-light leading-relaxed text-gray-700 text-md">
                 Chcesz mieć przyjemny chłód w lecie, kojące ciepło w zimie i
                 błogą ciszę zawsze?
               </p>
             </div>
           </div>
-          <p className="text-md font-light leading-relaxed mb-4 text-gray-700">
+          <p className="mb-4 font-light leading-relaxed text-gray-700 text-md">
             Począwszy od fundamentów, przez posadzki, aż po poddasze, musisz
-            zadbać o szereg elementów, które mają istotny wpływ na standard
-            energetyczny Twojego domu. Ocieplenie oraz izolacja poddasza, dachu,
-            podłogi, fundamentów ma ogromne znaczenie, ponieważ to właśnie tu
-            odnotowujemy największe straty ciepła. Od doboru odpowiedniej
-            technologii i wykorzystanych materiałów zależeć będzie Twój komfort
-            i koszty eksploatacji.
-            <br />
-            <br />
-            Piana zamkniętokomórkowa i otwartokomórkowa, aplikowana metodą
-            natryskową, jest doskonałym rozwiązaniem dla wymagających klientów,
-            którzy cenią sobie najwyższą jakość i niezmienne parametry
-            energetyczne przez wiele lat eksploatacji.
+            zadbać o szereg elementów, które będą miały istotny wpływ na
+            standard energetyczny Twojego budynku mieszkalnego.
+          </p>
+          <p className="mb-4 font-light leading-relaxed text-gray-700 text-md">
+            Prawidłowe ocieplenie domu oraz izolacje z wykorzystaniem piany PUR
+            poddasza, dachu, podłogi oraz fundamentów mają ogromne znaczenie. To
+            właśnie w tych obszarach odnotowujemy największe straty ciepła. Od
+            doboru odpowiedniej technologii termoizolacji i wykorzystanych
+            materiałów w trakcie wykonywania ocieplenia domu, zależeć będzie nie
+            tylko Twój komfort, ale też ponoszone regularnie koszty eksploatacji
+            obiektu. Warto więc skorzystać z rozwiązań, które pozwolą na
+            znaczące zmniejszenie wysokości rachunków za ogrzewanie.
+          </p>
+          <p className="mb-4 font-light leading-relaxed text-gray-700 text-md">
+            Ocieplanie pianą poliuretanową zamkniętokomórkową lub
+            otwartokomórkową, aplikowanymi metodą natryskową na wybranym
+            obszarze, jest doskonałym rozwiązaniem dla wymagających klientów
+            ceniących najwyższą jakość realizowanych usług oraz znakomite efekty
+            końcowe, przekładające się na niezmienne parametry energetyczne
+            przez wiele lat eksploatacji obiektu.
           </p>
           <div className="lg:pt-4 mn:pt-2">
             <Modal
               activator={({ setShow }) => (
                 <button
                   type="button"
-                  className="font-bold text-white bg-navy px-4 py-2 active:bg-gray-700"
+                  className="px-4 py-2 font-bold text-white bg-navy active:bg-gray-700"
                   onClick={() => setShow(true)}
                 >
                   Sprawdź ofertę!
@@ -121,8 +132,8 @@ export default function Description() {
           </div>
         </div>
 
-        <div className="w-5/12 mn:w-full mr-auto ml-auto mn:mt-6">
-          <div className="relative flex flex-col min-w-0 break-words w-full mb-6 shadow-lg bg-navy">
+        <div className="w-5/12 ml-auto mr-auto mn:w-full mn:mt-6">
+          <div className="relative flex flex-col w-full min-w-0 mb-6 break-words shadow-lg bg-navy">
             <img
               className="w-full align-middle rounded-t-lg"
               src={piana}
@@ -133,7 +144,7 @@ export default function Description() {
                 preserveAspectRatio="none"
                 xmlns="http://www.w3.org/2000/svg"
                 viewBox="0 0 583 95"
-                className="absolute left-0 w-full block"
+                className="absolute left-0 block w-full"
                 style={{
                   height: "95px",
                   top: "-94px",
@@ -141,13 +152,13 @@ export default function Description() {
               >
                 <polygon
                   points="-30,95 583,95 583,65"
-                  className="text-navy fill-current"
+                  className="fill-current text-navy"
                 ></polygon>
               </svg>
               <h4 className="text-xl font-bold text-white">
                 ZASTOSOWANIE SYSTEMÓW POLIURETANOWYCH
               </h4>
-              <p className="text-md font-light mt-2 text-white">
+              <p className="mt-2 font-light text-white text-md">
                 Oferujemy wykonanie termoizolacji metodą natryskową nowoczesnym
                 urządzeniem, znanej i renomowanej firmy GRACO. Specjalizujemy
                 się w kompleksowym wykonaniu izolacji i docieplenia domów,
