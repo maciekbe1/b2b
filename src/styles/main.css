@@ -822,6 +822,10 @@ video {
   height: 100%;
 }
 
+.h-screen {
+  height: 100vh;
+}
+
 .text-xs {
   font-size: 0.75rem;
   line-height: 1rem;
@@ -840,6 +844,11 @@ video {
 .text-2xl {
   font-size: 1.5rem;
   line-height: 2rem;
+}
+
+.text-5xl {
+  font-size: 3rem;
+  line-height: 1;
 }
 
 .text-sxs {
@@ -1067,6 +1076,10 @@ video {
   padding-top: 2rem;
 }
 
+.pb-10 {
+  padding-bottom: 2.5rem;
+}
+
 .pt-24 {
   padding-top: 6rem;
 }
@@ -1236,6 +1249,10 @@ video {
 
 .uppercase {
   text-transform: uppercase;
+}
+
+.underline {
+  text-decoration: underline;
 }
 
 .hover\:underline:hover {

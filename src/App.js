@@ -10,6 +10,7 @@ const AboutPage = lazy(() => import("./components/pages/AboutPage"));
 const OffertPage = lazy(() => import("./components/pages/OffertPage"));
 const SynthesiaPage = lazy(() => import("./components/pages/SynthesiaPage"));
 const RodoPage = lazy(() => import("./components/pages/RodoPage"));
+const NotFoundPage = lazy(() => import("./components/pages/NotFoundPage"));
 
 const ScrollToTop = lazy(() => import("./components/ScrollToTop"));
 const Layout = lazy(() => import("./components/Layout"));
@@ -28,6 +29,7 @@ export default function App() {
               <Route path="/oferta" component={OffertPage} />
               <Route path="/synthesia-technology" component={SynthesiaPage} />
               <Route path="/rodo" component={RodoPage} />
+              <Route component={NotFoundPage} />
             </Switch>
           </ScrollToTop>
         </Layout>
