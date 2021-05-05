@@ -1,28 +1,31 @@
-import express from "express";
-import bodyParser from "body-parser";
-import cookieParser from "cookie-parser";
-import morgan from "morgan";
-import cors from "cors";
-import nodemailer from "nodemailer";
-
+const express = require("express");
+const bodyParser = require("body-parser");
+const cookieParser = require("cookie-parser");
+const morgan = require("morgan");
+const cors = require("cors");
+const nodemailer = require("nodemailer");
 const path = require("path");
+const dotenv = require("dotenv");
 
-require("dotenv").config();
-
+dotenv.config();
 const app = express();
-
-const port = process.env.PORT;
+const port = 12033;
 
 if (process.env.NODE_ENV === "production") {
-  app.use(express.static(path.join(__dirname, "../build")));
+  app.use(express.static(path.resolve("./build")));
   app.get("*", (req, res) => {
-    res.sendFile(path.join(__dirname, "../build", "index.html"));
+    res.sendFile(path.resolve("./build", "index.html"));
   });
 }
 
 var jsonParser = bodyParser.json();
 
-app.use(cookieParser(), jsonParser, morgan("tiny"), cors("*"));
+var corsOptions = {
+  origin: process.env.VAR_SERVER,
+  optionsSuccessStatus: 200,
+};
+
+app.use(cookieParser(), jsonParser, morgan("tiny"), cors(corsOptions));
 
 app.post("/api/send", (req, res) => {
   try {
@@ -32,7 +35,7 @@ app.post("/api/send", (req, res) => {
       secure: true,
       auth: {
         user: "noreply@purconcept.pl",
-        pass: "admin1234567890",
+        pass: process.env.PASS,
       },
     });
 

@@ -26,7 +26,7 @@ export default function Form({ text }) {
   };
   const [name, setName] = useState("");
   const [email, setEmail] = useState("");
-  const [selectedValue, setSelectedValue] = useState();
+  const [selectedValue, setSelectedValue] = useState([]);
   const [message, setMessage] = useState("");
   const [pending, setPending] = useState(false);
   const [success, setSuccess] = useState(false);
@@ -68,13 +68,13 @@ export default function Form({ text }) {
     <form onSubmit={handleFormSubmit}>
       <h4 className="text-xl font-semibold text-navy">Napisz do nas</h4>
       {text ? (
-        <p className="text-md leading-relaxed font-light text-gray-700 mt-1 mb-4  text-justify">
+        <p className="mt-1 mb-4 font-light leading-relaxed text-justify text-gray-700 text-md">
           {text}
         </p>
       ) : null}
-      <div className="relative w-full mb-3 mt-8">
+      <div className="relative w-full mt-8 mb-3">
         <label
-          className="block uppercase text-gray-600 text-xs font-bold mb-2"
+          className="block mb-2 text-xs font-bold text-gray-600 uppercase"
           htmlFor="full-name"
         >
           Imie i Nazwisko
@@ -82,7 +82,7 @@ export default function Form({ text }) {
         <input
           type="text"
           required
-          className="px-3 py-3 placeholder-gray-400 text-gray-600 bg-white rounded text-sm border border-gray-300 focus:outline-none focus:shadow-outline w-full"
+          className="w-full px-3 py-3 text-sm text-gray-600 placeholder-gray-400 bg-white border border-gray-300 rounded focus:outline-none focus:shadow-outline"
           placeholder="Imie i Nazwisko"
           style={{
             transition: "all .15s ease",
@@ -92,7 +92,7 @@ export default function Form({ text }) {
       </div>
       <div className="relative w-full mb-3">
         <label
-          className="block uppercase text-gray-600 text-xs font-bold mb-2"
+          className="block mb-2 text-xs font-bold text-gray-600 uppercase"
           htmlFor="email"
         >
           Email
@@ -100,7 +100,7 @@ export default function Form({ text }) {
         <input
           type="email"
           required
-          className="px-3 py-3 placeholder-gray-400 text-gray-600 bg-white rounded text-sm border border-gray-300 focus:outline-none focus:shadow-outline w-full"
+          className="w-full px-3 py-3 text-sm text-gray-600 placeholder-gray-400 bg-white border border-gray-300 rounded focus:outline-none focus:shadow-outline"
           placeholder="Email"
           style={{
             transition: "all .15s ease",
@@ -109,7 +109,7 @@ export default function Form({ text }) {
         />
       </div>
       <div className="relative w-full mb-3">
-        <label className="block uppercase text-gray-600 text-xs font-bold mb-2">
+        <label className="block mb-2 text-xs font-bold text-gray-600 uppercase">
           Miejse aplikacji piany
         </label>
         <Select
@@ -119,20 +119,19 @@ export default function Form({ text }) {
           styles={customStyles}
           placeholder="Wybierz miejsce aplikacji"
           onChange={handleChange}
-          value={data.find((obj) => obj.value === selectedValue)}
         />
       </div>
       <div className="relative w-full mb-3">
         <label
-          className="block uppercase text-gray-600 text-xs font-bold mb-2"
+          className="block mb-2 text-xs font-bold text-gray-600 uppercase"
           htmlFor="message"
         >
           Wiadomość
         </label>
         <textarea
-          rows="4"
-          cols="80"
-          className="px-3 py-3 placeholder-gray-400 text-gray-700 bg-white text-sm rounded border border-gray-300 focus:outline-none focus:shadow-outline w-full"
+          rows={4}
+          cols={80}
+          className="w-full px-3 py-3 text-sm text-gray-700 placeholder-gray-400 bg-white border border-gray-300 rounded focus:outline-none focus:shadow-outline"
           placeholder="Napisz wiadomość..."
           onChange={(e) => setMessage(e.target.value)}
           required
@@ -140,8 +139,8 @@ export default function Form({ text }) {
       </div>
 
       <div className="w-full">
-        <label className="w-full flex">
-          <p className="leading-relaxed text-gray-600 text-sxs cursor-pointer">
+        <label className="flex w-full">
+          <p className="leading-relaxed text-gray-600 cursor-pointer text-sxs">
             Wyrażam zgodę na przetwarzanie moich danych osobowych przez Pur
             Concept s.c. z siedzibą we Wrocławiu, 55-002, ul. Działkowa 4A LOK.
             4, w celu przesyłania mi treści marketingowych na mój adres e-mail
@@ -154,14 +153,14 @@ export default function Form({ text }) {
           </p>
           <input
             type="checkbox"
-            className="form-checkbox border-2 border-navy text-logoGreen ml-2"
+            className="ml-2 border-2 form-checkbox border-navy text-logoGreen"
             onChange={() => setConsent(!consent)}
-            value={consent}
+            value={consent ? 1 : 0}
           />
         </label>
       </div>
 
-      <div className="text-center mt-6">
+      <div className="mt-6 text-center">
         {!success ? (
           <button
             type="submit"
@@ -176,7 +175,7 @@ export default function Form({ text }) {
             Wyślij Wiadomość
           </button>
         ) : (
-          <button className="bg-logoGreen text-white hover:bg-geen-700 text-xs font-bold uppercase px-6 py-3 shadow hover:shadow-lg outline-none focus:outline-none mr-1 mb-1">
+          <button className="px-6 py-3 mb-1 mr-1 text-xs font-bold text-white uppercase shadow outline-none bg-logoGreen hover:bg-geen-700 hover:shadow-lg focus:outline-none">
             Wiadomość Wysłana
           </button>
         )}
