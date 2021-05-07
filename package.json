@@ -41,7 +41,7 @@
     "postbuild": "react-snap",
     "start": "nodemon --exec babel-node app.js",
     "react": "npm run watch:css && react-scripts start",
-    "build": "npm install && npm run build:css && react-scripts build",
+    "build": "npm run build:css && react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject",
     "build:css": "postcss ./src/styles/tailwind.css -o ./src/styles/main.css",
