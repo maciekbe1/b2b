@@ -9,7 +9,6 @@ const dotenv = require("dotenv");
 
 dotenv.config();
 const app = express();
-const port = 12033;
 
 if (process.env.NODE_ENV === "production") {
   app.use(express.static(path.resolve("./build")));
@@ -77,6 +76,6 @@ app.post("/api/send", (req, res) => {
   }
 });
 
-app.listen(port, "127.0.0.1", () => {
-  console.log(`server start on port ${port}`);
+app.listen(process.env.PORT || 12033, () => {
+  console.log(`server start on port ${process.env.PORT}`);
 });
