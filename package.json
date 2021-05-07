@@ -40,7 +40,7 @@
   "scripts": {
     "postbuild": "react-snap",
     "start": "npm run watch:css && react-scripts start",
-    "build": "npm run build:css && react-scripts build",
+    "build": "npm run build:css && react-scripts build && nodemon --exec babel-node server/server.js",
     "test": "react-scripts test",
     "eject": "react-scripts eject",
     "build:css": "postcss ./src/styles/tailwind.css -o ./src/styles/main.css",
