@@ -1,5 +1,5 @@
 const { exec } = require("child_process");
-exec("npm run log", () => (error, stdout, stderr) => {
+exec("npm run server", () => (error, stdout, stderr) => {
   console.log(`stdout: ${stdout}`);
   console.log(`stderr: ${stderr}`);
   if (error !== null) {
