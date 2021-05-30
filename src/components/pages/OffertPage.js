@@ -15,11 +15,11 @@ export default function OffertPage() {
   const { width } = useWindowDimensions();
 
   return (
-    <>
+    <React.Fragment>
       <Helmet>
         <title>
           Ocieplenie domu, poddasza pianą otwartokomórkową, zamkniętokomórkową,
-          PUR - Pur Concept
+          PUR - PUR CONCEPT
         </title>
         <meta
           name="description"
@@ -246,6 +246,6 @@ export default function OffertPage() {
         </div>
       </div>
       <Footer />
-    </>
+    </React.Fragment>
   );
 }

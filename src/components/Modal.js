@@ -17,10 +17,10 @@ const Modal = ({ children, activator }) => {
   );
 
   return (
-    <>
+    <React.Fragment>
       {activator({ setShow })}
       {createPortal(content, document.body)}
-    </>
+    </React.Fragment>
   );
 };
 export default Modal;

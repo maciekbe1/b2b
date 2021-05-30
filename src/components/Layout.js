@@ -15,7 +15,7 @@ const structuredJSON = {
     postalCode: "55-002",
     addressRegion: "dolnośląskie",
   },
-  name: "Pur Concept s.c.",
+  name: "PUR CONCEPT s.c.",
   telephone: "510510499",
   vatID: "8961599491",
   image: `https://www.purconcept.pl${logo}`,
@@ -39,7 +39,7 @@ export default function Layout({ children }) {
     }
   }, []);
   return (
-    <>
+    <React.Fragment>
       <Helmet>
         <script type="application/ld+json">
           {JSON.stringify(structuredJSON)}
@@ -62,6 +62,6 @@ export default function Layout({ children }) {
           polityce prywatności.
         </Link>
       </CookieConsent>
-    </>
+    </React.Fragment>
   );
 }

@@ -13,7 +13,11 @@ export default function Partners() {
       </h3>
       <div className="flex flex-wrap items-center justify-center mdlg:justify-center lg:justify-between">
         <div className="p-4">
-          <a target="_blank" rel="noreferrer" href="https://wiazarpolska.pl/">
+          <a
+            target="_blank"
+            rel="noopener noreferrer"
+            href="https://wiazarpolska.pl/"
+          >
             <img src={wiazar_pl} alt="Wiązar Polska" className="h-36" />
           </a>
         </div>
@@ -21,7 +25,7 @@ export default function Partners() {
           <a
             target="_blank"
             href="https://www.rekuperatory.pl/"
-            rel="noreferrer"
+            rel="noopener noreferrer"
           >
             <img
               src={rekuperatory}
@@ -31,7 +35,11 @@ export default function Partners() {
           </a>
         </div>
         <div className="p-4">
-          <a target="_blank" href="https://www.mirenergia.pl/" rel="noreferrer">
+          <a
+            target="_blank"
+            href="https://www.mirenergia.pl/"
+            rel="noopener noreferrer"
+          >
             <img src={mir} alt="Mir" className="h-36" />
           </a>
         </div>
@@ -39,7 +47,7 @@ export default function Partners() {
           <a
             target="_blank"
             href="https://www.swiatokienidrzwi.pl/"
-            rel="noreferrer"
+            rel="noopener noreferrer"
           >
             <img src={swiatokien} alt="Mir" className="h-40" />
           </a>

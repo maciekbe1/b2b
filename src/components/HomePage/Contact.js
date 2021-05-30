@@ -8,7 +8,7 @@ registerLocale("pl", pl);
 
 const CustomInput = forwardRef(({ value, onClick }, ref) => (
   <button
-    className="font-bold text-white bg-navy px-4 py-2  hover:bg-gray-700"
+    className="px-4 py-2 font-bold text-white bg-navy hover:bg-gray-700"
     onClick={onClick}
   >
     {value}
@@ -22,10 +22,10 @@ export default function Contact({ setShow }) {
 
   const message = `email: ${email}%0D%0Anumer telefonu: ${phone}%0D%0APreferowana godzina kontaktu: ${dateUtil(
     startDate
-  )}%0D%0A%0D%0AWyrażam zgodę na przetwarzanie moich danych osobowych w celach handlowych i marketingowych przez PUR Concept S.C.`;
+  )}%0D%0A%0D%0AWyrażam zgodę na przetwarzanie moich danych osobowych w celach handlowych i marketingowych przez PUR CONCEPT S.C.`;
   return (
-    <div className="bg-white lg:p-4 p-2">
-      <div className="modal-header flex justify-between pb-2">
+    <div className="p-2 bg-white lg:p-4">
+      <div className="flex justify-between pb-2 modal-header">
         <p className="text-2xl font-semibold text-navy">Umów się na rozmowę</p>
         <button
           className="modal-close"
@@ -37,7 +37,7 @@ export default function Contact({ setShow }) {
             fill="none"
             viewBox="0 0 24 24"
             stroke="currentColor"
-            className="h-6 w-6 text-gray-700"
+            className="w-6 h-6 text-gray-700"
           >
             <path
               strokeLinecap="round"
@@ -51,14 +51,14 @@ export default function Contact({ setShow }) {
       <div className="modal-body">
         <div className="relative w-full mb-3">
           <label
-            className="block uppercase text-gray-700 text-xs font-bold mb-2"
+            className="block mb-2 text-xs font-bold text-gray-700 uppercase"
             htmlFor="email"
           >
             Email
           </label>
           <input
             type="email"
-            className="px-3 py-3 placeholder-gray-400 text-gray-700 bg-white rounded text-sm border border-gray-300 focus:outline-none focus:shadow-outline w-full"
+            className="w-full px-3 py-3 text-sm text-gray-700 placeholder-gray-400 bg-white border border-gray-300 rounded focus:outline-none focus:shadow-outline"
             placeholder="Email"
             style={{
               transition: "all .15s ease",
@@ -68,14 +68,14 @@ export default function Contact({ setShow }) {
         </div>
         <div className="relative w-full mb-3">
           <label
-            className="block uppercase text-gray-700 text-xs font-bold mb-2"
+            className="block mb-2 text-xs font-bold text-gray-700 uppercase"
             htmlFor="email"
           >
             Numer tefelonu
           </label>
           <input
             type="number"
-            className="px-3 py-3 placeholder-gray-400 text-gray-700 bg-white rounded text-sm border border-gray-300 focus:outline-none focus:shadow-outline w-full"
+            className="w-full px-3 py-3 text-sm text-gray-700 placeholder-gray-400 bg-white border border-gray-300 rounded focus:outline-none focus:shadow-outline"
             placeholder="Numer Telefonu"
             style={{
               transition: "all .15s ease",
@@ -84,7 +84,7 @@ export default function Contact({ setShow }) {
           />
         </div>
         <div>
-          <label className="block uppercase text-gray-700 text-xs font-bold mb-2">
+          <label className="block mb-2 text-xs font-bold text-gray-700 uppercase">
             Preferowany czas kontaktu
           </label>
           <DatePicker
@@ -101,10 +101,10 @@ export default function Contact({ setShow }) {
           </p>
         </div>
       </div>
-      <div className="modal-footer flex justify-end pt-2">
+      <div className="flex justify-end pt-2 modal-footer">
         <Link
           to="/"
-          className="text-sm font-semibold text-white bg-navy px-4 py-2 active:bg-gray-700 mr-2"
+          className="px-4 py-2 mr-2 text-sm font-semibold text-white bg-navy active:bg-gray-700"
           onClick={(e) => {
             window.location = `mailto:kontakt@purconcept.pl?subject=Kontakt%20PUR%20Concept&body=${message}`;
             e.preventDefault();
@@ -113,7 +113,7 @@ export default function Contact({ setShow }) {
           Wyślij
         </Link>
         <button
-          className="hover:underline text-sm font-semibold"
+          className="text-sm font-semibold hover:underline"
           onClick={() => setShow(false)}
         >
           Anuluj

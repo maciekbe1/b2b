@@ -9,7 +9,7 @@ export default function Info() {
 
       <div className="pt-6">
         <p className="mt-1 text-sm font-semibold text-gray-600">
-          Pur Concept S.C.
+          PUR CONCEPT S.C.
         </p>
       </div>
 

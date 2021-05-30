@@ -7,7 +7,7 @@ export default function Synthesia() {
   const { width } = useWindowDimensions();
 
   return (
-    <>
+    <React.Fragment>
       <div className="container px-6 mx-auto sm:pt-32 mn:pt-24 mn:px-4">
         <section className="container mx-auto mn:hidden">
           <div
@@ -96,6 +96,6 @@ export default function Synthesia() {
         <img src={SynthesiaHome} alt="synthesia" />
       </div>
       <Footer />
-    </>
+    </React.Fragment>
   );
 }

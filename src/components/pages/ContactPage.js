@@ -31,7 +31,7 @@ export default function Contact() {
   const { width } = useWindowDimensions();
 
   return (
-    <>
+    <React.Fragment>
       <div className="container px-6 mx-auto sm:pt-32 mn:pt-24 mn:px-4">
         <section className="container mx-auto mn:hidden">
           <div
@@ -69,6 +69,6 @@ export default function Contact() {
         </div>
       </div>
       <div className="full-width">{createMap()}</div>
-    </>
+    </React.Fragment>
   );
 }

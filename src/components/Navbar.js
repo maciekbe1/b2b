@@ -7,7 +7,7 @@ import youtube from "../assets/img/youtube.webp";
 export default function Navbar(props) {
   const [navbarOpen, setNavbarOpen] = React.useState(false);
   return (
-    <>
+    <React.Fragment>
       <nav className="fixed z-20 w-full bg-white border-b-2 border-navy">
         <div className="container px-2 mx-auto sm:px-6 lg:px-8">
           <div className="relative flex items-center justify-between h-24">
@@ -222,6 +222,6 @@ export default function Navbar(props) {
           </div>
         </div>
       </nav>
-    </>
+    </React.Fragment>
   );
 }

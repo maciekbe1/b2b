@@ -11,9 +11,9 @@ import { Helmet } from "react-helmet";
 
 export default function HomePage() {
   return (
-    <>
+    <React.Fragment>
       <Helmet>
-        <title>Ocieplenia i izolacje domu pianą - Pur Concept</title>
+        <title>Ocieplenia i izolacje domu pianą - PUR CONCEPT</title>
         <meta
           name="description"
           content="Specjalizujemy się w wykonywaniu profesjonalnych termoizolacji domów oraz obiektów przemysłowych. Wykonujemy również OCIEPLANIE PIANĄ przy zastosowaniu metody natryskowej."
@@ -48,6 +48,6 @@ export default function HomePage() {
         </section>
       </main>
       <Footer />
-    </>
+    </React.Fragment>
   );
 }

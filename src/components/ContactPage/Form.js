@@ -1,6 +1,6 @@
 import React, { useState } from "react";
-import axios from "axios";
 import Select from "react-select";
+import emailjs from "emailjs-com";
 
 export default function Form({ text }) {
   const data = [
@@ -40,27 +40,30 @@ export default function Form({ text }) {
     if (!success && consent) {
       setPending(true);
       const data = {
-        place: selectedValue.map((item) => item.label).join(", "),
+        place: selectedValue.map((item) => item.label).join(", ") || "",
         client: name,
         email: email,
         message: message,
       };
-      axios({
-        method: "post",
-        url: "/api/send",
-        headers: {
-          "Content-Type": "application/json",
-        },
-        data: data,
-      })
-        .then((res) => {
-          setPending(false);
-          setSuccess(true);
-        })
-        .catch((err) => {
-          setPending(false);
-          console.log(err);
-        });
+      emailjs
+        .send(
+          process.env.REACT_APP_SERVICE,
+          process.env.REACT_APP_TEMPLATE,
+          data,
+          process.env.REACT_APP_USER
+        )
+        .then(
+          (result) => {
+            console.log(result.text);
+            setPending(false);
+            setSuccess(true);
+          },
+          (error) => {
+            console.log(error.text);
+            setPending(false);
+            console.log(error);
+          }
+        );
     }
     setSuccess(false);
   };

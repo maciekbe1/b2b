@@ -6,7 +6,7 @@ export default function RodoPage() {
   const { width } = useWindowDimensions();
 
   return (
-    <>
+    <React.Fragment>
       <div className="container px-6 mx-auto sm:pt-32 mn:pt-24 mn:px-4">
         <section className="container mx-auto mn:hidden">
           <div
@@ -39,7 +39,7 @@ export default function RodoPage() {
           <p className="font-light leading-relaxed text-justify text-gray-700 text-md">
             Administratorem danych osobowych jest Przedsiębiorca Pani Marta
             Matusiewicz i Pan Rafał Stróżyk, prowadzący działalność gospodarczą
-            pod firmą: Pur Concept S.C., z siedzibą przy: Działkowa 4a lok. 4,
+            pod firmą: PUR CONCEPT S.C., z siedzibą przy: Działkowa 4a lok. 4,
             55-002 Kamieniec Wrocławski, NIP: 8961599491 (zwany dalej:
             „Właściciel").
           </p>
@@ -489,6 +489,6 @@ export default function RodoPage() {
         </div>
       </div>
       <Footer />
-    </>
+    </React.Fragment>
   );
 }
