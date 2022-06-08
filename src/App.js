@@ -8,7 +8,6 @@ const ContactPage = lazy(() => import("./components/pages/ContactPage"));
 const Navbar = lazy(() => import("./components/Navbar"));
 const AboutPage = lazy(() => import("./components/pages/AboutPage"));
 const OffertPage = lazy(() => import("./components/pages/OffertPage"));
-const SynthesiaPage = lazy(() => import("./components/pages/SynthesiaPage"));
 const RodoPage = lazy(() => import("./components/pages/RodoPage"));
 const NotFoundPage = lazy(() => import("./components/pages/NotFoundPage"));
 
@@ -27,7 +26,6 @@ export default function App() {
               <Route path="/kontakt" component={ContactPage} />
               <Route path="/o-nas" component={AboutPage} />
               <Route path="/oferta" component={OffertPage} />
-              <Route path="/synthesia-technology" component={SynthesiaPage} />
               <Route path="/rodo" component={RodoPage} />
               <Route component={NotFoundPage} />
             </Switch>

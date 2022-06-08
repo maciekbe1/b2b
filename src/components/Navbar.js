@@ -99,13 +99,6 @@ export default function Navbar(props) {
                     Kontakt
                   </NavLink>
                   <NavLink
-                    to="/synthesia-technology"
-                    className="px-3 py-2 text-sm font-medium hover:bg-navy hover:text-white"
-                    activeClassName="bg-navy text-white hover:text-white"
-                  >
-                    Synthesia Technology
-                  </NavLink>
-                  <NavLink
                     to="/rodo"
                     className="px-3 py-2 text-sm font-medium hover:bg-navy hover:text-white"
                     activeClassName="bg-navy text-white hover:text-white"
