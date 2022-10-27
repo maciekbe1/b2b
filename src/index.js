@@ -2,8 +2,15 @@ import React from "react";
 import App from "./App";
 import reportWebVitals from "./reportWebVitals";
 import { hydrate, render } from "react-dom";
+import TagManager from "react-gtm-module";
 
 const rootElement = document.getElementById("root");
+
+const tagManagerArgs = {
+  gtmId: "GTM-TKKMP2K",
+};
+
+TagManager.initialize(tagManagerArgs);
 
 if (rootElement.hasChildNodes()) {
   hydrate(<App />, rootElement);
