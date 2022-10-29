@@ -38,10 +38,10 @@ export default function RodoPage() {
           </h3>
           <p className="font-light leading-relaxed text-justify text-gray-700 text-md">
             Administratorem danych osobowych jest Przedsiębiorca Pani Marta
-            Matusiewicz i Pan Rafał Stróżyk, prowadzący działalność gospodarczą
-            pod firmą: PUR CONCEPT S.C., z siedzibą przy: Działkowa 4a lok. 4,
-            55-002 Kamieniec Wrocławski, NIP: 8961599491 (zwany dalej:
-            „Właściciel").
+            Matusiewicz i Pani Elżbieta Matusiewicz, prowadzący działalność
+            gospodarczą pod firmą: PUR CONCEPT S.C., z siedzibą przy: Działkowa
+            4a lok. 4, 55-002 Kamieniec Wrocławski, NIP: 8961599491 (zwany
+            dalej: „Właściciel”).
           </p>
         </div>
 
@@ -62,14 +62,15 @@ export default function RodoPage() {
             Cel przetwarzania danych osobowych
           </h3>
           <p className="mb-2 font-light leading-relaxed text-justify text-gray-700 text-md">
-            1. Administrator przetwarza dane osobowe Użytkownika w celu:
+            1. Administrator przetwarza dane osobowe Użytkownika w celu:
           </p>
           <p className="mb-2 ml-8 font-light leading-relaxed text-justify text-gray-700 text-md">
-            a. prezentowania oferty produktowej Pur Concept,
+            a. prezentowania oferty produktowej PUR CONCEPT S.C.,
           </p>
           <p className="mb-2 ml-8 font-light leading-relaxed text-justify text-gray-700 text-md">
             b. czynności związanych z zawarciem, wykonywaniem lub rozwiązywaniem
-            umowy, dotyczącej usług i towarów oferowanych przez Pur Concept,
+            umowy, dotyczącej usług i towarów oferowanych przez PUR CONCEPT
+            S.C.,
           </p>
           <p className="mb-2 ml-8 font-light leading-relaxed text-justify text-gray-700 text-md">
             c. obsługi posprzedażowej,
@@ -82,17 +83,17 @@ export default function RodoPage() {
             Concept samodzielnie lub we współpracy z innymi podmiotami,
           </p>
           <p className="mb-2 ml-8 font-light leading-relaxed text-justify text-gray-700 text-md">
-            f. archiwizacja danych klientów i kontrahentów Pur Concept,
+            f. archiwizacja danych klientów i kontrahentów PUR CONCEPT S.C.,
           </p>
           <p className="mb-2 ml-8 font-light leading-relaxed text-justify text-gray-700 text-md">
             g. prowadzenie analiz i statystyk na potrzeby prowadzonej przez Pur
             Concept działalności gospodarczej,
           </p>
           <p className="mb-2 ml-8 font-light leading-relaxed text-justify text-gray-700 text-md">
-            h. wykonywania prawnie uzasadnionych interesów Pur Concept, które
-            zostały wskazane powyżej, a także takich interesów jak dochodzenie
-            lub obrona w sprawie roszczeń lub praw Pur Concept lub podmiotu,
-            który Pur Concept reprezentuje,
+            h. wykonywania prawnie uzasadnionych interesów PUR CONCEPT S.C.,
+            które zostały wskazane powyżej, a także takich interesów jak
+            dochodzenie lub obrona w sprawie roszczeń lub praw PUR CONCEPT S.C.
+            lub podmiotu, który PUR CONCEPT S.C. reprezentuje,
           </p>
           <p className="mb-2 ml-8 font-light leading-relaxed text-justify text-gray-700 text-md">
             i. wykonywania obowiązku prawnego – obowiązki takie wynikają z
@@ -116,7 +117,7 @@ export default function RodoPage() {
           </p>
           <p className="mb-2 ml-8 font-light leading-relaxed text-justify text-gray-700 text-md">
             l. rzetelnego wykonywania kosztorysów inwestorskich na świadczone
-            usługi polegające na izolacji i ocieplaniu pianą PUR.
+            usługi polegające na izolacji i ocieplaniu pianą PUR.
           </p>
         </div>
 
@@ -126,8 +127,8 @@ export default function RodoPage() {
           </h3>
           <p className="font-light leading-relaxed text-justify text-gray-700 text-md">
             Administrator przetwarza następujące dane osobowe, których podanie
-            jest niezbędne do korzystania przez Państwa z usług Pur Concept. Są
-            to między innymi:
+            jest niezbędne do korzystania przez Państwa z usług PUR CONCEPT
+            S.C.. Są to między innymi:
           </p>
           <p className="mb-2 ml-8 font-light leading-relaxed text-justify text-gray-700 text-md">
             a. imiona, nazwiska,
@@ -160,11 +161,11 @@ export default function RodoPage() {
             Podstawa prawna przetwarzania danych osobowych
           </h3>
           <p className="mb-2 font-light leading-relaxed text-justify text-gray-700 text-md">
-            1. Dane osobowe są przetwarzane zgodnie z przepisami Rozporządzenia
-            Parlamentu Europejskiego i Rady (UE) 2016/679 z dnia 27 kwietnia
-            2016 r. w sprawie ochrony osób fizycznych w związku z przetwarzaniem
-            danych osobowych i w sprawie swobodnego przepływu takich danych oraz
-            uchylenia dyrektywy 95/46/WE (ogólne rozporządzenie o ochronie
+            1. Dane osobowe są przetwarzane zgodnie z przepisami Rozporządzenia
+            Parlamentu Europejskiego i Rady (UE) 2016/679 z dnia 27 kwietnia
+            2016 r. w sprawie ochrony osób fizycznych w związku z przetwarzaniem
+            danych osobowych i w sprawie swobodnego przepływu takich danych oraz
+            uchylenia dyrektywy 95/46/WE (ogólne rozporządzenie o ochronie
             danych), OJ L 119, 4.5.2016, p. 1–88, dalej zwane: „rozporządzenie
             RODO".
           </p>
@@ -183,68 +184,67 @@ export default function RodoPage() {
             Prawa przysługujące użytkownikowi
           </h3>
           <p className="mb-2 font-light leading-relaxed text-justify text-gray-700 text-md">
-            1. Użytkownik może w każdej chwili zażądać od administratora
-            informacji o zakresie przetwarzania danych osobowych.
+            1. Użytkownik może w każdej chwili zażądać od administratora
+            informacji o zakresie przetwarzania danych osobowych.
           </p>
           <p className="mb-2 font-light leading-relaxed text-justify text-gray-700 text-md">
-            2. Użytkownik może w każdej chwili zażądać poprawienia bądź
+            2. Użytkownik może w każdej chwili zażądać poprawienia bądź
             sprostowania swoich danych osobowych.
           </p>
           <p className="mb-2 font-light leading-relaxed text-justify text-gray-700 text-md">
-            3. Użytkownik może w każdej chwili wycofać swoją zgodę na
+            3. Użytkownik może w każdej chwili wycofać swoją zgodę na
             przetwarzanie jego danych osobowych, bez podawania przyczyny.
             Żądanie nieprzetwarzania danych może dotyczyć wskazanego przez
             Użytkownika konkretnego celu przetwarzania np. wycofanie zgody na
             otrzymywanie informacji handlowych bądź dotyczyć wszystkich celów
             przetwarzania danych. Wycofanie zgody co do wszystkich celów
-            przetwarzania spowoduje, że konto Użytkownika zostanie usunięte
-            ze strony internetowej, wraz ze wszystkimi wcześniej przetwarzanymi
+            przetwarzania spowoduje, że konto Użytkownika zostanie usunięte ze
+            strony internetowej, wraz ze wszystkimi wcześniej przetwarzanymi
             przez administratora danymi osobowymi Użytkownika. Wycofanie zgody
             nie wpłynie na już dokonane czynności.
           </p>
           <p className="mb-2 font-light leading-relaxed text-justify text-gray-700 text-md">
-            4. Użytkownik może w każdej chwili żądać, bez podawania przyczyny,
+            4. Użytkownik może w każdej chwili żądać, bez podawania przyczyny,
             aby administrator usunął Jego dane. Żądanie usunięcia danych nie
             wpłynie na dotychczas dokonane czynności. Usunięcie danych oznacza
-            jednoczesne usunięcie konta Użytkownika, wraz ze wszystkimi
-            zapisanymi i przetwarzanymi do tej pory przez administratora danymi
+            jednoczesne usunięcie konta Użytkownika, wraz ze wszystkimi
+            zapisanymi i przetwarzanymi do tej pory przez administratora danymi
             osobowymi.
           </p>
           <p className="mb-2 font-light leading-relaxed text-justify text-gray-700 text-md">
-            5. Użytkownik może w każdej chwili wyrazić sprzeciw przeciwko
-            przetwarzaniu danych osobowych, zarówno w zakresie wszystkich
+            5. Użytkownik może w każdej chwili wyrazić sprzeciw przeciwko
+            przetwarzaniu danych osobowych, zarówno w zakresie wszystkich
             przetwarzanych przez administratora danych osobowych Użytkownika,
-            jak również jedynie w ograniczonym zakresie np. co do przetwarzania
-            danych w konkretnie wskazanym celu. Sprzeciw nie wpłynie na
+            jak również jedynie w ograniczonym zakresie np. co do przetwarzania
+            danych w konkretnie wskazanym celu. Sprzeciw nie wpłynie na
             dotychczas dokonane czynności. Wniesienie sprzeciwu spowoduje
-            usunięcie konta Użytkownika, wraz ze wszystkimi zapisanymi
-            i przetwarzanymi do tej pory, przez administratora, danymi
-            osobowymi.
+            usunięcie konta Użytkownika, wraz ze wszystkimi zapisanymi i
+            przetwarzanymi do tej pory, przez administratora, danymi osobowymi.
           </p>
           <p className="mb-2 font-light leading-relaxed text-justify text-gray-700 text-md">
             6. Użytkownik może zażądać ograniczenia przetwarzania danych
-            osobowych, czy to przez określony czas, czy też bez ograniczenia
-            czasowego, ale w określonym zakresie, co administrator będzie
-            obowiązany spełnić. Żądanie to nie wpłynie na dotychczas dokonane
+            osobowych, czy to przez określony czas, czy też bez ograniczenia
+            czasowego, ale w określonym zakresie, co administrator będzie
+            obowiązany spełnić. Żądanie to nie wpłynie na dotychczas dokonane
             czynności.
           </p>
           <p className="mb-2 font-light leading-relaxed text-justify text-gray-700 text-md">
             7. Użytkownik może zażądać, aby administrator przekazał innemu
-            podmiotowi, przetwarzane dane osobowe Użytkownika. Powinien w tym
+            podmiotowi, przetwarzane dane osobowe Użytkownika. Powinien w tym
             celu napisać prośbę do administratora, wskazując, jakiemu podmiotowi
             (nazwa, adres) należy przekazać dane osobowe Użytkownika oraz jakie
             konkretnie dane Użytkownik życzy sobie, żeby administrator
             przekazał. Po potwierdzeniu przez Użytkownika swojego życzenia,
-            administrator przekaże, w formie elektronicznej, wskazanemu
+            administrator przekaże, w formie elektronicznej, wskazanemu
             podmiotowi, dane osobowe Użytkownika. Potwierdzenie przez
-            Użytkownika żądania jest niezbędne z uwagi na bezpieczeństwo danych
+            Użytkownika żądania jest niezbędne z uwagi na bezpieczeństwo danych
             osobowych Użytkownika oraz uzyskanie pewności, że żądanie pochodzi
             od osoby uprawnionej.
           </p>
           <p className="mb-2 font-light leading-relaxed text-justify text-gray-700 text-md">
-            8. Administrator informuje Użytkownika o podjętych działaniach,
-            przed upływem miesiąca od otrzymania jednego z żądań wymienionych
-            w poprzednich punktach.
+            8. Administrator informuje Użytkownika o podjętych działaniach,
+            przed upływem miesiąca od otrzymania jednego z żądań wymienionych w
+            poprzednich punktach.
           </p>
         </div>
 
@@ -253,31 +253,31 @@ export default function RodoPage() {
             Okres przechowywania danych osobowych
           </h3>
           <p className="mb-2 font-light leading-relaxed text-justify text-gray-700 text-md">
-            1. Zasadniczo dane osobowe są przechowywane tylko tak długo, jak
-            to jest konieczne do wypełnienia zobowiązań umownych lub ustawowych,
-            dla których zostały one zgromadzone. Dane te zostaną usunięte
-            natychmiast, gdy ich przechowywanie nie będzie konieczne, w celach
-            dowodowych, zgodnie z prawem cywilnym lub w związku z ustawowym
+            1. Zasadniczo dane osobowe są przechowywane tylko tak długo, jak to
+            jest konieczne do wypełnienia zobowiązań umownych lub ustawowych,
+            dla których zostały one zgromadzone. Dane te zostaną usunięte
+            natychmiast, gdy ich przechowywanie nie będzie konieczne, w celach
+            dowodowych, zgodnie z prawem cywilnym lub w związku z ustawowym
             obowiązkiem przechowywania danych.
           </p>
           <p className="mb-2 font-light leading-relaxed text-justify text-gray-700 text-md">
-            2. Informacje dotyczące umowy przechowuje się w celach dowodowych,
-            przez okres trzech lat, począwszy od końca roku, w którym zakończono
-            relacje handlowe z Użytkownikiem. Usunięcie danych nastąpi po
+            2. Informacje dotyczące umowy przechowuje się w celach dowodowych,
+            przez okres trzech lat, począwszy od końca roku, w którym zakończono
+            relacje handlowe z Użytkownikiem. Usunięcie danych nastąpi po
             upływie ustawowego terminu przedawnienia dochodzenia roszczeń
             umownych.
           </p>
           <p className="mb-2 font-light leading-relaxed text-justify text-gray-700 text-md">
             3. Ponadto, administrator może zachować informacje archiwalne,
             dotyczące zawartych transakcji, gdyż ich przechowywanie jest
-            związane z przysługującymi Użytkownikowi roszczeniami np. z tytułu
+            związane z przysługującymi Użytkownikowi roszczeniami np. z tytułu
             rękojmi.
           </p>
           <p className="mb-2 font-light leading-relaxed text-justify text-gray-700 text-md">
-            4. Jeśli żadna umowa nie została zawarta, między Użytkownikiem
-            i Właścicielem, dane osobowe Użytkownika są przechowywane do czasu
+            4. Jeśli żadna umowa nie została zawarta, między Użytkownikiem i
+            Właścicielem, dane osobowe Użytkownika są przechowywane do czasu
             usunięcia konta Użytkownika na stronie internetowej. Usunięcie konta
-            może nastąpić w wyniku wysunięcia żądania przez Użytkownika,
+            może nastąpić w wyniku wysunięcia żądania przez Użytkownika,
             wycofania zgody na przetwarzanie danych osobowych, bądź też
             zgłoszenia sprzeciwu co do przetwarzania tych danych.
           </p>
@@ -289,17 +289,17 @@ export default function RodoPage() {
           </h3>
           <p className="mb-2 font-light leading-relaxed text-justify text-gray-700 text-md">
             1. Administrator może powierzać przetwarzanie danych osobowych
-            podmiotom współpracującym z administratorem, w zakresie niezbędnym
-            dla realizacji transakcji np. w celu przygotowania zamówionego
-            towaru oraz dostarczania przesyłek lub przekazywania informacji
+            podmiotom współpracującym z administratorem, w zakresie niezbędnym
+            dla realizacji transakcji np. w celu przygotowania zamówionego
+            towaru oraz dostarczania przesyłek lub przekazywania informacji
             handlowych, pochodzących od administratora (ostatnie dotyczy
             Użytkowników, którzy wyrazili zgodę na otrzymywanie informacji
             handlowych).
           </p>
           <p className="mb-2 font-light leading-relaxed text-justify text-gray-700 text-md">
-            2. Poza celami wskazanymi w niniejszej Polityce Prywatności, dane
-            osobowe Użytkowników, nie będą w żaden sposób udostępniane osobom
-            trzecim ani przekazywane innym podmiotom, w celu przesyłania
+            2. Poza celami wskazanymi w niniejszej Polityce Prywatności, dane
+            osobowe Użytkowników, nie będą w żaden sposób udostępniane osobom
+            trzecim ani przekazywane innym podmiotom, w celu przesyłania
             materiałów marketingowych tych osób trzecich.
           </p>
           <p className="mb-2 font-light leading-relaxed text-justify text-gray-700 text-md">
@@ -307,8 +307,8 @@ export default function RodoPage() {
             poza obszar Unii Europejskiej.
           </p>
           <p className="mb-2 font-light leading-relaxed text-justify text-gray-700 text-md">
-            4. Niniejsza Polityka Prywatności jest zgodna z przepisami
-            wynikającymi z art. 13 ust. 1 i ust. 2 rozporządzenia RODO.
+            4. Niniejsza Polityka Prywatności jest zgodna z przepisami
+            wynikającymi z art. 13 ust. 1 i ust. 2 rozporządzenia RODO.
           </p>
         </div>
 
@@ -317,26 +317,26 @@ export default function RodoPage() {
             Pliki cookies
           </h3>
           <p className="mb-2 font-light leading-relaxed text-justify text-gray-700 text-md">
-            1. Strona internetowa używa plików cookies (ciasteczka) lub podobną
+            1. Strona internetowa używa plików cookies (ciasteczka) lub podobną
             technologię (dalej łącznie nazywane: "cookies") do zbierania
-            informacji o dostępie Użytkownika do strony internetowej (np. za
-            pomocą komputera lub smartfonu) oraz jego preferencjach. Są one
-            wykorzystywane m.in. w celach reklamowych i statystycznych oraz
-            w celu dostosowania strony internetowej do indywidualnych potrzeb
+            informacji o dostępie Użytkownika do strony internetowej (np. za
+            pomocą komputera lub smartfonu) oraz jego preferencjach. Są one
+            wykorzystywane m.in. w celach reklamowych i statystycznych oraz w
+            celu dostosowania strony internetowej do indywidualnych potrzeb
             Użytkownika.
           </p>
           <p className="mb-2 font-light leading-relaxed text-justify text-gray-700 text-md">
-            2. Pliki cookies to fragmenty informacji, które zawierają unikalny
+            2. Pliki cookies to fragmenty informacji, które zawierają unikalny
             kod referencyjny, który strona internetowa przesyła na urządzenie
-            Użytkownika, w celu przechowywania, a czasem śledzenia informacji
+            Użytkownika, w celu przechowywania, a czasem śledzenia informacji
             dotyczących używanego urządzenia. Zwykle nie pozwalają one
             zidentyfikować osoby Użytkownika. Ich głównym zadaniem jest lepsze
             dopasowanie strony internetowej do Użytkownika.
           </p>
           <p className="mb-2 font-light leading-relaxed text-justify text-gray-700 text-md">
-            3. Niektóre z plików cookies, występujące na stronie internetowej,
-            są dostępne tylko przez czas trwania danej sesji internetowej
-            i wygasają po zamknięciu przeglądarki. Inne pliki cookies służą do
+            3. Niektóre z plików cookies, występujące na stronie internetowej,
+            są dostępne tylko przez czas trwania danej sesji internetowej i
+            wygasają po zamknięciu przeglądarki. Inne pliki cookies służą do
             zapamiętywania Użytkownika, który po powrocie na stronę internetową,
             jest na niej rozpoznawany. Są one wówczas zachowywane przed dłuższy
             czas.
@@ -345,7 +345,7 @@ export default function RodoPage() {
             4. Pliki cookies używane na niniejszej stronie internetowej to:
           </p>
           <p className="mb-2 ml-8 font-light leading-relaxed text-justify text-gray-700 text-md">
-            _ga i są przechowywane przez okres 24 miesięcy ( 2 lata ).
+            _ga i są przechowywane przez okres 24 miesięcy ( 2 lata ).
           </p>
           <p className="mb-2 font-light leading-relaxed text-justify text-gray-700 text-md">
             5. Wszystkie pliki cookies, występujące na stronie internetowej, są
@@ -353,39 +353,39 @@ export default function RodoPage() {
           </p>
           <p className="mb-2 font-light leading-relaxed text-justify text-gray-700 text-md">
             6. Wszystkie pliki cookies, używane przez niniejszą stronę
-            internetową, są zgodne z obowiązującym prawem Unii Europejskiej.
+            internetową, są zgodne z obowiązującym prawem Unii Europejskiej.
           </p>
           <p className="mb-2 font-light leading-relaxed text-justify text-gray-700 text-md">
-            7. Większość Użytkowników i niektórych przeglądarek mobilnych
+            7. Większość Użytkowników i niektórych przeglądarek mobilnych
             automatycznie akceptuje pliki cookies. Jeżeli Użytkownik nie zmieni
-            ustawień, pliki cookies zostaną zapisane w pamięci urządzenia.
+            ustawień, pliki cookies zostaną zapisane w pamięci urządzenia.
           </p>
           <p className="mb-2 font-light leading-relaxed text-justify text-gray-700 text-md">
             8. Użytkownik może zmienić preferencje dotyczące akceptacji plików
-            cookies lub zmienić przeglądarkę, aby móc otrzymać za każdym razem
+            cookies lub zmienić przeglądarkę, aby móc otrzymać za każdym razem
             stosowne powiadomienie, gdy funkcja cookies jest ustawiona. Aby
             zmienić ustawienia akceptacji cookies, należy dostosować ustawienia
-            w przeglądarce.
+            w przeglądarce.
           </p>
           <p className="mb-2 font-light leading-relaxed text-justify text-gray-700 text-md">
-            9. Warto pamiętać, że blokowanie lub usuwanie plików cookies może
-            uniemożliwić pełne korzystanie ze strony internetowej.
+            9. Warto pamiętać, że blokowanie lub usuwanie plików cookies może
+            uniemożliwić pełne korzystanie ze strony internetowej.
           </p>
           <p className="mb-2 font-light leading-relaxed text-justify text-gray-700 text-md">
             10. Pliki cookies będą wykorzystywane do niezbędnego zarządzania
-            sesją, w tym:
+            sesją, w tym:
           </p>
 
           <p className="mb-2 ml-8 font-light leading-relaxed text-justify text-gray-700 text-md">
             a. Tworzenia specjalnej sesji logowania dla Użytkownika strony
             internetowej, aby strona zapamiętała, że Użytkownik jest zalogowany,
-            a jego żądania były dostarczane w sposób skuteczny, bezpieczny
-            i spójny,
+            a jego żądania były dostarczane w sposób skuteczny, bezpieczny i
+            spójny,
           </p>
           <p className="mb-2 ml-8 font-light leading-relaxed text-justify text-gray-700 text-md">
             b. Rozpoznawania Użytkownika, który już wcześniej odwiedził stronę
             internetową, co pozwala na identyfikację liczby unikalnych
-            użytkowników, którzy skorzystali z serwisu i pozwala upewnić się co
+            użytkowników, którzy skorzystali z serwisu i pozwala upewnić się co
             do wystarczającej pojemności serwisu dla liczby nowych użytkowników,
           </p>
           <p className="mb-2 ml-8 font-light leading-relaxed text-justify text-gray-700 text-md">
@@ -393,19 +393,19 @@ export default function RodoPage() {
             zarejestrowana na stronie internetowej,
           </p>
           <p className="mb-2 ml-8 font-light leading-relaxed text-justify text-gray-700 text-md">
-            d. Rejestrowanie informacji z urządzenia Użytkownika, w tym: pliki
-            cookies, adres IP i informacje o używanej przeglądarce, w celu
-            możliwości diagnozowania problemów, administrowania i śledzenia
+            d. Rejestrowanie informacji z urządzenia Użytkownika, w tym: pliki
+            cookies, adres IP i informacje o używanej przeglądarce, w celu
+            możliwości diagnozowania problemów, administrowania i śledzenia
             Użytkowania witryny,
           </p>
           <p className="mb-2 ml-8 font-light leading-relaxed text-justify text-gray-700 text-md">
-            e. Dostosowywania elementów układu szaty graficznej lub zawartości
+            e. Dostosowywania elementów układu szaty graficznej lub zawartości
             strony internetowej,
           </p>
           <p className="mb-2 ml-8 font-light leading-relaxed text-justify text-gray-700 text-md ">
-            f. Zbierania informacji statystycznych o tym, jak Użytkownik
-            korzysta ze strony, w celu możliwości ulepszania witryny
-            i stwierdzenia, które zakresy strony internetowej są najbardziej
+            f. Zbierania informacji statystycznych o tym, jak Użytkownik
+            korzysta ze strony, w celu możliwości ulepszania witryny i
+            stwierdzenia, które zakresy strony internetowej są najbardziej
             popularne dla Użytkowników.
           </p>
         </div>

@@ -144,15 +144,15 @@ export default function Form({ text }) {
       <div className="w-full">
         <label className="flex w-full">
           <p className="leading-relaxed text-gray-600 cursor-pointer text-sxs">
-            Wyrażam zgodę na przetwarzanie moich danych osobowych przez Pur
-            Concept s.c. z siedzibą we Wrocławiu, 55-002, ul. Działkowa 4A LOK.
-            4, w celu przesyłania mi treści marketingowych na mój adres e-mail
-            podany wyżej w formularzu kontaktowym. Informujemy, że Państwa zgoda
-            może zostać cofnięta w dowolnym momencie przez wysłanie wiadomości
-            e-mail na adres: kontakt@purconcept.pl, spod adresu, którego zgoda
-            dotyczy. Informujemy, że nie jesteście Państwo profilowani. Państwa
-            dane nie będą przekazywane poza EOG ani udostępniane organizacjom
-            międzynarodowym.
+            Wyrażam zgodę na przetwarzanie moich danych osobowych przez PUR
+            CONCEPT S.C. z siedzibą w Kamieńcu Wrocławskim, 55-002, ul.
+            Działkowa 4A LOK. 4, w celu przesyłania mi treści marketingowych na
+            mój adres e-mail podany wyżej w formularzu kontaktowym. Informujemy,
+            że Państwa zgoda może zostać cofnięta w dowolnym momencie przez
+            wysłanie wiadomości e-mail na adres: kontakt@purconcept.pl, spod
+            adresu, którego zgoda dotyczy. Informujemy, że nie jesteście Państwo
+            profilowani. Państwa dane nie będą przekazywane poza EOG ani
+            udostępniane organizacjom międzynarodowym.
           </p>
           <input
             type="checkbox"
