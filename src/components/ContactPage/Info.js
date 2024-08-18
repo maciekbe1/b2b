@@ -1,6 +1,6 @@
 import React from "react";
-import instagram from "../../assets/img/instagram.webp";
 import facebook from "../../assets/img/facebook.webp";
+import instagram from "../../assets/img/instagram.webp";
 import youtube from "../../assets/img/youtube.webp";
 export default function Info() {
   return (
@@ -15,7 +15,7 @@ export default function Info() {
 
       <div className="pt-6">
         <p className="mt-1 text-sm font-semibold text-gray-600">
-          ul. Działkowa 4a lok. 4 <br /> 55-002 Kamieniec Wrocławski
+          ul. Kościuszki 34/9 <br /> 57-550 Stronie Śląskie
         </p>
       </div>
 
@@ -30,10 +30,10 @@ export default function Info() {
 
       <div className="pt-6">
         <p className="mt-1 text-sm font-semibold text-gray-600">
-          NIP: 8961599491
+          NIP: 8811504230
         </p>
         <p className="mt-1 text-sm font-semibold text-gray-600">
-          REGON: 387683401
+          REGON: 529279722
         </p>
       </div>
 

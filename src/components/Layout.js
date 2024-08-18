@@ -1,23 +1,23 @@
 import React, { useEffect } from "react";
-import { Helmet } from "react-helmet";
-import logo from "../assets/img/logo-3.webp";
-import ReactGA from "react-ga";
 import CookieConsent from "react-cookie-consent";
+import ReactGA from "react-ga";
+import { Helmet } from "react-helmet";
 import { Link } from "react-router-dom";
+import logo from "../assets/img/logo-3.webp";
 
 const structuredJSON = {
   "@context": "http://schema.org",
   "@type": "LocalBusiness",
   address: {
     "@type": "PostalAddress",
-    addressLocality: "Kamieniec Wrocławski",
-    streetAddress: "Działkowa 4a/4",
-    postalCode: "55-002",
+    addressLocality: "Stronie Śląskie",
+    streetAddress: "Kościuszki 34/9",
+    postalCode: "57-550",
     addressRegion: "dolnośląskie",
   },
   name: "PUR CONCEPT s.c.",
   telephone: "510510499",
-  vatID: "8961599491",
+  vatID: "8811504230",
   image: `https://www.purconcept.pl${logo}`,
 };
 

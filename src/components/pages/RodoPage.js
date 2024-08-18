@@ -1,7 +1,7 @@
 import React from "react";
+import privacy from "../../assets/img/privacy.png";
 import Footer from "../Footer";
 import useWindowDimensions from "../utils/ViewPort";
-import privacy from "../../assets/img/privacy.png";
 export default function RodoPage() {
   const { width } = useWindowDimensions();
 
@@ -37,11 +37,10 @@ export default function RodoPage() {
             Administrator danych osobowych
           </h3>
           <p className="font-light leading-relaxed text-justify text-gray-700 text-md">
-            Administratorem danych osobowych jest Przedsiębiorca Pani Marta
-            Matusiewicz i Pani Elżbieta Matusiewicz, prowadzący działalność
-            gospodarczą pod firmą: PUR CONCEPT S.C., z siedzibą przy: Działkowa
-            4a lok. 4, 55-002 Kamieniec Wrocławski, NIP: 8961599491 (zwany
-            dalej: „Właściciel”).
+            Administratorem danych osobowych jest Przedsiębiorca Pan Patryk
+            Krawczyk, prowadzący działalność gospodarczą pod firmą: PUR CONCEPT
+            S.C., z siedzibą przy: Kościuszki 34/9, 57-550 Stronie Śląskie, NIP:
+            8811504230 (zwany dalej: „Właściciel”).
           </p>
         </div>
 

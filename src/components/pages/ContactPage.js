@@ -1,12 +1,12 @@
-import React from "react";
 import parse from "html-react-parser";
+import React from "react";
+import slider4 from "../../assets/img/slider4.webp";
 import Form from "../ContactPage/Form";
 import Info from "../ContactPage/Info";
-import slider4 from "../../assets/img/slider4.webp";
 import useWindowDimensions from "../utils/ViewPort";
 
 const createMap = () => {
-  const address = "Kamieniec Wrocławski Działkowa 4a";
+  const address = "Stronie Śląskie Kościuszki 34/9";
   const encode = encodeURIComponent(address);
   const map = `<iframe
 			height="540"

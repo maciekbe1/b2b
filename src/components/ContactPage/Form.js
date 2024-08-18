@@ -1,6 +1,6 @@
+import emailjs from "emailjs-com";
 import React, { useState } from "react";
 import Select from "react-select";
-import emailjs from "emailjs-com";
 
 export default function Form({ text }) {
   const data = [
@@ -145,10 +145,10 @@ export default function Form({ text }) {
         <label className="flex w-full">
           <p className="leading-relaxed text-gray-600 cursor-pointer text-sxs">
             Wyrażam zgodę na przetwarzanie moich danych osobowych przez PUR
-            CONCEPT S.C. z siedzibą w Kamieńcu Wrocławskim, 55-002, ul.
-            Działkowa 4A LOK. 4, w celu przesyłania mi treści marketingowych na
-            mój adres e-mail podany wyżej w formularzu kontaktowym. Informujemy,
-            że Państwa zgoda może zostać cofnięta w dowolnym momencie przez
+            CONCEPT S.C. z siedzibą w Stronie Śląskie, 57-550, ul. Kościuszki
+            34/9, w celu przesyłania mi treści marketingowych na mój adres
+            e-mail podany wyżej w formularzu kontaktowym. Informujemy, że
+            Państwa zgoda może zostać cofnięta w dowolnym momencie przez
             wysłanie wiadomości e-mail na adres: kontakt@purconcept.pl, spod
             adresu, którego zgoda dotyczy. Informujemy, że nie jesteście Państwo
             profilowani. Państwa dane nie będą przekazywane poza EOG ani
