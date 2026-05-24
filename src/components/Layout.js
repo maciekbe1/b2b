@@ -1,8 +1,6 @@
 import React, { useEffect } from "react";
-import CookieConsent from "react-cookie-consent";
 import ReactGA from "react-ga";
 import { Helmet } from "react-helmet";
-import { Link } from "react-router-dom";
 import logo from "../assets/img/logo-3.webp";
 
 const structuredJSON = {
@@ -46,22 +44,6 @@ export default function Layout({ children }) {
         </script>
       </Helmet>
       {children}
-      <CookieConsent
-        location="bottom"
-        buttonText="Zgadzam się"
-        cookieName="CookieConsent"
-        containerClasses="opacity-95 bg-darkNavy flex flex-wrap justify-between left-o fixed w-full z-10 bottom-0 px-4 py-2 text-white text-md font-light leading-relaxed text-xs items-center"
-        disableStyles
-        buttonClasses="text-white px-2 py-1 bg-navy text-xs"
-        expires={150}
-      >
-        Nasza strona internetowa przetwarza pliki cookie. Dalsze korzystanie ze
-        strony oznacza, że zgadzasz się na ich użycie. Więcej informacji na
-        temat plików cookie można znaleźć w{" "}
-        <Link to="/rodo" className="text-logoGreen">
-          polityce prywatności.
-        </Link>
-      </CookieConsent>
     </React.Fragment>
   );
 }

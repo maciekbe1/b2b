@@ -642,11 +642,6 @@ video {
   background-color: rgba(26, 79, 114, var(--tw-bg-opacity));
 }
 
-.bg-darkNavy {
-  --tw-bg-opacity: 1;
-  background-color: rgba(17, 50, 72, var(--tw-bg-opacity));
-}
-
 .bg-logoGreen {
   --tw-bg-opacity: 1;
   background-color: rgba(49, 179, 27, var(--tw-bg-opacity));
@@ -977,10 +972,6 @@ video {
 
 .opacity-60 {
   opacity: 0.6;
-}
-
-.opacity-95 {
-  opacity: 0.95;
 }
 
 .outline-none {
